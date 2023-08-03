@@ -4,39 +4,42 @@ using UnityEngine;
 
 public class Player_Rotation : MonoBehaviour
 {
-    // Stores mouse position
-    Vector3 mouse_position;
-
-    // Camera object
+    // Initalize rigidbody, camera, ray, hitpoint
+    Rigidbody rb;
     Camera cam;
-
-    // Player rigid body
-    Rigidbody2D rb;
+    Ray mouseRay;
+    Vector3 hitPoint;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Get player rigid body
-        rb = this.GetComponent<Rigidbody2D>();
-
-        // Retrieve main camera
+        rb = GetComponent<Rigidbody>();
         cam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Rotate to camera
-        rotate_to_camera();
-    }
+        mouseRay = cam.ScreenPointToRay(Input.mousePosition);
+        print(Input.mousePosition);
+        RaycastHit hitInfo;
 
-    // Function which rotates the rigid body towards camera
-    void rotate_to_camera()
-    {
-        // Calculate current mouse position
-        mouse_position = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z - cam.transform.position.z));
+        // if raycast from mouse hits anything (dist 100f), save details on hitInfo
+        if (Physics.Raycast(mouseRay, out hitInfo, 100f))
+        {
+            // Save the point of impact on hitPoint
+            hitPoint = hitInfo.point;
+        }
 
-        // Transform the player rigid body using euler angles (to prevent gimbal lock)
-        rb.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2((mouse_position.y - transform.position.y),(mouse_position.x - transform.position.x)) * Mathf.Rad2Deg);
+
+        // Take x and z values from hitPoint while take y value from player
+        // Prevents player from looking up and down into ground
+        Vector3 lookTarget = new Vector3(hitPoint.x, transform.position.y, hitPoint.z);
+
+        // Player look at lookTarget
+        transform.LookAt(lookTarget);
+
+        // DEBUG DEBUG DEBUG
+        Debug.DrawRay(cam.transform.position, lookTarget - cam.transform.position, Color.magenta);
     }
 }
