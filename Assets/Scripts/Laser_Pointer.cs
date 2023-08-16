@@ -63,17 +63,18 @@ public class Laser_Pointer : MonoBehaviour
         // Update the Line Renderer's end position to the hit point
         lineRenderer.SetPosition(0, laserObjectPos);
 
-        // If raycast hits something with tag
-        if (rayHit.collider != null)
-        {
-            // Update the Line Renderer's end position to the hit point
-            lineRenderer.SetPosition(1, rayHit.point);
-        }
         // If raycast does not hit anything
-        else
+        if (rayHit.collider == null)
         {
             // Default to laserDist value from object
             lineRenderer.SetPosition(1, laserObjectPos + laserObjectDir * laserDist);
+        }
+        // If raycast hits wall
+        else if (rayHit.collider.tag == "Wall")
+        {
+            print(rayHit.collider.tag);
+            // Update the Line Renderer's end position to the hit point
+            lineRenderer.SetPosition(1, rayHit.point);
         }
     }
 }
