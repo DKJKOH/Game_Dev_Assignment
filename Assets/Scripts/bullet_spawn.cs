@@ -4,18 +4,32 @@ using UnityEngine;
 
 public class bullet_spawn : MonoBehaviour
 {
+    // What kind of bullet would spawn
+    [SerializeField] 
     public GameObject bullet;
-    public int currentAmmo;  // Current available bullets
-    public bool isAuto;
-    private float lastShotTime; // Time when the last shot was fired
-    public float fireRate; // Time between shots in full auto mode
+
+    // Amount of bullets available in the weapon
+    [SerializeField]
+    public int currentAmmo = 10;
+
+    // Automatic fire or Single Fire for gun
+    [SerializeField]
+    public bool isAuto = false;
+
+
+    // How long would the thing wait before firing
+    [SerializeField]
+    public float timeBetweeenShots = 10;
+
+    // Stores the time where the last shot was taken
+    private float lastShotTime;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        currentAmmo = 2;  // Initialize ammo
         lastShotTime = 0f; // Initialize last shot time
-
     }
 
     // Update is called once per frame
@@ -32,24 +46,26 @@ public class bullet_spawn : MonoBehaviour
         else 
         {
             // ======================== Auto weapon ============================
-            // Left mouse button held down
-            if(currentAmmo > 0 && Input.GetMouseButton(0) && isAuto && Time.time - lastShotTime >= fireRate)
+            // If user holds down left mouse button on auto weapons
+            if(currentAmmo > 0 && Input.GetMouseButton(0) && isAuto && Time.time - lastShotTime >= timeBetweeenShots)
             {
                 //Create bullet object
                 Instantiate(bullet, transform.position, transform.rotation);
-                currentAmmo--;
-                lastShotTime = Time.time;
 
+                // Deduct ammo
+                currentAmmo--;
+
+                // Save the last shot time
+                lastShotTime = Time.time;
             }
         }
 
+        // If Run Out of ammo
         if(currentAmmo == 0)
         {
+            // Inform player ammo ran out
             Debug.Log("Ammo ran out!");
         }
-       
-
-
         // ======================= burst fire weapon =========================
 
     }

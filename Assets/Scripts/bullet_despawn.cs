@@ -6,17 +6,12 @@ public class bullet_despawn : MonoBehaviour
 {
 	//Set from inspector
 	[SerializeField]
-	float seconds;
+	float seconds = 10;
 
     // Start is called before the first frame update
     void Start()
     {
         Destroy(gameObject, seconds);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

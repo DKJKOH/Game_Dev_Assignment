@@ -6,7 +6,7 @@ public class bullet_movement : MonoBehaviour
 {
 
 	[SerializeField]
-	float force;
+	float force = 1000;
 
 	Rigidbody2D rb;
     // Start is called before the first frame update
@@ -15,7 +15,7 @@ public class bullet_movement : MonoBehaviour
     	// calling rigidbody2d
         rb = GetComponent<Rigidbody2D>();
 
-        // Adding bullet force
+        // Adding bullet force (In Y direction as it is 2D)
         rb.AddForce(transform.up * force * Time.deltaTime, ForceMode2D.Impulse);
     }
 
