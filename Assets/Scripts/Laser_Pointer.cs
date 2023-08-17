@@ -5,25 +5,16 @@ using UnityEngine;
 
 public class Laser_Pointer : MonoBehaviour
 {
-    // Renders Line
-    private LineRenderer lineRenderer;
-
-    // Stores cursor's mouse position in world value
-    private Vector3 mouseWorldPosition;
-
-    // Make reference to camera
-    Camera cam;
+    // Attach laser object here
+    [SerializeField]
+    Transform laserObject;
 
     // Set your laser distance here
     [SerializeField]
     float laserDist = 10;
 
-    // Attach lazer object here
-    [SerializeField]
-    Transform laserObject;
-
-
-
+    // Renders Line
+    private LineRenderer lineRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -32,33 +23,19 @@ public class Laser_Pointer : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.enabled = true;
         lineRenderer.useWorldSpace = true;
-
-        cam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //---------------------------------- Retrieve mouse pos world value -------------------------------------------------------//
-
-        // Retreive pixel position of mouse
-        Vector3 mousePos = Input.mousePosition;
-
-        // Increase z value of mouse pos to be above plane so that ScreenToWorldPoint works
-        mousePos.z = cam.nearClipPlane;
-
-        // Convert mouse pixel position into world positions
-        mouseWorldPosition = cam.ScreenToWorldPoint(mousePos);
-
-
         //---------------------------------- Draw Laser -------------------------------------------------------//
 
+        // Get laser's position and the forward direction (y direction in our case)
         Vector2 laserObjectPos = laserObject.position;
         Vector2 laserObjectDir = laserObject.up;
 
-        // Generate ray from laser object
+        // Create raycast from laser object in the forward direction of the laser object
         RaycastHit2D rayHit = Physics2D.Raycast(laserObjectPos, laserObjectDir, laserDist);
-
 
         // Update the Line Renderer's end position to the hit point
         lineRenderer.SetPosition(0, laserObjectPos);
@@ -70,9 +47,8 @@ public class Laser_Pointer : MonoBehaviour
             lineRenderer.SetPosition(1, laserObjectPos + laserObjectDir * laserDist);
         }
         // If raycast hits wall
-        else if (rayHit.collider.tag == "Wall")
+        else if (rayHit.collider.tag == "Wall" || rayHit.collider.tag == "Person")
         {
-            print(rayHit.collider.tag);
             // Update the Line Renderer's end position to the hit point
             lineRenderer.SetPosition(1, rayHit.point);
         }

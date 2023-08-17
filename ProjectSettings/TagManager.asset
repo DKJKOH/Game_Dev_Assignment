@@ -7,6 +7,7 @@ TagManager:
   - pistol
   - flamethrower
   - Wall
+  - Person
   layers:
   - Default
   - TransparentFX

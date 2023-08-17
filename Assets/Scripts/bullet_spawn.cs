@@ -37,11 +37,14 @@ public class bullet_spawn : MonoBehaviour
     {
         //======================== Single fire ============================
         //upon left click and if there is ammo
-        if(currentAmmo > 0 && Input.GetButtonDown("Fire1") && !isAuto)
+        if(currentAmmo > 0 && Input.GetButtonDown("Fire1") && !isAuto && Time.time - lastShotTime >= timeBetweeenShots)
         {
             //Create bullet object
             Instantiate(bullet, transform.position, transform.rotation);
             currentAmmo--;
+
+            // Save the last shot time
+            lastShotTime = Time.time;
         }
         else 
         {
