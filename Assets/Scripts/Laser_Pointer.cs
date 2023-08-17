@@ -40,7 +40,7 @@ public class Laser_Pointer : MonoBehaviour
         // Update the Line Renderer's end position to the hit point
         lineRenderer.SetPosition(0, laserObjectPos);
 
-        // If raycast does not hit anything
+        // This if statement is to bypass error "object reference not set to an instance of an object"
         if (rayHit.collider == null)
         {
             // Default to laserDist value from object
@@ -51,6 +51,12 @@ public class Laser_Pointer : MonoBehaviour
         {
             // Update the Line Renderer's end position to the hit point
             lineRenderer.SetPosition(1, rayHit.point);
+        }
+        else
+        {
+
+            // Default to laserDist value from object
+            lineRenderer.SetPosition(1, laserObjectPos + laserObjectDir * laserDist);
         }
     }
 }
