@@ -46,7 +46,7 @@ MonoBehaviour:
   bullet: {fileID: 1495651842477448840, guid: 80e55ec6143f6144997570321e229011, type: 3}
   currentAmmo: 10
   isAuto: 0
-  fireRate: 0
+  timeBetweeenShots: 0.3
 --- !u!1 &2993761677061916108
 GameObject:
   m_ObjectHideFlags: 0
