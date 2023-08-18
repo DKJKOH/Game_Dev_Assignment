@@ -47,7 +47,7 @@ public class player_movement : MonoBehaviour
             // Get player model current position
             Vector2 playerPosition = player_rb.position;
 
-            // Set player's velocity, angular velocity and interia to zero (to prevent movement of player)
+            // Set player's velocity, angular velocity and interia to zero (to prevent movement of playerawaw)
             player_rb.velocity = Vector2.zero;
             player_rb.angularVelocity = 0;
             player_rb.inertia = 0;

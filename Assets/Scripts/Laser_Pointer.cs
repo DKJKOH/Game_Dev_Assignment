@@ -33,75 +33,34 @@ public class Laser_Pointer : MonoBehaviour
     void Update()
     {
         //---------------------------------- Draw Laser -------------------------------------------------------//
-
         // Get laser's position and the forward direction (y direction in our case)
         Vector2 laserObjectPos = laserObject.position;
-
-        //Vector2 laserObjectDir = laserObject.up;
 
         // Retrieve mouse position (pixel coordinates)
         Vector2 mousePosition = Input.mousePosition;
         // Convert pixel coordinates into world coordinates
         Vector3 mousePositionWorldCoordinates = mainCamera.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, mainCamera.transform.position.y - laserObject.position.y));
 
+        // Ensures that the mouse position z position is the same as the laser object z position
+        mousePositionWorldCoordinates.z = laserObject.position.z;
+
+        // Calcualte laser's direction
         Vector3 laserDirection = mousePositionWorldCoordinates - laserObject.position;
 
-
-
-        // Create raycast from laser object in the forward direction of the laser object
-        //RaycastHit2D rayHit = Physics2D.Raycast(laserObjectPos, laserObjectDir, laserDist);
-
-
-        // Debug show ray
-        //Debug.DrawRay(laserObjectPos, laserObjectDir);
-
-        // Stores details on what the ray hit
-        RaycastHit rayHit;
-
-        // Debug, shows ray
-        Debug.DrawRay(laserObject.position, laserDirection);
-
-        // Set starting position of laser (which is at weapon)
+        // Set laser's starting point
         lineRenderer.SetPosition(0, laserObject.position);
 
-        // If ray hits something
-        if (Physics.Raycast(laserObject.position, laserDirection, out rayHit, laserDist))
+        RaycastHit2D hit = Physics2D.Raycast(laserObjectPos, laserDirection, laserDist);
+        // If laser hits something
+        if (hit.collider != null && hit.collider.tag != "Bullet")
         {
-            Debug.Log("Apple");
-            // Set the laser end point
-            lineRenderer.SetPosition(1, rayHit.point);
+            // Set the end position of laser to be the location of the hit place
+            lineRenderer.SetPosition(1, hit.point);
         }
         else
         {
+            // Default to laserDist value from object
             lineRenderer.SetPosition(1, laserObject.position + laserDirection.normalized * laserDist);
         }
-
-        // Issue, you need to provide the direction of the ray as the second parameter, not the end point
-
-        //    if (rayHit.collider != null)
-        //    {
-        //        // Update the Line Renderer's end position to the hit point
-        //        lineRenderer.SetPosition(0, laserObjectPos);
-
-        //        // If raycast hits wall or person
-        //        if (rayHit.collider.tag == "Wall" || rayHit.collider.tag == "Person")
-        //        {
-        //            // Update the Line Renderer's end position to the hit point
-        //            lineRenderer.SetPosition(1, rayHit.point);
-        //        }
-        //        else
-        //        {
-        //            // Update the Line Renderer's end position to the hit point
-        //            lineRenderer.SetPosition(1, rayHit.point);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        // Update the Line Renderer's start position at the gun's coordinates
-        //        lineRenderer.SetPosition(0, laserObjectPos);
-
-        //        // Default to laserDist value from object
-        //        lineRenderer.SetPosition(1, laserObjectPos + laserObjectDir * laserDist);
-        //    }
     }
 }

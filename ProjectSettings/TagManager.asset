@@ -8,6 +8,7 @@ TagManager:
   - flamethrower
   - Wall
   - Person
+  - Bullet
   layers:
   - Default
   - TransparentFX
