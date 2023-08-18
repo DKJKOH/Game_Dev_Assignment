@@ -145,7 +145,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0005
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803b86e3c040c0a449029653c5847e47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 3
+  movementSpeed: 100000
 --- !u!61 &2879709579146350049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -556,6 +556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserObject: {fileID: 2879709579415322717}
   laserDist: 10
+  mainCamera: {fileID: 0}
 --- !u!1 &2879709579443177502
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +660,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2879709579674446815}
-  - component: {fileID: 2879709579674446814}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -684,15 +684,3 @@ Transform:
   m_Father: {fileID: 2879709579146350052}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2879709579674446814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2879709579674446812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8df7ce2e1d5cb2341a80c3784ae62119, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
