@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class weapon_rotation : MonoBehaviour
 {
-    void Start(){}
+    // Save the rotation value for future use
+    private float yRotationValue;
+
+    void Start()
+    {
+        // Save the user set rotation value
+        yRotationValue = transform.rotation.eulerAngles.y;
+    }
 
     // Update is called once per frame
     void Update()
@@ -18,7 +25,7 @@ public class weapon_rotation : MonoBehaviour
         // Calculate the angle to rotate the playermodel towards the mouse
         float rotationAngle = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;
 
-        // Rotate weapon (tilt it 50 degrees)
-        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, rotationAngle);
+        // Rotate weapon (tilt it according to inital set degrees)
+        transform.rotation = Quaternion.Euler(0, yRotationValue, rotationAngle);
     }
 }

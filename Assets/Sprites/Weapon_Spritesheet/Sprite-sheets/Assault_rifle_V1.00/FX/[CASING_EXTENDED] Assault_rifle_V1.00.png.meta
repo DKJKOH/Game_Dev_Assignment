@@ -1,7 +1,79 @@
 fileFormatVersion: 2
 guid: 78fa59aeb9423fa41b5c87e869cc1f3b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2814369869302081497
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_0'
+  - first:
+      213: -3872591012965155466
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_1'
+  - first:
+      213: -2924838377946246770
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_2'
+  - first:
+      213: 7223691594575721079
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_3'
+  - first:
+      213: 2801717545352551971
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_4'
+  - first:
+      213: -230195217403526901
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_5'
+  - first:
+      213: 2374895908590011056
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_6'
+  - first:
+      213: 3770401650024064946
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_7'
+  - first:
+      213: 9129784206411616175
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_8'
+  - first:
+      213: 1245856758835808917
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_9'
+  - first:
+      213: 61061884596490980
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_10'
+  - first:
+      213: 4118205943122380525
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_11'
+  - first:
+      213: -3298157674141708010
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_12'
+  - first:
+      213: 1741791142124059371
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_13'
+  - first:
+      213: -2163434077067533833
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_14'
+  - first:
+      213: -8691570728124839130
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_15'
+  - first:
+      213: -6838998877054637196
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_16'
+  - first:
+      213: -20844971971652127
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_17'
+  - first:
+      213: -8226503773463018847
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_18'
+  - first:
+      213: -7762239771144724501
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_19'
+  - first:
+      213: -4315561489336998939
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_20'
+  - first:
+      213: -2001191960735427838
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_21'
+  - first:
+      213: 1782474847865041471
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_22'
+  - first:
+      213: -480846989930763067
+    second: '[CASING_EXTENDED] Assault_rifle_V1.00_23'
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +112,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +143,525 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_0'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d720562c76ae0720800000000000000
+      internalID: 2814369869302081497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_1'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d77d7ddfac14ac0800000000000000
+      internalID: -3872591012965155466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_2'
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e819511edf2e867d0800000000000000
+      internalID: -2924838377946246770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_3'
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77239a58b35bf3460800000000000000
+      internalID: 7223691594575721079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_4'
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ed7bb6343b1e620800000000000000
+      internalID: 2801717545352551971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_5'
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b014bad5bae2eccf0800000000000000
+      internalID: -230195217403526901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_6'
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b249020f3355f020800000000000000
+      internalID: 2374895908590011056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_7'
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b72b320358235430800000000000000
+      internalID: 3770401650024064946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_8'
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafc2233d5283be70800000000000000
+      internalID: 9129784206411616175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_9'
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a8d6f0f1c2a4110800000000000000
+      internalID: 1245856758835808917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_10'
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e290b4e57fe8d000800000000000000
+      internalID: 61061884596490980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_11'
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de646bf6c7ec62930800000000000000
+      internalID: 4118205943122380525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_12'
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6111e8bd1179a32d0800000000000000
+      internalID: -3298157674141708010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_13'
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaf93bb0d51c2810800000000000000
+      internalID: 1741791142124059371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_14'
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f12a655b20f9f1e0800000000000000
+      internalID: -2163434077067533833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_15'
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b8fe10976516780800000000000000
+      internalID: -8691570728124839130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_16'
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47becd181cef611a0800000000000000
+      internalID: -6838998877054637196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_17'
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5d642cb91f5bff0800000000000000
+      internalID: -20844971971652127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_18'
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a28357676695dd80800000000000000
+      internalID: -8226503773463018847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_19'
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef5283ed0cf64490800000000000000
+      internalID: -7762239771144724501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_20'
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e366b5b0bb0c14c0800000000000000
+      internalID: -4315561489336998939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_21'
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2035ff4b3865a34e0800000000000000
+      internalID: -2001191960735427838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_22'
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3270102e6f9cb810800000000000000
+      internalID: 1782474847865041471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[CASING_EXTENDED] Assault_rifle_V1.00_23'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 127
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc6cd5d530b359f0800000000000000
+      internalID: -480846989930763067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
