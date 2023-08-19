@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class bullet_spawn : MonoBehaviour
@@ -32,6 +33,9 @@ public class bullet_spawn : MonoBehaviour
 
     private int currentAmmo;
 
+    // If reloading, prevent any other actions from happening
+    private bool isReloading;
+
     // this function will fully execute once the reload animation is finished
     IEnumerator WaitForReload()
     {
@@ -42,8 +46,6 @@ public class bullet_spawn : MonoBehaviour
             // Return null for the moment
             yield return null;
         }
-
-        Debug.Log("Apple");
     }
 
 
@@ -61,6 +63,14 @@ public class bullet_spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check if user is still reloading
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Idle_AutomaticRifle"))
+        {
+            // Set is Reloading to false so that user is not able to shoot
+            isReloading = false;
+        }
+
+
         //======================== Single fire ============================
         //upon left click and if there is ammo
         if(currentAmmo > 0 && Input.GetButtonDown("Fire1") && !isAuto && Time.time - lastShotTime >= timeBetweeenShots)
@@ -83,13 +93,15 @@ public class bullet_spawn : MonoBehaviour
         // If user holds down left mouse button on auto weapons
         else if (isAuto && Time.time - lastShotTime >= timeBetweeenShots)
         {
+            // Retrieve sprites for enabling and disabling for animations (Reloading, Shooting and Idle)
             GameObject Weapon_Single_Shot_Object = weapon.transform.GetChild(1).gameObject;
             GameObject Weapon_Reload_Object = weapon.transform.GetChild(2).gameObject;
             GameObject Weapon_Idle_Object = weapon.transform.GetChild(3).gameObject;
 
             // If user presses down button
-            if (Input.GetMouseButton(0) && currentAmmo > 0)
+            if (Input.GetMouseButton(0) && currentAmmo > 0 && !isReloading)
             {
+
                 // Disable Weapon Idle
                 Weapon_Idle_Object.SetActive(false);
 
@@ -98,8 +110,6 @@ public class bullet_spawn : MonoBehaviour
 
                 // Enable Weapon Firing
                 Weapon_Single_Shot_Object.SetActive(true);
-
-
 
                 // Run animation
                 // Animation, set is firing to true
@@ -113,12 +123,12 @@ public class bullet_spawn : MonoBehaviour
 
                 // Save the last shot time
                 lastShotTime = Time.time;
-
-                WaitForReload();
             }
             // If user presses R and is automatic rifle
             else if (Input.GetKeyDown(KeyCode.R) && currentAmmo != magazineSize)
             {
+                isReloading = true;
+
                 // Disable Weapon Idle
                 Weapon_Idle_Object.SetActive(false);
 
@@ -140,15 +150,11 @@ public class bullet_spawn : MonoBehaviour
 
         }
 
-
-
-        // If Run Out of ammo
+        // If there is no ammunition in the magazine
         if (currentAmmo == 0)
         {
             // Inform player ammo ran out
             Debug.Log("Ammo ran out!");
         }
-        // ======================= burst fire weapon =========================
-
     }
 }
