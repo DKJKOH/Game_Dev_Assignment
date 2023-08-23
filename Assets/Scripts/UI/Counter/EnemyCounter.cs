@@ -16,14 +16,17 @@ public class EnemyCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Display of enemies left
         enemyDisplay.text = "Enemies Left: " + enemy.ToString();
     }
 
-     public int getEnemy()
+    // Get the enemy amount to display
+    public int getEnemy()
     {
         return enemy;
     }
 
+    // Update the enemy amount
     public void setEnemy(int NewEnemy)
     {
         enemy = NewEnemy;

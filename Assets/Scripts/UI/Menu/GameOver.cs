@@ -16,6 +16,7 @@ public class GameOver : MonoBehaviour
 
     // Return Main Menu Button
     public void MainMenu(){
+        // Loading of scene to main menu
         SceneManager.LoadScene("MainMenu");
     }
         

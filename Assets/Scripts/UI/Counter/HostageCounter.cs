@@ -16,14 +16,17 @@ public class HostageCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Display of hostage amount
         hostageDisplay.text = "Hostages Left: " + hostage.ToString();
     }
 
+    // Get hostage amount for display
     public int getHostage()
     {
         return hostage;
     }
 
+    // Update Hostage amount
     public void setHostage(int NewHostage)
     {
         hostage = NewHostage;
