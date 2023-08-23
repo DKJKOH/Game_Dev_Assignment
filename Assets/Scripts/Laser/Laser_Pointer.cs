@@ -5,9 +5,15 @@ using UnityEngine;
 
 public class Laser_Pointer : MonoBehaviour
 {
+    // ISSUE, THE LASER POINTS TOWARDS CURSOR TOO MUCH, i WANT IT TO POINT STRAIGHT AHEAD
+
     // Attach laser object here
     [SerializeField]
     Transform laserObject;
+
+    // Attach Gun object (Parent of laser) here
+    [SerializeField]
+    Transform GunObject;
 
     // Set your laser distance here
     [SerializeField]
@@ -44,8 +50,12 @@ public class Laser_Pointer : MonoBehaviour
         // Ensures that the mouse position z position is the same as the laser object z position
         mousePositionWorldCoordinates.z = laserObject.position.z;
 
-        // Calcualte laser's direction
-        Vector3 laserDirection = mousePositionWorldCoordinates - laserObject.position;
+        // Calculate laser's direction
+        //Vector3 laserDirection = mousePositionWorldCoordinates - laserObject.position;
+
+        Vector3 laserDirection = laserObject.transform.up;
+
+        Vector3 laserDirectionNormalized = laserDirection.normalized;
 
         // Set laser's starting point
         lineRenderer.SetPosition(0, laserObject.position);
@@ -59,8 +69,14 @@ public class Laser_Pointer : MonoBehaviour
         }
         else
         {
+
+
             // Default to laserDist value from object
-            lineRenderer.SetPosition(1, laserObject.position + laserDirection.normalized * laserDist);
+            //lineRenderer.SetPosition(1, laserObject.position + laserDirection.normalized * laserDist);
+
+
+            // Test Test
+            lineRenderer.SetPosition(1, laserObject.position + laserDirectionNormalized * laserDist);
         }
     }
 }
