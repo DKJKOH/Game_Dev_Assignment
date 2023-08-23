@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c3cba788c0900d24ab9bc741b5126e22
+  - enabled: 1
+    path: Assets/Scenes/Tutorial room edited (Damien).unity
+    guid: 15927847fc16efe4aa53068b05ba358f
   m_configObjects: {}
