@@ -1,91 +1,91 @@
 fileFormatVersion: 2
-guid: 75c43b907f68a614388bd454c088273e
+guid: 68cf266139c460b4d93249558d346f02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 764455923269090420
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_0'
+      213: 192647958403903000
+    second: shooting_sniper_0
   - first:
-      213: 5035177919050831216
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_1'
+      213: -412679989449920876
+    second: shooting_sniper_1
   - first:
-      213: 163419216688343614
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_2'
+      213: 769210224544889859
+    second: shooting_sniper_2
   - first:
-      213: 2757967064224450700
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_3'
+      213: 3540759379639841476
+    second: shooting_sniper_3
   - first:
-      213: -7045989504651767173
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_4'
+      213: -5427393104464236718
+    second: shooting_sniper_4
   - first:
-      213: -2231700370377335757
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_5'
+      213: -6579369390441416968
+    second: shooting_sniper_5
   - first:
-      213: -1525248197636381748
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_6'
+      213: 5162285992463803673
+    second: shooting_sniper_6
   - first:
-      213: -5092494866518910972
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_7'
+      213: -8806206542601407146
+    second: shooting_sniper_7
   - first:
-      213: 9179174709041482953
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_8'
+      213: 4846719917179887507
+    second: shooting_sniper_8
   - first:
-      213: 1693564461995182919
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_9'
+      213: 8982096554301425695
+    second: shooting_sniper_9
   - first:
-      213: -556230210024908071
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_10'
+      213: -5694854687180542427
+    second: shooting_sniper_10
   - first:
-      213: -7309872622401625552
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_11'
+      213: 3574301885309543409
+    second: shooting_sniper_11
   - first:
-      213: 5411355883169375443
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_12'
+      213: -9178938312996831656
+    second: shooting_sniper_12
   - first:
-      213: 3196255113927122056
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_13'
+      213: 1122685688819222207
+    second: shooting_sniper_13
   - first:
-      213: 4116987483974500672
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_14'
+      213: 2501273534867642945
+    second: shooting_sniper_14
   - first:
-      213: -3621801369284869466
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_15'
+      213: 6545748679416382619
+    second: shooting_sniper_15
   - first:
-      213: 3573239425610266885
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_16'
+      213: 7169059069523076631
+    second: shooting_sniper_16
   - first:
-      213: 8984598506113231701
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_17'
+      213: -5665575719116069443
+    second: shooting_sniper_17
   - first:
-      213: -6013095836245400626
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_18'
+      213: 1016976853298239573
+    second: shooting_sniper_18
   - first:
-      213: 7540967517030650120
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_19'
+      213: -7638389492658832447
+    second: shooting_sniper_19
   - first:
-      213: -97854078580546004
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_20'
+      213: 6748912545033792412
+    second: shooting_sniper_20
   - first:
-      213: -5677287101796917789
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_21'
+      213: 5574011791130058495
+    second: shooting_sniper_21
   - first:
-      213: -1225116349881032318
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_22'
+      213: 2606196059826384259
+    second: shooting_sniper_22
   - first:
-      213: -7051708884566536990
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_23'
+      213: 5792642086318735569
+    second: shooting_sniper_23
   - first:
-      213: -1185011298210335344
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_24'
+      213: 4579861317531212313
+    second: shooting_sniper_24
   - first:
-      213: -5318388096053787356
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_25'
+      213: -5933186223816719492
+    second: shooting_sniper_25
   - first:
-      213: 1768655315318152747
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_26'
+      213: -4924777688139687268
+    second: shooting_sniper_26
   - first:
-      213: 3770959884667528880
-    second: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_27'
+      213: -6072292001196847941
+    second: shooting_sniper_27
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -171,7 +171,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_0'
+      name: shooting_sniper_0
       rect:
         serializedVersion: 2
         x: 0
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47cb5e8ac94eb9a00800000000000000
-      internalID: 764455923269090420
+      spriteID: 81e6e572c4c6ca200800000000000000
+      internalID: 192647958403903000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_1'
+      name: shooting_sniper_1
       rect:
         serializedVersion: 2
         x: 0
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0755aedc3ab80e540800000000000000
-      internalID: 5035177919050831216
+      spriteID: 49eecee6cbdd54af0800000000000000
+      internalID: -412679989449920876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_2'
+      name: shooting_sniper_2
       rect:
         serializedVersion: 2
         x: 0
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a6e2869e4944200800000000000000
-      internalID: 163419216688343614
+      spriteID: 30cb89faf98ccaa00800000000000000
+      internalID: 769210224544889859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_3'
+      name: shooting_sniper_3
       rect:
         serializedVersion: 2
         x: 0
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c88435dbe64464620800000000000000
-      internalID: 2757967064224450700
+      spriteID: 4c2b09265ed432130800000000000000
+      internalID: 3540759379639841476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_4'
+      name: shooting_sniper_4
       rect:
         serializedVersion: 2
         x: 0
@@ -269,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b72d91470ed973e90800000000000000
-      internalID: -7045989504651767173
+      spriteID: 25f21002ab60ea4b0800000000000000
+      internalID: -5427393104464236718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_5'
+      name: shooting_sniper_5
       rect:
         serializedVersion: 2
         x: 0
@@ -290,14 +290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33c1d8256586701e0800000000000000
-      internalID: -2231700370377335757
+      spriteID: 8f639acf56261b4a0800000000000000
+      internalID: -6579369390441416968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_6'
+      name: shooting_sniper_6
       rect:
         serializedVersion: 2
         x: 0
@@ -311,14 +311,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc3249968da35dae0800000000000000
-      internalID: -1525248197636381748
+      spriteID: 915a7c952cf14a740800000000000000
+      internalID: 5162285992463803673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_7'
+      name: shooting_sniper_7
       rect:
         serializedVersion: 2
         x: 0
@@ -332,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 408d3ac66e2d359b0800000000000000
-      internalID: -5092494866518910972
+      spriteID: 655b5898ec11ac580800000000000000
+      internalID: -8806206542601407146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_8'
+      name: shooting_sniper_8
       rect:
         serializedVersion: 2
         x: 0
@@ -353,14 +353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cccaa7b3caf26f70800000000000000
-      internalID: 9179174709041482953
+      spriteID: 39f515de512034340800000000000000
+      internalID: 4846719917179887507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_9'
+      name: shooting_sniper_9
       rect:
         serializedVersion: 2
         x: 0
@@ -374,14 +374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74bc271c7efb08710800000000000000
-      internalID: 1693564461995182919
+      spriteID: f1885691a31d6ac70800000000000000
+      internalID: 8982096554301425695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_10'
+      name: shooting_sniper_10
       rect:
         serializedVersion: 2
         x: 0
@@ -395,14 +395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dadf1e229fd748f0800000000000000
-      internalID: -556230210024908071
+      spriteID: 52ea22ba5dfc7f0b0800000000000000
+      internalID: -5694854687180542427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_11'
+      name: shooting_sniper_11
       rect:
         serializedVersion: 2
         x: 0
@@ -416,14 +416,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 032e56c449d1e8a90800000000000000
-      internalID: -7309872622401625552
+      spriteID: 1f362e190a87a9130800000000000000
+      internalID: 3574301885309543409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_12'
+      name: shooting_sniper_12
       rect:
         serializedVersion: 2
         x: 0
@@ -437,14 +437,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d4e781518ff81b40800000000000000
-      internalID: 5411355883169375443
+      spriteID: 85eb9968c3cdd9080800000000000000
+      internalID: -9178938312996831656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_13'
+      name: shooting_sniper_13
       rect:
         serializedVersion: 2
         x: 0
@@ -458,14 +458,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88cd62577116b5c20800000000000000
-      internalID: 3196255113927122056
+      spriteID: fb60c7c8fa4949f00800000000000000
+      internalID: 1122685688819222207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_14'
+      name: shooting_sniper_14
       rect:
         serializedVersion: 2
         x: 0
@@ -479,14 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 041870fcd4a722930800000000000000
-      internalID: 4116987483974500672
+      spriteID: 14a1fd3170f46b220800000000000000
+      internalID: 2501273534867642945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_15'
+      name: shooting_sniper_15
       rect:
         serializedVersion: 2
         x: 0
@@ -500,14 +500,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a280c008d6ccbdc0800000000000000
-      internalID: -3621801369284869466
+      spriteID: b9488993ebb27da50800000000000000
+      internalID: 6545748679416382619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_16'
+      name: shooting_sniper_16
       rect:
         serializedVersion: 2
         x: 0
@@ -521,14 +521,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 509bbe46352b69130800000000000000
-      internalID: 3573239425610266885
+      spriteID: 71627bc8d3d9d7360800000000000000
+      internalID: 7169059069523076631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_17'
+      name: shooting_sniper_17
       rect:
         serializedVersion: 2
         x: 0
@@ -542,14 +542,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55b62662db4bfac70800000000000000
-      internalID: 8984598506113231701
+      spriteID: db52206a6e4df51b0800000000000000
+      internalID: -5665575719116069443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_18'
+      name: shooting_sniper_18
       rect:
         serializedVersion: 2
         x: 0
@@ -563,14 +563,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec3663812313d8ca0800000000000000
-      internalID: -6013095836245400626
+      spriteID: 558d2a55f070d1e00800000000000000
+      internalID: 1016976853298239573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_19'
+      name: shooting_sniper_19
       rect:
         serializedVersion: 2
         x: 0
@@ -584,14 +584,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8011f53c006e6a860800000000000000
-      internalID: 7540967517030650120
+      spriteID: 1cb7ef1f93dfef590800000000000000
+      internalID: -7638389492658832447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_20'
+      name: shooting_sniper_20
       rect:
         serializedVersion: 2
         x: 0
@@ -605,14 +605,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c262266eb3a54aef0800000000000000
-      internalID: -97854078580546004
+      spriteID: c9baae2d334f8ad50800000000000000
+      internalID: 6748912545033792412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_21'
+      name: shooting_sniper_21
       rect:
         serializedVersion: 2
         x: 0
@@ -626,14 +626,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3eddc71e5793631b0800000000000000
-      internalID: -5677287101796917789
+      spriteID: ffe5520113eda5d40800000000000000
+      internalID: 5574011791130058495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_22'
+      name: shooting_sniper_22
       rect:
         serializedVersion: 2
         x: 0
@@ -647,14 +647,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28161d4bb238ffee0800000000000000
-      internalID: -1225116349881032318
+      spriteID: 38d69f812811b2420800000000000000
+      internalID: 2606196059826384259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_23'
+      name: shooting_sniper_23
       rect:
         serializedVersion: 2
         x: 0
@@ -668,14 +668,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ec02fb812c432e90800000000000000
-      internalID: -7051708884566536990
+      spriteID: 1d0810a6949936050800000000000000
+      internalID: 5792642086318735569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_24'
+      name: shooting_sniper_24
       rect:
         serializedVersion: 2
         x: 0
@@ -689,14 +689,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0953953b08efd8fe0800000000000000
-      internalID: -1185011298210335344
+      spriteID: 91a10086a9fee8f30800000000000000
+      internalID: 4579861317531212313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_25'
+      name: shooting_sniper_25
       rect:
         serializedVersion: 2
         x: 0
@@ -710,14 +710,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4254c05643a4136b0800000000000000
-      internalID: -5318388096053787356
+      spriteID: c73c927909619ada0800000000000000
+      internalID: -5933186223816719492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_26'
+      name: shooting_sniper_26
       rect:
         serializedVersion: 2
         x: 0
@@ -731,14 +731,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e15a773a68b8810800000000000000
-      internalID: 1768655315318152747
+      spriteID: c9a1aa409cca7abb0800000000000000
+      internalID: -4924777688139687268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_27'
+      name: shooting_sniper_27
       rect:
         serializedVersion: 2
         x: 0
@@ -752,8 +752,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b62bd32904255430800000000000000
-      internalID: 3770959884667528880
+      spriteID: bbc4738e892eabba0800000000000000
+      internalID: -6072292001196847941
       vertices: []
       indices: 
       edges: []

@@ -1,145 +1,127 @@
 fileFormatVersion: 2
-guid: c6494470a0043c948a408fe92192bec0
+guid: f6691aa8a002ad640b9fb11e37110a02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2291948093636527700
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_0'
+      213: -3388145959118936581
+    second: insert_1_bullet_chamber_0
   - first:
-      213: -9156823502213789485
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_1'
+      213: 8044480989001642609
+    second: insert_1_bullet_chamber_1
   - first:
-      213: -6390733024560958987
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_2'
+      213: 446058250544981690
+    second: insert_1_bullet_chamber_2
   - first:
-      213: -2396465049715906670
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_3'
+      213: 9022052699431674087
+    second: insert_1_bullet_chamber_3
   - first:
-      213: 3707319062443276434
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_4'
+      213: -7995627087604434801
+    second: insert_1_bullet_chamber_4
   - first:
-      213: -8787557014961079717
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_5'
+      213: 6413758160217375604
+    second: insert_1_bullet_chamber_5
   - first:
-      213: -8569172451372627422
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_6'
+      213: 2490614680866880686
+    second: insert_1_bullet_chamber_6
   - first:
-      213: 2116987010852801335
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_7'
+      213: 755646164884226587
+    second: insert_1_bullet_chamber_7
   - first:
-      213: 5035879952978418418
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_8'
+      213: -6292881193944297054
+    second: insert_1_bullet_chamber_8
   - first:
-      213: -2295084798860415168
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_9'
+      213: 2049977966594945198
+    second: insert_1_bullet_chamber_9
   - first:
-      213: 6438119638034052194
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_10'
+      213: 9219728225949840876
+    second: insert_1_bullet_chamber_10
   - first:
-      213: -5995360124543002533
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_11'
+      213: -8284200917560298882
+    second: insert_1_bullet_chamber_11
   - first:
-      213: 6260389632648848560
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_12'
+      213: -5758500718576811353
+    second: insert_1_bullet_chamber_12
   - first:
-      213: 9158635645625025835
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_13'
+      213: -3846664103145097282
+    second: insert_1_bullet_chamber_13
   - first:
-      213: 887388415074596887
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_14'
+      213: -8582594070001780047
+    second: insert_1_bullet_chamber_14
   - first:
-      213: -16014472183891099
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_15'
+      213: -3402191853867677847
+    second: insert_1_bullet_chamber_15
   - first:
-      213: 2833558085397524650
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_16'
+      213: -3395814130987067984
+    second: insert_1_bullet_chamber_16
   - first:
-      213: 2109451341881656089
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_17'
+      213: 8055153787370679094
+    second: insert_1_bullet_chamber_17
   - first:
-      213: 695374387169794750
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_18'
+      213: 8391000012918345134
+    second: insert_1_bullet_chamber_18
   - first:
-      213: 8907410989020928044
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_19'
+      213: -3723618846213612276
+    second: insert_1_bullet_chamber_19
   - first:
-      213: 5639102898066964119
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_20'
+      213: 8874787584228678197
+    second: insert_1_bullet_chamber_20
   - first:
-      213: -3007429707562930351
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_21'
+      213: 6892119218641792060
+    second: insert_1_bullet_chamber_21
   - first:
-      213: -6012268507165103047
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_22'
+      213: 8873593383578394319
+    second: insert_1_bullet_chamber_22
   - first:
-      213: 6630940201591677811
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_23'
+      213: -977166610071508401
+    second: insert_1_bullet_chamber_23
   - first:
-      213: 3680523397976264815
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_24'
+      213: -5183438607511005907
+    second: insert_1_bullet_chamber_24
   - first:
-      213: 2421778037773354926
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_25'
+      213: 6571401919328437370
+    second: insert_1_bullet_chamber_25
   - first:
-      213: 4058870316797540210
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_26'
+      213: -1857390861485289062
+    second: insert_1_bullet_chamber_26
   - first:
-      213: -4769435246434241945
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_27'
+      213: 4126994984270375406
+    second: insert_1_bullet_chamber_27
   - first:
-      213: 2821214062424967631
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_28'
+      213: -8519349402683518702
+    second: insert_1_bullet_chamber_28
   - first:
-      213: 8642786803205794033
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_29'
+      213: -6162356650550338028
+    second: insert_1_bullet_chamber_29
   - first:
-      213: 7644440222346813128
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_30'
+      213: 6248312166525600528
+    second: insert_1_bullet_chamber_30
   - first:
-      213: -5046440865133842562
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_31'
+      213: -2369776160104992538
+    second: insert_1_bullet_chamber_31
   - first:
-      213: 3485433196849547541
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_32'
+      213: 4085356392214573391
+    second: insert_1_bullet_chamber_32
   - first:
-      213: 4194534827934910117
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_33'
+      213: 1438020035287133596
+    second: insert_1_bullet_chamber_33
   - first:
-      213: 2586660144240013238
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_34'
+      213: -4172948086086254327
+    second: insert_1_bullet_chamber_34
   - first:
-      213: 7177809594142037316
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_35'
+      213: -6032550244995068639
+    second: insert_1_bullet_chamber_35
   - first:
-      213: -1914381801409838456
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_36'
+      213: -2967760585825280321
+    second: insert_1_bullet_chamber_36
   - first:
-      213: -3717495973295905666
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_37'
+      213: -3961439698255034286
+    second: insert_1_bullet_chamber_37
   - first:
-      213: 4338155598879044810
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_38'
+      213: 2162552343804095164
+    second: insert_1_bullet_chamber_38
   - first:
-      213: -1431874751177058850
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_39'
-  - first:
-      213: -5154850273725894227
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_40'
-  - first:
-      213: -7487713951635892791
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_41'
-  - first:
-      213: -3356381071416426172
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_42'
-  - first:
-      213: 8751508170939260049
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_43'
-  - first:
-      213: -7800046671913528342
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_44'
-  - first:
-      213: -7629314764492255330
-    second: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_45'
+      213: -3553447529736658321
+    second: insert_1_bullet_chamber_39
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -225,133 +207,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_0'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1440
-        width: 128
-        height: 32
-      alignment: 9
-      pivot: {x: 0.9365112, y: 0.6834564}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca939232a5d5130e0800000000000000
-      internalID: -2291948093636527700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_1'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1408
-        width: 128
-        height: 32
-      alignment: 9
-      pivot: {x: 0.9365112, y: 0.6834564}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d849972a8d6ce080800000000000000
-      internalID: -9156823502213789485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_2'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1376
-        width: 128
-        height: 32
-      alignment: 9
-      pivot: {x: 0.9365112, y: 0.6834564}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f1bfa87c2e8f47a0800000000000000
-      internalID: -6390733024560958987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_3'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1344
-        width: 128
-        height: 32
-      alignment: 9
-      pivot: {x: 0.9365112, y: 0.6834564}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2976b0bfbbb0ebed0800000000000000
-      internalID: -2396465049715906670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_4'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1312
-        width: 128
-        height: 32
-      alignment: 9
-      pivot: {x: 0.9365112, y: 0.6834564}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29837f98b0b037330800000000000000
-      internalID: 3707319062443276434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_5'
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1280
-        width: 128
-        height: 32
-      alignment: 9
-      pivot: {x: 0.9365112, y: 0.6834564}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5ab0cf04735c0680800000000000000
-      internalID: -8787557014961079717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_6'
+      name: insert_1_bullet_chamber_0
       rect:
         serializedVersion: 2
         x: 0
@@ -365,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22a0fd09e0f241980800000000000000
-      internalID: -8569172451372627422
+      spriteID: bf56a8b8333eaf0d0800000000000000
+      internalID: -3388145959118936581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_7'
+      name: insert_1_bullet_chamber_1
       rect:
         serializedVersion: 2
         x: 0
@@ -386,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73b4ff7587c016d10800000000000000
-      internalID: 2116987010852801335
+      spriteID: 17273d786dcb3af60800000000000000
+      internalID: 8044480989001642609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_8'
+      name: insert_1_bullet_chamber_2
       rect:
         serializedVersion: 2
         x: 0
@@ -407,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fa1ac0d22a03e540800000000000000
-      internalID: 5035879952978418418
+      spriteID: ab6add49d97b03600800000000000000
+      internalID: 446058250544981690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_9'
+      name: insert_1_bullet_chamber_3
       rect:
         serializedVersion: 2
         x: 0
@@ -428,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04fa68a09883620e0800000000000000
-      internalID: -2295084798860415168
+      spriteID: 7e0aa761125c43d70800000000000000
+      internalID: 9022052699431674087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_10'
+      name: insert_1_bullet_chamber_4
       rect:
         serializedVersion: 2
         x: 0
@@ -449,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2647c7e33bbc85950800000000000000
-      internalID: 6438119638034052194
+      spriteID: f88b8d6c683d90190800000000000000
+      internalID: -7995627087604434801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_11'
+      name: insert_1_bullet_chamber_5
       rect:
         serializedVersion: 2
         x: 0
@@ -470,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5892144bb33ccca0800000000000000
-      internalID: -5995360124543002533
+      spriteID: 473050fa01f320950800000000000000
+      internalID: 6413758160217375604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_12'
+      name: insert_1_bullet_chamber_6
       rect:
         serializedVersion: 2
         x: 0
@@ -491,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b4a291b33f51e650800000000000000
-      internalID: 6260389632648848560
+      spriteID: eac717d3bd0709220800000000000000
+      internalID: 2490614680866880686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_13'
+      name: insert_1_bullet_chamber_7
       rect:
         serializedVersion: 2
         x: 0
@@ -512,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b25c5bc58920a1f70800000000000000
-      internalID: 9158635645625025835
+      spriteID: b128fc1fe289c7a00800000000000000
+      internalID: 755646164884226587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_14'
+      name: insert_1_bullet_chamber_8
       rect:
         serializedVersion: 2
         x: 0
@@ -533,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 718715adf03a05c00800000000000000
-      internalID: 887388415074596887
+      spriteID: 2a1d63d25e13ba8a0800000000000000
+      internalID: -6292881193944297054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_15'
+      name: insert_1_bullet_chamber_9
       rect:
         serializedVersion: 2
         x: 0
@@ -554,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56bb6322cea17cff0800000000000000
-      internalID: -16014472183891099
+      spriteID: ea0f440791cf27c10800000000000000
+      internalID: 2049977966594945198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_16'
+      name: insert_1_bullet_chamber_10
       rect:
         serializedVersion: 2
         x: 0
@@ -575,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa03e8ad012d25720800000000000000
-      internalID: 2833558085397524650
+      spriteID: ce5f16929fd03ff70800000000000000
+      internalID: 9219728225949840876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_17'
+      name: insert_1_bullet_chamber_11
       rect:
         serializedVersion: 2
         x: 0
@@ -596,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 913c3dfa1d6464d10800000000000000
-      internalID: 2109451341881656089
+      spriteID: e727ad4382b980d80800000000000000
+      internalID: -8284200917560298882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_18'
+      name: insert_1_bullet_chamber_12
       rect:
         serializedVersion: 2
         x: 0
@@ -617,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eba1925225776a900800000000000000
-      internalID: 695374387169794750
+      spriteID: 7a2c5663b12b510b0800000000000000
+      internalID: -5758500718576811353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_19'
+      name: insert_1_bullet_chamber_13
       rect:
         serializedVersion: 2
         x: 0
@@ -638,14 +494,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c28d00dd91b7d9b70800000000000000
-      internalID: 8907410989020928044
+      spriteID: eb73ac1f067ed9ac0800000000000000
+      internalID: -3846664103145097282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_20'
+      name: insert_1_bullet_chamber_14
       rect:
         serializedVersion: 2
         x: 0
@@ -659,14 +515,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e3823653e124e40800000000000000
-      internalID: 5639102898066964119
+      spriteID: 1ba7b267a2084e880800000000000000
+      internalID: -8582594070001780047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_21'
+      name: insert_1_bullet_chamber_15
       rect:
         serializedVersion: 2
         x: 0
@@ -680,14 +536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15f21c17d967346d0800000000000000
-      internalID: -3007429707562930351
+      spriteID: 9674d74d88cf8c0d0800000000000000
+      internalID: -3402191853867677847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_22'
+      name: insert_1_bullet_chamber_16
       rect:
         serializedVersion: 2
         x: 0
@@ -701,14 +557,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ce728a5a1209ca0800000000000000
-      internalID: -6012268507165103047
+      spriteID: 0b593472a05afd0d0800000000000000
+      internalID: -3395814130987067984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_23'
+      name: insert_1_bullet_chamber_17
       rect:
         serializedVersion: 2
         x: 0
@@ -722,14 +578,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 373aaba2bf4d50c50800000000000000
-      internalID: 6630940201591677811
+      spriteID: 63b2f5b01b7a9cf60800000000000000
+      internalID: 8055153787370679094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_24'
+      name: insert_1_bullet_chamber_18
       rect:
         serializedVersion: 2
         x: 0
@@ -743,14 +599,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6093ebb788d31330800000000000000
-      internalID: 3680523397976264815
+      spriteID: eadcb48ed02d27470800000000000000
+      internalID: 8391000012918345134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_25'
+      name: insert_1_bullet_chamber_19
       rect:
         serializedVersion: 2
         x: 0
@@ -764,14 +620,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea7c2525b42eb9120800000000000000
-      internalID: 2421778037773354926
+      spriteID: c0ddc70536c035cc0800000000000000
+      internalID: -3723618846213612276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_26'
+      name: insert_1_bullet_chamber_20
       rect:
         serializedVersion: 2
         x: 0
@@ -785,14 +641,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 277381e5c01045830800000000000000
-      internalID: 4058870316797540210
+      spriteID: 53a5ff68944992b70800000000000000
+      internalID: 8874787584228678197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_27'
+      name: insert_1_bullet_chamber_21
       rect:
         serializedVersion: 2
         x: 0
@@ -806,14 +662,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7623f05b9ef8fcdb0800000000000000
-      internalID: -4769435246434241945
+      spriteID: c3c69c0d9e9b5af50800000000000000
+      internalID: 6892119218641792060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_28'
+      name: insert_1_bullet_chamber_22
       rect:
         serializedVersion: 2
         x: 0
@@ -827,14 +683,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc94d2a0e37f62720800000000000000
-      internalID: 2821214062424967631
+      spriteID: fce52750b26552b70800000000000000
+      internalID: 8873593383578394319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_29'
+      name: insert_1_bullet_chamber_23
       rect:
         serializedVersion: 2
         x: 0
@@ -848,14 +704,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f8e38a5ec851f770800000000000000
-      internalID: 8642786803205794033
+      spriteID: f4aa05835286072f0800000000000000
+      internalID: -977166610071508401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_30'
+      name: insert_1_bullet_chamber_24
       rect:
         serializedVersion: 2
         x: 0
@@ -869,14 +725,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ce90b751e1861a60800000000000000
-      internalID: 7644440222346813128
+      spriteID: d25d24cac0ab018b0800000000000000
+      internalID: -5183438607511005907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_31'
+      name: insert_1_bullet_chamber_25
       rect:
         serializedVersion: 2
         x: 0
@@ -890,14 +746,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7faea535c077f9b0800000000000000
-      internalID: -5046440865133842562
+      spriteID: a7444e59a3f423b50800000000000000
+      internalID: 6571401919328437370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_32'
+      name: insert_1_bullet_chamber_26
       rect:
         serializedVersion: 2
         x: 0
@@ -911,14 +767,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5194292a60fbe5030800000000000000
-      internalID: 3485433196849547541
+      spriteID: a91dc143ad83936e0800000000000000
+      internalID: -1857390861485289062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_33'
+      name: insert_1_bullet_chamber_27
       rect:
         serializedVersion: 2
         x: 0
@@ -932,14 +788,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a68011d33bf53a30800000000000000
-      internalID: 4194534827934910117
+      spriteID: ee9214b8218064930800000000000000
+      internalID: 4126994984270375406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_34'
+      name: insert_1_bullet_chamber_28
       rect:
         serializedVersion: 2
         x: 0
@@ -953,14 +809,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bf261c42b9a5e320800000000000000
-      internalID: 2586660144240013238
+      spriteID: 211dc9f0bd035c980800000000000000
+      internalID: -8519349402683518702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_35'
+      name: insert_1_bullet_chamber_29
       rect:
         serializedVersion: 2
         x: 0
@@ -974,14 +830,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4451a34dbc3bc9360800000000000000
-      internalID: 7177809594142037316
+      spriteID: 41e5ea0a649ea7aa0800000000000000
+      internalID: -6162356650550338028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_36'
+      name: insert_1_bullet_chamber_30
       rect:
         serializedVersion: 2
         x: 0
@@ -995,14 +851,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8828e7af4efbe65e0800000000000000
-      internalID: -1914381801409838456
+      spriteID: 013828b7fc676b650800000000000000
+      internalID: 6248312166525600528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_37'
+      name: insert_1_bullet_chamber_31
       rect:
         serializedVersion: 2
         x: 0
@@ -1016,14 +872,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e74a0c1cb1dc86cc0800000000000000
-      internalID: -3717495973295905666
+      spriteID: 6e0b0c3532ddc1fd0800000000000000
+      internalID: -2369776160104992538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_38'
+      name: insert_1_bullet_chamber_32
       rect:
         serializedVersion: 2
         x: 0
@@ -1037,14 +893,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac4be8b5889343c30800000000000000
-      internalID: 4338155598879044810
+      spriteID: f4132da5ef912b830800000000000000
+      internalID: 4085356392214573391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_39'
+      name: insert_1_bullet_chamber_33
       rect:
         serializedVersion: 2
         x: 0
@@ -1058,14 +914,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed59d3d0085f02ce0800000000000000
-      internalID: -1431874751177058850
+      spriteID: c9d2f276a9fd4f310800000000000000
+      internalID: 1438020035287133596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_40'
+      name: insert_1_bullet_chamber_34
       rect:
         serializedVersion: 2
         x: 0
@@ -1079,14 +935,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da13e34dcfa4678b0800000000000000
-      internalID: -5154850273725894227
+      spriteID: 901ceae23d5b616c0800000000000000
+      internalID: -4172948086086254327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_41'
+      name: insert_1_bullet_chamber_35
       rect:
         serializedVersion: 2
         x: 0
@@ -1100,14 +956,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5910525db461890800000000000000
-      internalID: -7487713951635892791
+      spriteID: 12d8f559383184ca0800000000000000
+      internalID: -6032550244995068639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_42'
+      name: insert_1_bullet_chamber_36
       rect:
         serializedVersion: 2
         x: 0
@@ -1121,14 +977,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 441016bc23dbb61d0800000000000000
-      internalID: -3356381071416426172
+      spriteID: fbe9a77987560d6d0800000000000000
+      internalID: -2967760585825280321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_43'
+      name: insert_1_bullet_chamber_37
       rect:
         serializedVersion: 2
         x: 0
@@ -1142,14 +998,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19c53c1605a937970800000000000000
-      internalID: 8751508170939260049
+      spriteID: 258c06245932609c0800000000000000
+      internalID: -3961439698255034286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_44'
+      name: insert_1_bullet_chamber_38
       rect:
         serializedVersion: 2
         x: 0
@@ -1163,14 +1019,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae35029d0eaa0c390800000000000000
-      internalID: -7800046671913528342
+      spriteID: cbaa1a426ede20e10800000000000000
+      internalID: 2162552343804095164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[MAGAZINE_ONLY_FIVE_ROUND_RELOADING]_Sniper_rifle_[KAR98]_V1.00_45'
+      name: insert_1_bullet_chamber_39
       rect:
         serializedVersion: 2
         x: 0
@@ -1184,8 +1040,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9fcbceb4aa3f1690800000000000000
-      internalID: -7629314764492255330
+      spriteID: f62ae067c4e9faec0800000000000000
+      internalID: -3553447529736658321
       vertices: []
       indices: 
       edges: []
