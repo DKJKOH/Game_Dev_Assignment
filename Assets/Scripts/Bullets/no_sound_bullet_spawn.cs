@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class bullet_spawn : MonoBehaviour
+public class no_sound_bullet_spawn : MonoBehaviour
 {
     // This part is for weapon animation, attach animator here
     [SerializeField]
