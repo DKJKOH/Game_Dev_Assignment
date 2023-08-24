@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chamber_Bullet_Slug_Shotgun
+  m_Name: Insert_Last_Bullet_Animation_With_Pump
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0

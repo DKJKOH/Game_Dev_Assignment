@@ -858,7 +858,7 @@ MonoBehaviour:
   weapon: {fileID: 563964866}
   bullet_spawner_object: {fileID: 575546933}
   bullet: {fileID: 6016075639743349473, guid: cbd35b8e37d77524d8fa4a67e4766321, type: 3}
-  magazineSize: 10
+  magazineSize: 6
   timeBetweeenShots: 1
   reloadTime: 0.5
 --- !u!114 &563964871
