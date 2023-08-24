@@ -32,9 +32,6 @@ public class kar98k : MonoBehaviour
     // Stores information about current ammunition in magazine
     private int currentAmmo;
 
-    // Bool to determine if a clip is needed to reload 5 bullets instead of just 1
-    bool reloadClip;
-
     // If reloading, prevent any other actions from happening
     private bool isReloading;
 
@@ -52,8 +49,6 @@ public class kar98k : MonoBehaviour
 
         // So that user is able to shoot for the first time
         lastShotTime = -timeBetweeenShots;
-
-        reloadClip = false;
 
         isReloading = false;
     }
