@@ -85,7 +85,7 @@ public class pickup_throw : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("gun") && !holdingGun && Hand.transform.childCount < 1)
+        if ((collision.gameObject.CompareTag("gun") || collision.gameObject.CompareTag("grenade")) && !holdingGun && Hand.transform.childCount < 1)
         {
             // Retrieve details for weapon to pickup
             weapon_to_pickup = collision.gameObject;

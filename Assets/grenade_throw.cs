@@ -17,8 +17,12 @@ public class grenade_throw : MonoBehaviour
     [SerializeField]
     float explosion_time = 1; 
 
-    // Delay time after explosion before destruction
-    double delay_time = 1.6; 
+    // This function removes grenade, will be executed on end of grenade explosion animation, can be found under grenade_ani in animations
+    void grenade_remove()
+    {
+        // Destroy the grenade game object
+        Destroy(gameObject);
+    }
 
     void Start()
     {
@@ -27,7 +31,9 @@ public class grenade_throw : MonoBehaviour
         grenade.isKinematic = true; 
         animator = GetComponent<Animator>();
         // Grenade hasn't been thrown yet
-        isStarted = false; 
+        isStarted = false;
+
+        grenade.transform.rotation = transform.parent.rotation;
     }
 
     void Update()
@@ -54,14 +60,7 @@ public class grenade_throw : MonoBehaviour
         	// Stop grenade's movement
             grenade.velocity = new Vector3(0, 0, 0); 
             // Trigger explosion animation
-            animator.SetTrigger("isExplode"); 
-
-            // Wait for animation to finish before destroying the grenade
-            if (Time.time - start_time >= delay_time)
-            {
-            	// Destroy the grenade game object
-                Destroy(gameObject); 
-            }
+            animator.SetTrigger("isExplode");
         }
     }
 }

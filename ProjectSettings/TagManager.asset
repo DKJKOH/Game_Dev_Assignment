@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - gun
   - grabbable
+  - grenade
   layers:
   - Default
   - TransparentFX
