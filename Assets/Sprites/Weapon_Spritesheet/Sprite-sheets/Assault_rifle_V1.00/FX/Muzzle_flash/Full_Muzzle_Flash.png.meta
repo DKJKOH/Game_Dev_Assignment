@@ -1,55 +1,79 @@
 fileFormatVersion: 2
-guid: 2083f931b8a43d04ba77f1ce3a245788
+guid: a5d5c0d7f4d74a545929902efcfe0e1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3846170517290229651
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_0'
+      213: 3671602967030333706
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_0'
   - first:
-      213: -7343992139205383912
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_1'
+      213: 1766277085183046467
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_1'
   - first:
-      213: 729368929129544789
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_2'
+      213: 859098648515370576
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_2'
   - first:
-      213: 8703790379500112220
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_3'
+      213: -7283479775425848116
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_3'
   - first:
-      213: 5692632888405103184
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_4'
+      213: -4770212239602731533
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_4'
   - first:
-      213: 7774002998330916066
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_5'
+      213: 5271391000310866332
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_5'
   - first:
-      213: -5699581596933365319
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_6'
+      213: 5123734045212410762
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_6'
   - first:
-      213: 6695854790620136867
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_7'
+      213: 472343721573643115
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_7'
   - first:
-      213: -4001227006988722405
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_8'
+      213: 2572544983005778118
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_8'
   - first:
-      213: 6140261120380558374
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_9'
+      213: -9167444507425846182
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_9'
   - first:
-      213: 8267328067295508109
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_10'
+      213: -7544166900648226576
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_10'
   - first:
-      213: 4943267337586653837
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_11'
+      213: -8984538567030996713
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_11'
   - first:
-      213: -346888739948666643
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_12'
+      213: 6695013138461008297
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_12'
   - first:
-      213: 3990930929305747477
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_13'
+      213: 5481094093546367170
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_13'
   - first:
-      213: -4513335084818160415
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_14'
+      213: -1667332312440974094
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_14'
   - first:
-      213: 8050534627061699431
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_15'
+      213: -31383400589071308
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_15'
+  - first:
+      213: 6955786380193296575
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_16'
+  - first:
+      213: -335527664665353514
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_17'
+  - first:
+      213: 4331701618563563653
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_18'
+  - first:
+      213: 5349838798520681200
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_19'
+  - first:
+      213: 2904253066025227154
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_20'
+  - first:
+      213: -3110541329537437660
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_21'
+  - first:
+      213: 3155128326383041919
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_22'
+  - first:
+      213: 7949890127328842186
+    second: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_23'
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,7 +159,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_0'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_0'
       rect:
         serializedVersion: 2
         x: 0
@@ -149,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d60e55bda48af9ac0800000000000000
-      internalID: -3846170517290229651
+      spriteID: a010d1e027724f230800000000000000
+      internalID: 3671602967030333706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_1'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_1'
       rect:
         serializedVersion: 2
         x: 128
@@ -170,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 819e66d3f06e41a90800000000000000
-      internalID: -7343992139205383912
+      spriteID: 3437f3d96a3138810800000000000000
+      internalID: 1766277085183046467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_2'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_2'
       rect:
         serializedVersion: 2
         x: 256
@@ -191,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55c39fa3d2d3f1a00800000000000000
-      internalID: 729368929129544789
+      spriteID: 05ed6cb4ba12ceb00800000000000000
+      internalID: 859098648515370576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_3'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_3'
       rect:
         serializedVersion: 2
         x: 384
@@ -212,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5901994c331ac870800000000000000
-      internalID: 8703790379500112220
+      spriteID: ccc1009dbb1ebea90800000000000000
+      internalID: -7283479775425848116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_4'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_4'
       rect:
         serializedVersion: 2
         x: 512
@@ -233,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 052971e737b400f40800000000000000
-      internalID: 5692632888405103184
+      spriteID: 3f53243ed3dcccdb0800000000000000
+      internalID: -4770212239602731533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_5'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_5'
       rect:
         serializedVersion: 2
         x: 640
@@ -254,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ecf55ed98ec2eb60800000000000000
-      internalID: 7774002998330916066
+      spriteID: c9168bd8f2eb72940800000000000000
+      internalID: 5271391000310866332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_6'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_6'
       rect:
         serializedVersion: 2
         x: 768
@@ -275,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b1ee6a3cb407e0b0800000000000000
-      internalID: -5699581596933365319
+      spriteID: a830678a7f82b1740800000000000000
+      internalID: 5123734045212410762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_7'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_7'
       rect:
         serializedVersion: 2
         x: 896
@@ -296,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a5c286b4747cec50800000000000000
-      internalID: 6695854790620136867
+      spriteID: b637848bc1a1e8600800000000000000
+      internalID: 472343721573643115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_8'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_8'
       rect:
         serializedVersion: 2
         x: 1024
@@ -317,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1fdcbe8c39c878c0800000000000000
-      internalID: -4001227006988722405
+      spriteID: 6c0d5c8380483b320800000000000000
+      internalID: 2572544983005778118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_9'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_9'
       rect:
         serializedVersion: 2
         x: 1152
@@ -338,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62cdc6cd4f6963550800000000000000
-      internalID: 6140261120380558374
+      spriteID: a5cc6ccaac1b6c080800000000000000
+      internalID: -9167444507425846182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_10'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_10'
       rect:
         serializedVersion: 2
         x: 1280
@@ -359,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d86f3c433137bb270800000000000000
-      internalID: 8267328067295508109
+      spriteID: 0f05a90bc2cbd4790800000000000000
+      internalID: -7544166900648226576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_11'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_11'
       rect:
         serializedVersion: 2
         x: 1408
@@ -380,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8ab4a6f3730a9440800000000000000
-      internalID: 4943267337586653837
+      spriteID: 711025186c1805380800000000000000
+      internalID: -8984538567030996713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_12'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_12'
       rect:
         serializedVersion: 2
         x: 1536
@@ -401,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de0e6c6678a9f2bf0800000000000000
-      internalID: -346888739948666643
+      spriteID: 9a1aa8c4af679ec50800000000000000
+      internalID: 6695013138461008297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_13'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_13'
       rect:
         serializedVersion: 2
         x: 1664
@@ -422,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510836c0982a26730800000000000000
-      internalID: 3990930929305747477
+      spriteID: 2c8a25ab902c01c40800000000000000
+      internalID: 5481094093546367170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_14'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_14'
       rect:
         serializedVersion: 2
         x: 1792
@@ -443,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e42b1d27a96d51c0800000000000000
-      internalID: -4513335084818160415
+      spriteID: 2f4dc6288127cd8e0800000000000000
+      internalID: -1667332312440974094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_15'
+      name: '[FULL_MUZZLE_FLASH] Assault_rifle_V1.00_15'
       rect:
         serializedVersion: 2
         x: 1920
@@ -464,8 +488,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7639ef9f69e39bf60800000000000000
-      internalID: 8050534627061699431
+      spriteID: 43c6b04a6f0809ff0800000000000000
+      internalID: -31383400589071308
       vertices: []
       indices: 
       edges: []

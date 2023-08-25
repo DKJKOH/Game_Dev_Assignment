@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 2083f931b8a43d04ba77f1ce3a245788
+guid: 3d2f85d8cc0fbee4a810e69abd019f3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3846170517290229651
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_0'
+      213: 1686563213201094305
+    second: Remove_Magazine_0
   - first:
-      213: -7343992139205383912
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_1'
+      213: -4222219735419216261
+    second: Remove_Magazine_1
   - first:
-      213: 729368929129544789
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_2'
+      213: 4264474247018460028
+    second: Remove_Magazine_2
   - first:
-      213: 8703790379500112220
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_3'
+      213: 5761400139307849483
+    second: Remove_Magazine_3
   - first:
-      213: 5692632888405103184
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_4'
+      213: 3199351804193001873
+    second: Remove_Magazine_4
   - first:
-      213: 7774002998330916066
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_5'
+      213: -5434187395632984451
+    second: Remove_Magazine_5
   - first:
-      213: -5699581596933365319
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_6'
+      213: 7977113899657274335
+    second: Remove_Magazine_6
   - first:
-      213: 6695854790620136867
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_7'
+      213: 6563256855734470124
+    second: Remove_Magazine_7
   - first:
-      213: -4001227006988722405
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_8'
+      213: 1975908380408656287
+    second: Remove_Magazine_8
   - first:
-      213: 6140261120380558374
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_9'
+      213: -36736861375601876
+    second: Remove_Magazine_9
   - first:
-      213: 8267328067295508109
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_10'
+      213: 7379548239851982354
+    second: Remove_Magazine_10
   - first:
-      213: 4943267337586653837
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_11'
+      213: 5375001846499034248
+    second: Remove_Magazine_11
   - first:
-      213: -346888739948666643
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_12'
+      213: 5789837035967508534
+    second: Remove_Magazine_12
   - first:
-      213: 3990930929305747477
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_13'
+      213: 184887133853270958
+    second: Remove_Magazine_13
   - first:
-      213: -4513335084818160415
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_14'
+      213: -5579804027589579232
+    second: Remove_Magazine_14
   - first:
-      213: 8050534627061699431
-    second: '[SINGLE_SHOT] Assault_rifle_V1.00_15'
+      213: -7360484091466578168
+    second: Remove_Magazine_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,337 +135,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_0'
+      name: Remove_Magazine_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d60e55bda48af9ac0800000000000000
-      internalID: -3846170517290229651
+      spriteID: 1a6b71e7e40e76710800000000000000
+      internalID: 1686563213201094305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_1'
+      name: Remove_Magazine_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 96
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 819e66d3f06e41a90800000000000000
-      internalID: -7343992139205383912
+      spriteID: b7e91ba5589a765c0800000000000000
+      internalID: -4222219735419216261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_2'
+      name: Remove_Magazine_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55c39fa3d2d3f1a00800000000000000
-      internalID: 729368929129544789
+      spriteID: c733657cbb47e2b30800000000000000
+      internalID: 4264474247018460028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_3'
+      name: Remove_Magazine_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6444165, y: 0.8258007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b079458c6ea94ff40800000000000000
+      internalID: 5761400139307849483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remove_Magazine_4
       rect:
         serializedVersion: 2
         x: 384
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5901994c331ac870800000000000000
-      internalID: 8703790379500112220
+      spriteID: 191dd68d381666c20800000000000000
+      internalID: 3199351804193001873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_4'
+      name: Remove_Magazine_5
       rect:
         serializedVersion: 2
-        x: 512
+        x: 480
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 052971e737b400f40800000000000000
-      internalID: 5692632888405103184
+      spriteID: d7e0460fa53e594b0800000000000000
+      internalID: -5434187395632984451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_5'
+      name: Remove_Magazine_6
       rect:
         serializedVersion: 2
-        x: 640
+        x: 576
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ecf55ed98ec2eb60800000000000000
-      internalID: 7774002998330916066
+      spriteID: fd327e1c3d664be60800000000000000
+      internalID: 7977113899657274335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_6'
+      name: Remove_Magazine_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 96
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6444165, y: 0.8258007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce543bf265f551b50800000000000000
+      internalID: 6563256855734470124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remove_Magazine_8
       rect:
         serializedVersion: 2
         x: 768
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b1ee6a3cb407e0b0800000000000000
-      internalID: -5699581596933365319
+      spriteID: f91b9f20436db6b10800000000000000
+      internalID: 1975908380408656287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_7'
+      name: Remove_Magazine_9
       rect:
         serializedVersion: 2
-        x: 896
+        x: 864
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a5c286b4747cec50800000000000000
-      internalID: 6695854790620136867
+      spriteID: c236b8be40c7d7ff0800000000000000
+      internalID: -36736861375601876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_8'
+      name: Remove_Magazine_10
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 960
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1fdcbe8c39c878c0800000000000000
-      internalID: -4001227006988722405
+      spriteID: 21e8c3f860c696660800000000000000
+      internalID: 7379548239851982354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_9'
+      name: Remove_Magazine_11
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 96
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6444165, y: 0.8258007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884c4af83b7d79a40800000000000000
+      internalID: 5375001846499034248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Remove_Magazine_12
       rect:
         serializedVersion: 2
         x: 1152
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62cdc6cd4f6963550800000000000000
-      internalID: 6140261120380558374
+      spriteID: 6307e3cbb12a95050800000000000000
+      internalID: 5789837035967508534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_10'
+      name: Remove_Magazine_13
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1248
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d86f3c433137bb270800000000000000
-      internalID: 8267328067295508109
+      spriteID: ea34dd06ed9d09200800000000000000
+      internalID: 184887133853270958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_11'
+      name: Remove_Magazine_14
       rect:
         serializedVersion: 2
-        x: 1408
+        x: 1344
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8ab4a6f3730a9440800000000000000
-      internalID: 4943267337586653837
+      spriteID: 02eaa3bcccd8092b0800000000000000
+      internalID: -5579804027589579232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_12'
+      name: Remove_Magazine_15
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1440
         y: 0
-        width: 127
-        height: 48
+        width: 96
+        height: 64
       alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
+      pivot: {x: 0.6444165, y: 0.8258007}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de0e6c6678a9f2bf0800000000000000
-      internalID: -346888739948666643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_13'
-      rect:
-        serializedVersion: 2
-        x: 1664
-        y: 0
-        width: 127
-        height: 48
-      alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 510836c0982a26730800000000000000
-      internalID: 3990930929305747477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_14'
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 0
-        width: 127
-        height: 48
-      alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e42b1d27a96d51c0800000000000000
-      internalID: -4513335084818160415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: '[SINGLE_SHOT] Assault_rifle_V1.00_15'
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 127
-        height: 48
-      alignment: 9
-      pivot: {x: 0.4872778, y: 0.7683006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7639ef9f69e39bf60800000000000000
-      internalID: 8050534627061699431
+      spriteID: 807883167be4ad990800000000000000
+      internalID: -7360484091466578168
       vertices: []
       indices: 
       edges: []

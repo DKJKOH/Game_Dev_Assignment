@@ -1,43 +1,79 @@
 fileFormatVersion: 2
-guid: 4fb52f66f0291dd40b729f96481f1e02
+guid: 091b6db81de21934b8724b7380d3b227
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3492139136873008070
-    second: '[SHOOTING]PistolV1.00_0'
+      213: -8176048351834071270
+    second: '[CASING] PistolV1.00_0'
   - first:
-      213: -5732862940553472794
-    second: '[SHOOTING]PistolV1.00_1'
+      213: 7935899030081756840
+    second: '[CASING] PistolV1.00_1'
   - first:
-      213: 1448591165325129280
-    second: '[SHOOTING]PistolV1.00_2'
+      213: 1470067790183582964
+    second: '[CASING] PistolV1.00_2'
   - first:
-      213: -6364094974459455993
-    second: '[SHOOTING]PistolV1.00_3'
+      213: -3092750490284535915
+    second: '[CASING] PistolV1.00_3'
   - first:
-      213: 8492394972286527650
-    second: '[SHOOTING]PistolV1.00_4'
+      213: 5111457485976493243
+    second: '[CASING] PistolV1.00_4'
   - first:
-      213: -3936242184174039161
-    second: '[SHOOTING]PistolV1.00_5'
+      213: -8549843270439981797
+    second: '[CASING] PistolV1.00_5'
   - first:
-      213: -4893836340449272518
-    second: '[SHOOTING]PistolV1.00_6'
+      213: -231535410723488758
+    second: '[CASING] PistolV1.00_6'
   - first:
-      213: -7102102250644293496
-    second: '[SHOOTING]PistolV1.00_7'
+      213: -7913587066330512618
+    second: '[CASING] PistolV1.00_7'
   - first:
-      213: 2900827547275811863
-    second: '[SHOOTING]PistolV1.00_8'
+      213: -4548627224894665623
+    second: '[CASING] PistolV1.00_8'
   - first:
-      213: -6107845211336979678
-    second: '[SHOOTING]PistolV1.00_9'
+      213: -8314187874989013975
+    second: '[CASING] PistolV1.00_9'
   - first:
-      213: 8879133157290404289
-    second: '[SHOOTING]PistolV1.00_10'
+      213: 619747801933142485
+    second: '[CASING] PistolV1.00_10'
   - first:
-      213: -5526526627798482004
-    second: '[SHOOTING]PistolV1.00_11'
+      213: 2703160726506478203
+    second: '[CASING] PistolV1.00_11'
+  - first:
+      213: -9013049428374030882
+    second: Bullet_Casing_0
+  - first:
+      213: -7812484806927455374
+    second: Bullet_Casing_1
+  - first:
+      213: -3814241192021965614
+    second: Bullet_Casing_2
+  - first:
+      213: 7430719095965339691
+    second: Bullet_Casing_3
+  - first:
+      213: -2827061569765980715
+    second: Bullet_Casing_4
+  - first:
+      213: 8427192051974158592
+    second: Bullet_Casing_5
+  - first:
+      213: -2625185027228586776
+    second: Bullet_Casing_6
+  - first:
+      213: 4224796003182541637
+    second: Bullet_Casing_7
+  - first:
+      213: 3985517495423699896
+    second: Bullet_Casing_8
+  - first:
+      213: 5553117790592574511
+    second: Bullet_Casing_9
+  - first:
+      213: -969023024463303076
+    second: Bullet_Casing_10
+  - first:
+      213: 1950017507710293740
+    second: Bullet_Casing_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,7 +159,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_0'
+      name: Bullet_Casing_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cb0e87fa02967030800000000000000
-      internalID: 3492139136873008070
+      spriteID: ed57abe4c473be280800000000000000
+      internalID: -9013049428374030882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_1'
+      name: Bullet_Casing_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e41f429787c070b0800000000000000
-      internalID: -5732862940553472794
+      spriteID: 27be3fdd57a749390800000000000000
+      internalID: -7812484806927455374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_2'
+      name: Bullet_Casing_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04639f96dfd6a1410800000000000000
-      internalID: 1448591165325129280
+      spriteID: 2d44ed538d7111bc0800000000000000
+      internalID: -3814241192021965614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_3'
+      name: Bullet_Casing_3
       rect:
         serializedVersion: 2
         x: 192
@@ -200,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706de72d6513ea7a0800000000000000
-      internalID: -6364094974459455993
+      spriteID: b20d9bce5a73f1760800000000000000
+      internalID: 7430719095965339691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_4'
+      name: Bullet_Casing_4
       rect:
         serializedVersion: 2
         x: 256
@@ -221,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a8a37f8b3c0bd570800000000000000
-      internalID: 8492394972286527650
+      spriteID: 5d5c0ff0b7244c8d0800000000000000
+      internalID: -2827061569765980715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_5'
+      name: Bullet_Casing_5
       rect:
         serializedVersion: 2
         x: 320
@@ -242,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78f066ea698af59c0800000000000000
-      internalID: -3936242184174039161
+      spriteID: 0093ae7a58663f470800000000000000
+      internalID: 8427192051974158592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_6'
+      name: Bullet_Casing_6
       rect:
         serializedVersion: 2
         x: 384
@@ -263,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3d9f9ae6c9951cb0800000000000000
-      internalID: -4893836340449272518
+      spriteID: 8ecad566028719bd0800000000000000
+      internalID: -2625185027228586776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_7'
+      name: Bullet_Casing_7
       rect:
         serializedVersion: 2
         x: 448
@@ -284,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88838dfa1a3407d90800000000000000
-      internalID: -7102102250644293496
+      spriteID: 54b7f2ab49d71aa30800000000000000
+      internalID: 4224796003182541637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_8'
+      name: Bullet_Casing_8
       rect:
         serializedVersion: 2
         x: 512
@@ -305,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71cda06f84fc14820800000000000000
-      internalID: 2900827547275811863
+      spriteID: 8bb85d0cb076f4730800000000000000
+      internalID: 3985517495423699896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_9'
+      name: Bullet_Casing_9
       rect:
         serializedVersion: 2
         x: 576
@@ -326,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22b403b14239c3ba0800000000000000
-      internalID: -6107845211336979678
+      spriteID: f242c287533a01d40800000000000000
+      internalID: 5553117790592574511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_10'
+      name: Bullet_Casing_10
       rect:
         serializedVersion: 2
         x: 640
@@ -347,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c9efa91094093b70800000000000000
-      internalID: 8879133157290404289
+      spriteID: c5ea0bf71b65d82f0800000000000000
+      internalID: -969023024463303076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[SHOOTING]PistolV1.00_11'
+      name: Bullet_Casing_11
       rect:
         serializedVersion: 2
         x: 704
@@ -368,8 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca385541055dd43b0800000000000000
-      internalID: -5526526627798482004
+      spriteID: ce65dd4779adf0b10800000000000000
+      internalID: 1950017507710293740
       vertices: []
       indices: 
       edges: []
