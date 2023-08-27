@@ -15,16 +15,16 @@ public class bullet_spawn : MonoBehaviour
 
     // Amount of bullets available in the weapon
     [SerializeField]
-    int currentAmmo = 10;
+    public int currentAmmo = 10;
 
     // Automatic fire or Single Fire for gun
     [SerializeField]
-    bool isAuto = false;
+    public bool isAuto = false;
 
 
     // How long would the thing wait before firing
     [SerializeField]
-    float timeBetweeenShots = 10;
+    public float timeBetweeenShots = 10;
 
     // Stores the time where the last shot was taken
     private float lastShotTime;
