@@ -1,0 +1,776 @@
+fileFormatVersion: 2
+guid: 68cf266139c460b4d93249558d346f02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 192647958403903000
+    second: shooting_sniper_0
+  - first:
+      213: -412679989449920876
+    second: shooting_sniper_1
+  - first:
+      213: 769210224544889859
+    second: shooting_sniper_2
+  - first:
+      213: 3540759379639841476
+    second: shooting_sniper_3
+  - first:
+      213: -5427393104464236718
+    second: shooting_sniper_4
+  - first:
+      213: -6579369390441416968
+    second: shooting_sniper_5
+  - first:
+      213: 5162285992463803673
+    second: shooting_sniper_6
+  - first:
+      213: -8806206542601407146
+    second: shooting_sniper_7
+  - first:
+      213: 4846719917179887507
+    second: shooting_sniper_8
+  - first:
+      213: 8982096554301425695
+    second: shooting_sniper_9
+  - first:
+      213: -5694854687180542427
+    second: shooting_sniper_10
+  - first:
+      213: 3574301885309543409
+    second: shooting_sniper_11
+  - first:
+      213: -9178938312996831656
+    second: shooting_sniper_12
+  - first:
+      213: 1122685688819222207
+    second: shooting_sniper_13
+  - first:
+      213: 2501273534867642945
+    second: shooting_sniper_14
+  - first:
+      213: 6545748679416382619
+    second: shooting_sniper_15
+  - first:
+      213: 7169059069523076631
+    second: shooting_sniper_16
+  - first:
+      213: -5665575719116069443
+    second: shooting_sniper_17
+  - first:
+      213: 1016976853298239573
+    second: shooting_sniper_18
+  - first:
+      213: -7638389492658832447
+    second: shooting_sniper_19
+  - first:
+      213: 6748912545033792412
+    second: shooting_sniper_20
+  - first:
+      213: 5574011791130058495
+    second: shooting_sniper_21
+  - first:
+      213: 2606196059826384259
+    second: shooting_sniper_22
+  - first:
+      213: 5792642086318735569
+    second: shooting_sniper_23
+  - first:
+      213: 4579861317531212313
+    second: shooting_sniper_24
+  - first:
+      213: -5933186223816719492
+    second: shooting_sniper_25
+  - first:
+      213: -4924777688139687268
+    second: shooting_sniper_26
+  - first:
+      213: -6072292001196847941
+    second: shooting_sniper_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shooting_sniper_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e6e572c4c6ca200800000000000000
+      internalID: 192647958403903000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eecee6cbdd54af0800000000000000
+      internalID: -412679989449920876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cb89faf98ccaa00800000000000000
+      internalID: 769210224544889859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2b09265ed432130800000000000000
+      internalID: 3540759379639841476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f21002ab60ea4b0800000000000000
+      internalID: -5427393104464236718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f639acf56261b4a0800000000000000
+      internalID: -6579369390441416968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915a7c952cf14a740800000000000000
+      internalID: 5162285992463803673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655b5898ec11ac580800000000000000
+      internalID: -8806206542601407146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f515de512034340800000000000000
+      internalID: 4846719917179887507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1885691a31d6ac70800000000000000
+      internalID: 8982096554301425695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ea22ba5dfc7f0b0800000000000000
+      internalID: -5694854687180542427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f362e190a87a9130800000000000000
+      internalID: 3574301885309543409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85eb9968c3cdd9080800000000000000
+      internalID: -9178938312996831656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb60c7c8fa4949f00800000000000000
+      internalID: 1122685688819222207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a1fd3170f46b220800000000000000
+      internalID: 2501273534867642945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9488993ebb27da50800000000000000
+      internalID: 6545748679416382619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71627bc8d3d9d7360800000000000000
+      internalID: 7169059069523076631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db52206a6e4df51b0800000000000000
+      internalID: -5665575719116069443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558d2a55f070d1e00800000000000000
+      internalID: 1016976853298239573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb7ef1f93dfef590800000000000000
+      internalID: -7638389492658832447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9baae2d334f8ad50800000000000000
+      internalID: 6748912545033792412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe5520113eda5d40800000000000000
+      internalID: 5574011791130058495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d69f812811b2420800000000000000
+      internalID: 2606196059826384259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0810a6949936050800000000000000
+      internalID: 5792642086318735569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a10086a9fee8f30800000000000000
+      internalID: 4579861317531212313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73c927909619ada0800000000000000
+      internalID: -5933186223816719492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a1aa409cca7abb0800000000000000
+      internalID: -4924777688139687268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shooting_sniper_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7490355, y: 0.6835365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc4738e892eabba0800000000000000
+      internalID: -6072292001196847941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
