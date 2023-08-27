@@ -4,12 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - pistol
+  - flamethrower
   - Wall
   - Person
-  - Bullet
-  - gun
-  - grabbable
-  - grenade
   layers:
   - Default
   - TransparentFX
