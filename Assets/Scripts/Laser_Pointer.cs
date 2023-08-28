@@ -5,13 +5,23 @@ using UnityEngine;
 
 public class Laser_Pointer : MonoBehaviour
 {
+    // ISSUE, THE LASER POINTS TOWARDS CURSOR TOO MUCH, i WANT IT TO POINT STRAIGHT AHEAD
+
     // Attach laser object here
     [SerializeField]
     Transform laserObject;
 
+    // Attach Gun object (Parent of laser) here
+    [SerializeField]
+    Transform GunObject;
+
     // Set your laser distance here
     [SerializeField]
-    float laserDist = 10;
+    int laserDist = 10;
+
+    // Set camera which follows user here
+    [SerializeField]
+    Camera mainCamera;
 
     // Renders Line
     private LineRenderer lineRenderer;
@@ -29,34 +39,44 @@ public class Laser_Pointer : MonoBehaviour
     void Update()
     {
         //---------------------------------- Draw Laser -------------------------------------------------------//
-
         // Get laser's position and the forward direction (y direction in our case)
         Vector2 laserObjectPos = laserObject.position;
-        Vector2 laserObjectDir = laserObject.up;
 
-        // Create raycast from laser object in the forward direction of the laser object
-        RaycastHit2D rayHit = Physics2D.Raycast(laserObjectPos, laserObjectDir, laserDist);
+        // Retrieve mouse position (pixel coordinates)
+        Vector2 mousePosition = Input.mousePosition;
+        // Convert pixel coordinates into world coordinates
+        Vector3 mousePositionWorldCoordinates = mainCamera.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, mainCamera.transform.position.y - laserObject.position.y));
 
-        // Update the Line Renderer's end position to the hit point
-        lineRenderer.SetPosition(0, laserObjectPos);
+        // Ensures that the mouse position z position is the same as the laser object z position
+        mousePositionWorldCoordinates.z = laserObject.position.z;
 
-        // This if statement is to bypass error "object reference not set to an instance of an object"
-        if (rayHit.collider == null)
+        // Calculate laser's direction
+        //Vector3 laserDirection = mousePositionWorldCoordinates - laserObject.position;
+
+        Vector3 laserDirection = laserObject.transform.up;
+
+        Vector3 laserDirectionNormalized = laserDirection.normalized;
+
+        // Set laser's starting point
+        lineRenderer.SetPosition(0, laserObject.position);
+
+        RaycastHit2D hit = Physics2D.Raycast(laserObjectPos, laserDirection, laserDist);
+        // If laser hits something
+        if (hit.collider != null && hit.collider.tag != "Bullet")
         {
-            // Default to laserDist value from object
-            lineRenderer.SetPosition(1, laserObjectPos + laserObjectDir * laserDist);
-        }
-        // If raycast hits wall
-        else if (rayHit.collider.tag == "Wall" || rayHit.collider.tag == "Person")
-        {
-            // Update the Line Renderer's end position to the hit point
-            lineRenderer.SetPosition(1, rayHit.point);
+            // Set the end position of laser to be the location of the hit place
+            lineRenderer.SetPosition(1, hit.point);
         }
         else
         {
 
+
             // Default to laserDist value from object
-            lineRenderer.SetPosition(1, laserObjectPos + laserObjectDir * laserDist);
+            //lineRenderer.SetPosition(1, laserObject.position + laserDirection.normalized * laserDist);
+
+
+            // Test Test
+            lineRenderer.SetPosition(1, laserObject.position + laserDirectionNormalized * laserDist);
         }
     }
 }
