@@ -9018,6 +9018,11 @@ PrefabInstance:
       propertyPath: gunshotSound
       value: 
       objectReference: {fileID: 8300000, guid: af66162561d2eed40ad49268cab318bb, type: 3}
+    - target: {fileID: 2879709578253464335, guid: 96d7d238205177f47baa53094f45ce15,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2879709579146350052, guid: 96d7d238205177f47baa53094f45ce15,
         type: 3}
       propertyPath: m_RootOrder
@@ -9078,6 +9083,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2879709579249712069, guid: 96d7d238205177f47baa53094f45ce15,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879709579415322706, guid: 96d7d238205177f47baa53094f45ce15,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2879709579443177496, guid: 96d7d238205177f47baa53094f45ce15,
         type: 3}
       propertyPath: audioSource
@@ -9088,10 +9103,20 @@ PrefabInstance:
       propertyPath: gunshotSound
       value: 
       objectReference: {fileID: 8300000, guid: 3d95c443371180644b181d014693cb00, type: 3}
+    - target: {fileID: 2879709579622938047, guid: 96d7d238205177f47baa53094f45ce15,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5018094592783182367, guid: 96d7d238205177f47baa53094f45ce15,
         type: 3}
       propertyPath: m_Volume
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6608744910824840708, guid: 96d7d238205177f47baa53094f45ce15,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6608744910824840708, guid: 96d7d238205177f47baa53094f45ce15,
         type: 3}
