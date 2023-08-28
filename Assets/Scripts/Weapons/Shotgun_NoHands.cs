@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shotgun : MonoBehaviour
+public class Shotgun_NoHands : MonoBehaviour
 {
     // This part is for weapon animation, attach animator here
     [SerializeField]
@@ -66,9 +66,8 @@ public class shotgun : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("Current amount of bullets:" + currentAmmo);
-
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Reload_Bullet_Shotgun"))
+        Debug.Log(currentAmmo);
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("insert_bullet"))
         {
             isReloading = true;
         }
@@ -76,7 +75,7 @@ public class shotgun : MonoBehaviour
         {
             isReloading = false;
         }
-        
+
         if (currentAmmo == 0)
         {
             // Animation purposes where you would need to pump shotgun to load round into chamber
@@ -85,8 +84,8 @@ public class shotgun : MonoBehaviour
             // Automatically reload shotgun
             isReloading = true;
 
-            // Stops reload animation
-            animator.SetBool("load_bullet", true);
+            // Starts reload animation
+            animator.SetBool("load_slug", true);
         }
 
 
@@ -97,7 +96,7 @@ public class shotgun : MonoBehaviour
             isReloading = false;
 
             // Stops reload animation
-            animator.SetBool("load_bullet", false);
+            animator.SetBool("load_slug", false);
 
             // If number of bullets in magazine is full and it is during the reloading phase
             if (pumpShotgun)
@@ -115,17 +114,17 @@ public class shotgun : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             // Stop reload coroutine
-            animator.SetBool("load_bullet", false);
+            animator.SetBool("load_slug", false);
         }
 
         // If there are bullets in magazine and user fires
         if (currentAmmo > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
         {
             // Set load bullet to be false
-            animator.SetBool("load_bullet", false);
+            animator.SetBool("load_slug", false);
 
             // Trigger firing animation
-            animator.SetTrigger("fire_shotgun");
+            animator.SetTrigger("fire");
 
             // Save the last shot time
             lastShotTime = Time.time;
@@ -143,7 +142,7 @@ public class shotgun : MonoBehaviour
             isReloading = true;
 
             // Set load bullet to be true
-            animator.SetBool("load_bullet", true);
+            animator.SetBool("load_slug", true);
         }
     }
 }
