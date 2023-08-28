@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public class pickup_throw : MonoBehaviour
+public class PickUp_Throw : MonoBehaviour
 {
     [SerializeField] GameObject Pickup_text;
 
@@ -51,7 +50,7 @@ public class pickup_throw : MonoBehaviour
         Pickup_text.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 
         Debug.Log(Hand.transform.childCount);
-       
+
 
         if (Hand.transform.childCount == 1 && Input.GetKey("q"))
         {
@@ -85,7 +84,7 @@ public class pickup_throw : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("gun") && !holdingGun && Hand.transform.childCount < 1)
+        if ((collision.gameObject.CompareTag("gun") || collision.gameObject.CompareTag("grenade")) && !holdingGun && Hand.transform.childCount < 1)
         {
             // Retrieve details for weapon to pickup
             weapon_to_pickup = collision.gameObject;
