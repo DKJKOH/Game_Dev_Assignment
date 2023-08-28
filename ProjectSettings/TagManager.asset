@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - gun
   - grabbable
+  - flamethrower
   layers:
   - Default
   - TransparentFX

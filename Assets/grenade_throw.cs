@@ -13,21 +13,27 @@ public class grenade_throw : MonoBehaviour
     private float start_time;
     private bool isStarted;
 
-	// Time before grenade explodes
+    // Time before grenade explodes
     [SerializeField]
-    float explosion_time = 1; 
+    float explosion_time = 1;
 
-    // Delay time after explosion before destruction
-    double delay_time = 1.6; 
+    // This function removes grenade, will be executed on end of grenade explosion animation, can be found under grenade_ani in animations
+    void grenade_remove()
+    {
+        // Destroy the grenade game object
+        Destroy(gameObject);
+    }
 
     void Start()
     {
         grenade = GetComponent<Rigidbody2D>();
         // Initially, grenade is not affected by physics 
-        grenade.isKinematic = true; 
+        grenade.isKinematic = true;
         animator = GetComponent<Animator>();
         // Grenade hasn't been thrown yet
-        isStarted = false; 
+        isStarted = false;
+
+        grenade.transform.rotation = transform.parent.rotation;
     }
 
     void Update()
@@ -35,7 +41,7 @@ public class grenade_throw : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             // Grenade throwing process started
-            isStarted = true; 
+            isStarted = true;
             start_time = Time.time;
 
             grenade.isKinematic = false; // Now, physics affect the grenade
@@ -51,17 +57,10 @@ public class grenade_throw : MonoBehaviour
 
         if (Time.time - start_time >= explosion_time && isStarted == true)
         {
-        	// Stop grenade's movement
-            grenade.velocity = new Vector3(0, 0, 0); 
+            // Stop grenade's movement
+            grenade.velocity = new Vector3(0, 0, 0);
             // Trigger explosion animation
-            animator.SetTrigger("isExplode"); 
-
-            // Wait for animation to finish before destroying the grenade
-            if (Time.time - start_time >= delay_time)
-            {
-            	// Destroy the grenade game object
-                Destroy(gameObject); 
-            }
+            animator.SetTrigger("isExplode");
         }
     }
 }

@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: 62335cefd013955489eb5695db7671c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6790447471762465689
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_0'
+  - first:
+      213: -2996484007174555337
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_1'
+  - first:
+      213: 9030307569960908950
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_2'
+  - first:
+      213: -5194515520540341697
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_3'
+  - first:
+      213: -1585679167685623837
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_4'
+  - first:
+      213: -4105393283570606620
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_5'
+  - first:
+      213: -8846066264130674617
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_6'
+  - first:
+      213: -6980454187161204518
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_7'
+  - first:
+      213: 5705590077513414063
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_8'
+  - first:
+      213: -7336987837811253799
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_9'
+  - first:
+      213: -4888127984419012293
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_10'
+  - first:
+      213: -6409648420889092970
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_11'
+  - first:
+      213: -1432805791286901741
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_12'
+  - first:
+      213: -8357593888119484317
+    second: '[SHOOTING_CHAMBER_OPEN] Shotgun_V1.02_13'
+  - first:
+      213: 8749463647312693121
+    second: Shoot_Open_Chamber_0
+  - first:
+      213: 9182277707564988376
+    second: Shoot_Open_Chamber_1
+  - first:
+      213: 5902612871230431872
+    second: Shoot_Open_Chamber_2
+  - first:
+      213: -6698966810859891804
+    second: Shoot_Open_Chamber_3
+  - first:
+      213: 5373632889317350579
+    second: Shoot_Open_Chamber_4
+  - first:
+      213: 1344826535691812366
+    second: Shoot_Open_Chamber_5
+  - first:
+      213: -2030565063719287080
+    second: Shoot_Open_Chamber_6
+  - first:
+      213: -4407969683280803469
+    second: Shoot_Open_Chamber_7
+  - first:
+      213: -9106587092853112290
+    second: Shoot_Open_Chamber_8
+  - first:
+      213: -6928154204909571207
+    second: Shoot_Open_Chamber_9
+  - first:
+      213: -6708681393070734207
+    second: Shoot_Open_Chamber_10
+  - first:
+      213: -5212956632815394332
+    second: Shoot_Open_Chamber_11
+  - first:
+      213: 3656674630100740318
+    second: Shoot_Open_Chamber_12
+  - first:
+      213: 2624754016046231913
+    second: Shoot_Open_Chamber_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1874441a4d65c6970800000000000000
+      internalID: 8749463647312693121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7366cdce00e6f70800000000000000
+      internalID: 9182277707564988376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082a65c022b4ae150800000000000000
+      internalID: 5902612871230431872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3909c9d2d7803a0800000000000000
+      internalID: -6698966810859891804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcdd1164aaf29a40800000000000000
+      internalID: 5373632889317350579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0efd68eb98c9a210800000000000000
+      internalID: 1344826535691812366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d681bb35dbf1d3e0800000000000000
+      internalID: -2030565063719287080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3794b5f6deeb3d2c0800000000000000
+      internalID: -4407969683280803469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12455ea947ee9180800000000000000
+      internalID: -9106587092853112290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9737c3325704adf90800000000000000
+      internalID: -6928154204909571207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_10
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1840fbe21d9f5e2a0800000000000000
+      internalID: -6708681393070734207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_11
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1a587df8bd7a7b0800000000000000
+      internalID: -5212956632815394332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_12
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed86652c33e1fb230800000000000000
+      internalID: 3656674630100740318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot_Open_Chamber_13
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961373dfedffc6420800000000000000
+      internalID: 2624754016046231913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
