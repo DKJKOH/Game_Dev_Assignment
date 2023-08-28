@@ -39,7 +39,26 @@ public class player_movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Move player
-        player_rb.velocity = playerMovement * movementSpeed;
+
+
+        // If user does not want to move at all
+        if (Input.GetAxisRaw("Vertical") == 0 && Input.GetAxisRaw("Horizontal") == 0)
+        {
+            // Get player model current position
+            Vector2 playerPosition = player_rb.position;
+
+            // Set player's velocity, angular velocity and interia to zero (to prevent movement of playerawaw)
+            player_rb.velocity = Vector2.zero;
+            player_rb.angularVelocity = 0;
+            player_rb.inertia = 0;
+
+            // Set player to current position
+            player_rb.position = playerPosition;
+        }
+        else
+        {
+            // Move player
+            player_rb.velocity = playerMovement * movementSpeed;
+        }
     }
 }

@@ -1,7 +1,49 @@
 fileFormatVersion: 2
 guid: 9ed8d480d70f2ec4bb1dd48cc2c8e4b5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 9167286349639655021
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_0'
+  - first:
+      213: 5334730300254839153
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_1'
+  - first:
+      213: -1524562073116569802
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_2'
+  - first:
+      213: -2361734081416465824
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_3'
+  - first:
+      213: -2979378087531756660
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_4'
+  - first:
+      213: 4363626449224640037
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_5'
+  - first:
+      213: 4396644578258359111
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_6'
+  - first:
+      213: -8133072766663452551
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_7'
+  - first:
+      213: -3238132115548028968
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_8'
+  - first:
+      213: 5386043499594361426
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_9'
+  - first:
+      213: -2989941632889893377
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_10'
+  - first:
+      213: -491935343232862321
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_11'
+  - first:
+      213: 3771768352985139484
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_12'
+  - first:
+      213: -8104086650938142589
+    second: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_13'
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -40,7 +82,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -64,7 +106,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +127,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e1f885d5eb83f70800000000000000
+      internalID: 9167286349639655021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_1'
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171e33781f4c80a40800000000000000
+      internalID: 5334730300254839153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_2'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f8ad93fdaa7dae0800000000000000
+      internalID: -1524562073116569802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_3'
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062fc3fad5f693fd0800000000000000
+      internalID: -2361734081416465824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_4'
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8346113a6f17a6d0800000000000000
+      internalID: -2979378087531756660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_5'
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526a886d227be8c30800000000000000
+      internalID: 4363626449224640037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_6'
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7439cb213f4040d30800000000000000
+      internalID: 4396644578258359111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_7'
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9781f9ad865812f80800000000000000
+      internalID: -8133072766663452551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_8'
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfb9fc4ff7df03d0800000000000000
+      internalID: -3238132115548028968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_9'
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25aaf12c6021fba40800000000000000
+      internalID: 5386043499594361426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_10'
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd42702de79186d0800000000000000
+      internalID: -2989941632889893377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_11'
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f873526696b4c29f0800000000000000
+      internalID: -491935343232862321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_12'
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c194db65553085430800000000000000
+      internalID: 3771768352985139484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[FULL_MUZZLE_FLASH] Shotgun_V1.02_13'
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380d8d5d020888f80800000000000000
+      internalID: -8104086650938142589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

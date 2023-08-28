@@ -65,7 +65,13 @@ public class shotgun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("insert_bullet"))
+=======
+        Debug.Log("Current amount of bullets:" + currentAmmo);
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Reload_Bullet_Shotgun"))
+>>>>>>> a3a878a99ad8161da9425afb2dbc2ff802f7fa82
         {
             isReloading = true;
         }
