@@ -57,29 +57,23 @@ public class pickup_throw : MonoBehaviour
         {
             GameObject weapon_to_drop = Hand.transform.GetChild(0).gameObject;
 
-            if (weapon_to_drop.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("idle"))
+            if (weapon_to_drop.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("idle") || weapon_to_drop.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("empty"))
             {
+                // Disable weapon rotation / shooting scripts
                 weaponDisable(weapon_to_drop.transform, true);
 
+                // Unset the hand as the weapon's parent
                 weapon_to_drop.transform.parent = null;
 
-
+                // Set weapon to dynamic
                 weapon_to_drop.GetComponent<Rigidbody2D>().isKinematic = false;
+                
+                // Disable weapon animation
+                weapon_to_drop.GetComponentInChildren<Animator>().enabled = false;
 
-                weapon_to_drop.GetComponentInChildren<Animator>().enabled = true;
+                // Freeze transformation of weapon so that the weapon do not move away from hand
+                weapon_to_pickup.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             }
-            else if (weapon_to_drop.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("empty"))
-            {
-                weaponDisable(weapon_to_drop.transform, true);
-
-                weapon_to_drop.transform.parent = null;
-
-
-                weapon_to_drop.GetComponent<Rigidbody2D>().isKinematic = false;
-
-                weapon_to_drop.GetComponentInChildren<Animator>().enabled = true;
-            }
-
         }
     }
 
@@ -106,6 +100,9 @@ public class pickup_throw : MonoBehaviour
 
                 // Attach hand to weapon 
                 weapon_to_pickup.transform.parent = Hand.transform;
+
+                // Freeze transformation of weapon so that the weapon do not move away from hand
+                weapon_to_pickup.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
             }
         }
     }
