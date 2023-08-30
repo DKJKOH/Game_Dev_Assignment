@@ -48,6 +48,8 @@ public class grenade_throw : MonoBehaviour
 
             transform.parent = null; // Detach grenade from its parent
 
+            grenade.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+
             // Apply force to simulate the throw
             grenade.AddForce(transform.up * throw_force * Time.deltaTime, ForceMode2D.Impulse);
         }
