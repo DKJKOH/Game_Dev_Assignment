@@ -22,7 +22,6 @@ public class pickup_throw : MonoBehaviour
         MonoBehaviour[] allScripts = weapon_object.GetComponents<MonoBehaviour>();
         foreach (MonoBehaviour script in allScripts)
         {
-            Debug.Log(script.name);
             if (script.name == "LaserSight")
             {
                 // Enable laser sight
@@ -48,10 +47,7 @@ public class pickup_throw : MonoBehaviour
     void Update()
     {
         // Ensures that the text is facing the correct direction so that it is readable
-        Pickup_text.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-
-        Debug.Log(Hand.transform.childCount);
-       
+        Pickup_text.transform.rotation = Quaternion.Euler(0f, 0f, 0f);       
 
         if (Hand.transform.childCount == 1 && Input.GetKey("q"))
         {
@@ -77,7 +73,7 @@ public class pickup_throw : MonoBehaviour
         }
     }
 
-    void OnCollisionStay2D(Collision2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
         if ((collision.gameObject.CompareTag("gun")|| collision.gameObject.CompareTag("grabbable")) && !holdingGun && Hand.transform.childCount < 1)
         {
@@ -106,7 +102,7 @@ public class pickup_throw : MonoBehaviour
             }
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         Pickup_text.SetActive(false);
     }
