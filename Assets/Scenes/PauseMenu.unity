@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 132786590}
   - component: {fileID: 132786589}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -413,12 +413,12 @@ GameObject:
   - component: {fileID: 534169814}
   - component: {fileID: 534169813}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: Menubutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &534169812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -436,7 +436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00012207, y: -164}
+  m_AnchoredPosition: {x: -0.00012207, y: -133}
   m_SizeDelta: {x: 100.38902, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534169813
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 0.5
+  m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 1616838273}
   - component: {fileID: 1616838274}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -876,7 +876,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.00012207, y: 10.4}
-  m_SizeDelta: {x: 603.12054, y: 600}
+  m_SizeDelta: {x: 603.12054, y: 458.0316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1616838274
 MonoBehaviour:
@@ -1059,7 +1059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00012207031, y: 137.6}
+  m_AnchoredPosition: {x: -0.00012207031, y: 64}
   m_SizeDelta: {x: 603.1207, y: 182.81967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976142398
