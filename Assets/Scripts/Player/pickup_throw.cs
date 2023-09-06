@@ -55,21 +55,22 @@ public class pickup_throw : MonoBehaviour
 
             if (weapon_to_drop.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("idle") || weapon_to_drop.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("empty"))
             {
-                // Disable weapon rotation / shooting scripts
-                weaponDisable(weapon_to_drop.transform, true);
+
 
                 // Unset the hand as the weapon's parent
                 weapon_to_drop.transform.parent = null;
 
-                // Set weapon to dynamic
+                // Set sprite to dynamic
                 weapon_to_drop.GetComponent<Rigidbody2D>().isKinematic = false;
-                
-                // Disable weapon animation
-                weapon_to_drop.GetComponentInChildren<Animator>().enabled = false;
 
-                // Freeze transformation of weapon so that the weapon do not move away from hand
-                weapon_to_pickup.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                // Disable weapon rotation / shooting scripts
+                weaponDisable(weapon_to_drop.transform, true);
+
+                // Disable sprite animation
+                weapon_to_drop.GetComponentInChildren<Animator>().enabled = false;
             }
+            // Freeze transformation of weapon so that the weapon do not move away from hand
+            weapon_to_pickup.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         }
     }
 
@@ -84,7 +85,15 @@ public class pickup_throw : MonoBehaviour
 
             if (Input.GetKey("e"))
             {
-                weapon_to_pickup.GetComponentInChildren<Animator>().enabled = true;
+                try
+                {
+                    // Enable sprite animation
+                    weapon_to_pickup.GetComponentInChildren<Animator>().enabled = true;
+                }
+                catch
+                {
+                    
+                }
 
                 weaponDisable(weapon_to_pickup.transform, false);
 
