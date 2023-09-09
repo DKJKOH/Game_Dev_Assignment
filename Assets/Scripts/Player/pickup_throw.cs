@@ -47,7 +47,7 @@ public class pickup_throw : MonoBehaviour
     void Update()
     {
         // Ensures that the text is facing the correct direction so that it is readable
-        Pickup_text.transform.rotation = Quaternion.Euler(0f, 0f, 0f);       
+        Pickup_text.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 
         if (Hand.transform.childCount == 1 && Input.GetKey("q"))
         {
@@ -81,7 +81,21 @@ public class pickup_throw : MonoBehaviour
             // Retrieve details for weapon to pickup
             weapon_to_pickup = collision.gameObject;
 
-            Pickup_text.SetActive(true);
+            // Get weapon name
+            string weapon_name = weapon_to_pickup.name;
+
+            // Change the text
+            Pickup_text.GetComponent<TextMesh>().text = "E - Pick up " + weapon_name;
+
+            if (Hand.transform.childCount == 0)
+            {
+                Pickup_text.SetActive(true);
+            }
+            else
+            {
+                Pickup_text.SetActive(false);
+            }
+
 
             if (Input.GetKey("e"))
             {

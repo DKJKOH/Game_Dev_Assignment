@@ -74,7 +74,7 @@ public class automatic_rifle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Current amount of bullets:" + currentAmmo);
+        //Debug.Log("Current amount of bullets:" + currentAmmo);
 
         // Enable shooting as weapon is not being reloaded
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))

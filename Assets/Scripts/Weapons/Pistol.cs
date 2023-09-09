@@ -12,7 +12,8 @@ public class Pistol : MonoBehaviour
     // This part is for bullet spawn location, attach bullet spawner here
     GameObject bullet_spawner_object;
 
-    Animator animator;
+    [HideInInspector]
+    public Animator animator;
 
     // What kind of bullet would spawn
     [SerializeField]
@@ -56,7 +57,6 @@ public class Pistol : MonoBehaviour
         }
             
     }
-
 
 
     // Start is called before the first frame update
@@ -126,4 +126,6 @@ public class Pistol : MonoBehaviour
             animator.SetBool("reload", true);
         }
     }
+
+
 }

@@ -6,7 +6,10 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Enemy_FOV : MonoBehaviour
 {
+    // Current weapon held by enemy
     public GameObject gun;
+
+    public Pistol pistol_controller;
 
     // View radius of player
     public float viewRadius;
@@ -64,6 +67,9 @@ public class Enemy_FOV : MonoBehaviour
                 transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, rotationAngle));
 
                 gun.transform.rotation = Quaternion.Euler(new Vector3(0f, 0, WeaponRotationAngle));
+
+                // Trigger gun shoot (Fire weapon)
+                //pistol_controller.fire_weapon();
 
             }
         }
