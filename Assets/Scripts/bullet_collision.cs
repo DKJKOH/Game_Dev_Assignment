@@ -37,7 +37,22 @@ public class bullet_collision : MonoBehaviour
             hitObject.GetComponent<Animator>().SetTrigger("die");
         }
 
+        // If bullet hits gun
+        if (hitObject.tag == "gun")
+        {
+            // Destroy gun
+            Destroy(hitObject);
+        }
+
+        // If bullet hits grenade
+        if (hitObject.tag == "grenade")
+        {
+            // Grenade explodes
+            hitObject.GetComponent<Animator>().SetTrigger("isExplode");          
+        }
+
         // Destroy self (aka bullet)
         Destroy(transform.gameObject);
     }
 }
+

@@ -11,6 +11,7 @@ TagManager:
   - grabbable
   - flamethrower
   - Enemy
+  - grenade
   layers:
   - Default
   - TransparentFX

@@ -176,6 +176,7 @@ MonoBehaviour:
   bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   magazineSize: 10
   timeBetweeenShots: 0.5
+  totalBullets: 15
   reloadTime: 1
 --- !u!95 &21918774
 Animator:
@@ -1169,6 +1170,7 @@ MonoBehaviour:
   gun: {fileID: 478605558}
   pistol_controller: {fileID: 2084432775}
   viewRadius: 3.38
+  bullet: {fileID: 0}
   viewAngle: 65
   targetMask:
     serializedVersion: 2
@@ -1177,6 +1179,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   targetsVisible: []
+  timeBetweeenShots: 1
 --- !u!61 &239945697
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5060,7 +5063,7 @@ GameObject:
   - component: {fileID: 327434952}
   m_Layer: 0
   m_Name: Grenade
-  m_TagString: grabbable
+  m_TagString: grenade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5204,7 +5207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327434951}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.99, y: 4.55, z: -3.9604945}
+  m_LocalPosition: {x: -0.52, y: 5.12, z: -3.9604945}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 916432350}
@@ -5451,6 +5454,7 @@ MonoBehaviour:
   bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   magazineSize: 10
   timeBetweeenShots: 0.5
+  totalBullets: 0
   reloadTime: 1
 --- !u!4 &439278385
 Transform:
@@ -9779,6 +9783,7 @@ MonoBehaviour:
   bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   magazineSize: 10
   timeBetweeenShots: 0.5
+  totalBullets: 0
   reloadTime: 1
 --- !u!95 &527141887
 Animator:
@@ -9871,7 +9876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &529437831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9918,6 +9923,7 @@ MonoBehaviour:
   gun: {fileID: 661779823}
   pistol_controller: {fileID: 439278384}
   viewRadius: 3.38
+  bullet: {fileID: 0}
   viewAngle: 65
   targetMask:
     serializedVersion: 2
@@ -9926,6 +9932,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   targetsVisible: []
+  timeBetweeenShots: 1
 --- !u!61 &529437834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27316,7 +27323,7 @@ GameObject:
   - component: {fileID: 845799471}
   - component: {fileID: 845799470}
   m_Layer: 0
-  m_Name: Pickup_Text
+  m_Name: Text_Prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28740,7 +28747,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026857050}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -28752,7 +28759,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
 --- !u!1 &1050851501
 GameObject:
   m_ObjectHideFlags: 0
@@ -28769,7 +28776,7 @@ GameObject:
   - component: {fileID: 1050851503}
   - component: {fileID: 1050851502}
   m_Layer: 9
-  m_Name: Enemy
+  m_Name: Enemy - can shoot back (Pistol)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28821,6 +28828,7 @@ MonoBehaviour:
   gun: {fileID: 1026857050}
   pistol_controller: {fileID: 1371852016}
   viewRadius: 3.38
+  bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   viewAngle: 65
   targetMask:
     serializedVersion: 2
@@ -28829,6 +28837,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   targetsVisible: []
+  timeBetweeenShots: 1
 --- !u!61 &1050851505
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28933,14 +28942,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050851501}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.06, y: 3.08, z: -3}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -5.551, y: 4.482, z: -3}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 1306538634}
   m_Father: {fileID: 0}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1064865840
 GameObject:
   m_ObjectHideFlags: 0
@@ -29060,6 +29069,7 @@ MonoBehaviour:
   bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   magazineSize: 10
   timeBetweeenShots: 0.5
+  totalBullets: 0
   reloadTime: 1
 --- !u!4 &1099052275
 Transform:
@@ -31002,6 +31012,7 @@ MonoBehaviour:
   bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   magazineSize: 10
   timeBetweeenShots: 0.5
+  totalBullets: 15
   reloadTime: 1
 --- !u!95 &1371852017
 Animator:
@@ -35937,7 +35948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1923481253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35984,6 +35995,7 @@ MonoBehaviour:
   gun: {fileID: 230657415}
   pistol_controller: {fileID: 1099052274}
   viewRadius: 3.38
+  bullet: {fileID: 0}
   viewAngle: 65
   targetMask:
     serializedVersion: 2
@@ -35992,6 +36004,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   targetsVisible: []
+  timeBetweeenShots: 1
 --- !u!61 &1923481256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40741,6 +40754,7 @@ MonoBehaviour:
   bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   magazineSize: 10
   timeBetweeenShots: 0.5
+  totalBullets: 0
   reloadTime: 1
 --- !u!4 &2084432776
 Transform:

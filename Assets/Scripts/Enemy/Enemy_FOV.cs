@@ -14,6 +14,10 @@ public class Enemy_FOV : MonoBehaviour
     // View radius of player
     public float viewRadius;
 
+    // What kind of bullet would spawn
+    [SerializeField]
+    public GameObject bullet;
+
     // Player's vision cone angle
     [Range(0, 360)]
     public float viewAngle;
@@ -25,6 +29,12 @@ public class Enemy_FOV : MonoBehaviour
     // Lists which contains current visible targets from current object
     [HideInInspector]
     public List<Transform> targetsVisible = new List<Transform>();
+
+
+    // Shooting stuff
+    public float timeBetweeenShots = 1;
+    // Stores the time where the last shot was taken
+    private float lastShotTime;
 
     private void Start()
     {
@@ -69,8 +79,20 @@ public class Enemy_FOV : MonoBehaviour
                 gun.transform.rotation = Quaternion.Euler(new Vector3(0f, 0, WeaponRotationAngle));
 
                 // Trigger gun shoot (Fire weapon)
-                //pistol_controller.fire_weapon();
+                GameObject bullet_spawner = transform.Find("Hand/Pistol/Weapon_Object/Bullet_Spawner").gameObject;
 
+                if (Time.time - lastShotTime >= timeBetweeenShots)
+                {
+                    // Create bullet object
+                    Instantiate(bullet, bullet_spawner.transform.position, bullet_spawner.transform.rotation);
+                    // Animate firing
+                    pistol_controller.GetComponent<Animator>().SetTrigger("shoot");
+
+
+                    // Save the last shot time
+                    lastShotTime = Time.time;
+                }
+ 
             }
         }
     }
