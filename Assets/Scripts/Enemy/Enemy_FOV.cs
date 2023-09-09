@@ -78,21 +78,26 @@ public class Enemy_FOV : MonoBehaviour
 
                 gun.transform.rotation = Quaternion.Euler(new Vector3(0f, 0, WeaponRotationAngle));
 
-                // Trigger gun shoot (Fire weapon)
-                GameObject bullet_spawner = transform.Find("Hand/Pistol/Weapon_Object/Bullet_Spawner").gameObject;
+                GameObject hand = transform.GetChild(0).gameObject;
 
-                if (Time.time - lastShotTime >= timeBetweeenShots)
+                // If enemy has weapon
+                if (hand.transform.childCount != 0)
                 {
-                    // Create bullet object
-                    Instantiate(bullet, bullet_spawner.transform.position, bullet_spawner.transform.rotation);
-                    // Animate firing
-                    pistol_controller.GetComponent<Animator>().SetTrigger("shoot");
+                    // Trigger gun shoot (Fire weapon)
+                    GameObject bullet_spawner = transform.Find("Hand/Pistol/Weapon_Object/Bullet_Spawner").gameObject;
+
+                    if (Time.time - lastShotTime >= timeBetweeenShots)
+                    {
+                        // Create bullet object
+                        Instantiate(bullet, bullet_spawner.transform.position, bullet_spawner.transform.rotation);
+                        // Animate firing
+                        pistol_controller.GetComponent<Animator>().SetTrigger("shoot");
 
 
-                    // Save the last shot time
-                    lastShotTime = Time.time;
+                        // Save the last shot time
+                        lastShotTime = Time.time;
+                    }
                 }
- 
             }
         }
     }
