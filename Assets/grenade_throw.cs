@@ -47,6 +47,9 @@ public class grenade_throw : MonoBehaviour
 
             grenade.isKinematic = false; // Now, physics affect the grenade
 
+            // Get's hand forward direction (y axis) so that we can orient grenade throw in the correct direction
+            grenade.transform.up = transform.parent.up;
+
             transform.parent = null; // Detach grenade from its parent
 
             grenade.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;

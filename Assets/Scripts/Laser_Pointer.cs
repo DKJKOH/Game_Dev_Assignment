@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor.PackageManager;
+#endif
+
 using UnityEngine;
 
 public class Laser_Pointer : MonoBehaviour

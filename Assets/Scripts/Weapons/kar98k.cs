@@ -18,10 +18,6 @@ public class kar98k : MonoBehaviour
     [SerializeField]
     public GameObject bullet;
 
-    // Amount of bullets available in the weapon (Default 10)
-    [SerializeField]
-    public int magazineSize = 10;
-
     // How long would the thing wait before firing
     [SerializeField]
     public float timeBetweeenShots = 1;
@@ -29,20 +25,71 @@ public class kar98k : MonoBehaviour
     // Stores the time where the last shot was taken
     private float lastShotTime;
 
-    // Stores information about current ammunition in magazine
-    private int currentAmmo;
-
     // If reloading, prevent any other actions from happening
     private bool isReloading;
 
     [SerializeField]
     public float reloadTime = 1;
 
+
+
+    // Ammo stuff
+    // Stores information about current ammunition in magazine
+    //public int currentAmmo;
+    // Amount of bullets available in the weapon (Default 10)
+    [SerializeField]
+    public int magazineSize = 10;
+    // Stores information about current ammunition in magazine\
+    [HideInInspector]
+    public int numberBulletsInMag;
+    // Total number of bullets allowed for this weapon
+    [SerializeField]
+    public int totalBullets;
+
+    void add_bullet()
+    {
+        //// If there is ammo and magazine is not full
+        //if (totalBullets > 0 && numberBulletsInMag <= magazineSize)
+        //{
+        // Minus total ammo
+        totalBullets--;
+            // Add number of bullets
+        numberBulletsInMag++;
+        //}
+    }
+
+    void add_magazine_bullet()
+    {
+        // Minus the magazine size
+        totalBullets = totalBullets - magazineSize;
+
+        // Restet number of ammunitions in mag
+        numberBulletsInMag = magazineSize;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        // If number of bullets is lesser than magazine capacity
+        if (totalBullets <= magazineSize)
+        {
+
+            // Set current ammo
+            numberBulletsInMag = totalBullets;
+
+            totalBullets = 0;
+        }
+        else
+        {
+            // Set current ammo
+            numberBulletsInMag = magazineSize;
+
+            // Number of bullets in magazine
+            totalBullets = totalBullets - magazineSize;
+        }
+
         // Set current ammo
-        currentAmmo = magazineSize;
+        //totalBullets = magazineSize;
 
         lastShotTime = 0f; // Initialize last shot time
         animator = weapon.GetComponent<Animator>();
@@ -53,20 +100,12 @@ public class kar98k : MonoBehaviour
         isReloading = false;
     }
 
-    void add_bullet()
-    {
-        currentAmmo++;
-    }
 
-    void add_magazine_bullet()
-    {
-        currentAmmo = magazineSize;
-    }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Current amount of bullets:" + currentAmmo);
+        Debug.Log("Total bullets in mag: " + numberBulletsInMag + "Total Bullets: " + totalBullets);
 
         // Disable 
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
@@ -89,8 +128,8 @@ public class kar98k : MonoBehaviour
             animator.SetBool("load_bullet", false);
         }
 
-        // If there are bullets in magazine and user fires
-        if (currentAmmo > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+        // If user fires (magazine is not empty)
+        if (numberBulletsInMag > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
         {
 
             // Trigger firing animation
@@ -103,10 +142,10 @@ public class kar98k : MonoBehaviour
             Instantiate(bullet, bullet_spawner_object.transform.position, bullet_spawner_object.transform.rotation);
 
             // Decrease current ammo in clip
-            currentAmmo--;
+            numberBulletsInMag--;
         }
 
-        if (currentAmmo < magazineSize && Input.GetKeyDown(KeyCode.R))
+        if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R))
         {
             // Do not allow user to fire
             isReloading = true;
@@ -115,20 +154,36 @@ public class kar98k : MonoBehaviour
             animator.SetBool("load_bullet", true);
         }
 
-        // If user runs out of bullet
-        if (currentAmmo == 0)
+        // If user runs out of bullet (and has enough ammunition to reload a magazine)
+        if (numberBulletsInMag == 0 && totalBullets >= magazineSize)
         {
             // Trigger load clip animation
             animator.SetBool("load_clip", true);
         }
+        else if (numberBulletsInMag == 0 && totalBullets < magazineSize)
+        {
+            // Do not allow user to fire
+            isReloading = true;
+
+            // Set load bullet to be true
+            animator.SetBool("load_bullet", true);
+        }
 
 
         // If maximum amount of ammo in magazine size reached
-        if (currentAmmo >= magazineSize)
+        if (numberBulletsInMag >= magazineSize)
         {
             // Set reloading to false
             isReloading = false;
 
+            // Stops reload animation
+            animator.SetBool("load_bullet", false);
+        }
+
+        if (totalBullets <= 0)
+        {
+            // Set reloading to false
+            isReloading = false;
             // Stops reload animation
             animator.SetBool("load_bullet", false);
         }

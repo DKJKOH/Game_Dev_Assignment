@@ -18,9 +18,7 @@ public class Shotgun_NoHands : MonoBehaviour
     [SerializeField]
     public GameObject bullet;
 
-    // Amount of bullets available in the weapon
-    [SerializeField]
-    public int magazineSize = 10;
+
 
     // How long would the thing wait before firing
     [SerializeField]
@@ -29,8 +27,7 @@ public class Shotgun_NoHands : MonoBehaviour
     // Stores the time where the last shot was taken
     private float lastShotTime;
 
-    // Stores information about current ammunition in magazine
-    private int currentAmmo;
+
 
     // This part is to determine if the gun needs to be pumped after loading shell
     bool pumpShotgun;
@@ -41,11 +38,49 @@ public class Shotgun_NoHands : MonoBehaviour
     public float reloadTime = 1;
 
 
+
+
+
+
+
+
+    // Ammo count stuff
+
+
+    // Stores information about current ammunition in magazine
+    //public int currentAmmo;
+    // Amount of bullets available in the weapon (Default 10)
+    [SerializeField]
+    public int magazineSize = 10;
+    // Stores information about current ammunition in magazine\
+    [HideInInspector]
+    public int numberBulletsInMag;
+    // Total number of bullets allowed for this weapon
+    [SerializeField]
+    public int totalBullets;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        // Set current ammo
-        currentAmmo = magazineSize;
+        // If number of bullets is lesser than magazine capacity
+        if (totalBullets <= magazineSize)
+        {
+
+            // Set current ammo
+            numberBulletsInMag = totalBullets;
+
+            totalBullets = 0;
+        }
+        else
+        {
+            // Set current ammo
+            numberBulletsInMag = magazineSize;
+
+            // Number of bullets in magazine
+            totalBullets = totalBullets - magazineSize;
+        }
+
 
         lastShotTime = 0f; // Initialize last shot time
         animator = weapon.GetComponent<Animator>();
@@ -59,14 +94,23 @@ public class Shotgun_NoHands : MonoBehaviour
     // Function is being used in animation clip for shotgun (Reload_Bullet_Shotgun) clip
     void add_bullet()
     {
-        currentAmmo++;
+        //if (numberBulletsInMag <= magazineSize && totalBullets > 0)
+        //{
+            // Minus total ammo
+            totalBullets--;
+            // Add number of bullets
+            numberBulletsInMag++;
+        //}
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        // For ammo count debugging
+        Debug.Log("Total bullets in mag: " + numberBulletsInMag + "Total Bullets: " + totalBullets);
 
-        Debug.Log(currentAmmo);
+
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("insert_bullet"))
         {
             isReloading = true;
@@ -76,7 +120,7 @@ public class Shotgun_NoHands : MonoBehaviour
             isReloading = false;
         }
 
-        if (currentAmmo == 0)
+        if (numberBulletsInMag == 0 && totalBullets > 0)
         {
             // Animation purposes where you would need to pump shotgun to load round into chamber
             pumpShotgun = true;
@@ -90,7 +134,7 @@ public class Shotgun_NoHands : MonoBehaviour
 
 
         // If maximum amount of ammo in magazine size reached
-        if (currentAmmo >= magazineSize)
+        if (numberBulletsInMag >= magazineSize || totalBullets <= 0)
         {
             // Set reloading to false
             isReloading = false;
@@ -118,7 +162,7 @@ public class Shotgun_NoHands : MonoBehaviour
         }
 
         // If there are bullets in magazine and user fires
-        if (currentAmmo > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+        if (numberBulletsInMag > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
         {
             // Set load bullet to be false
             animator.SetBool("load_slug", false);
@@ -133,10 +177,10 @@ public class Shotgun_NoHands : MonoBehaviour
             Instantiate(bullet, bullet_spawner_object.transform.position, bullet_spawner_object.transform.rotation);
 
             // Decrease current ammo in clip
-            currentAmmo--;
+            numberBulletsInMag--;
         }
 
-        if (currentAmmo < magazineSize && Input.GetKeyDown(KeyCode.R))
+        if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
         {
             // Do not allow user to fire
             isReloading = true;

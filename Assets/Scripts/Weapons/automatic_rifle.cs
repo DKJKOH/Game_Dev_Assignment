@@ -35,30 +35,76 @@ public class automatic_rifle : MonoBehaviour
     // If reloading, prevent any other actions from happening
     private bool isReloading;
 
+
+    // Stores information about current ammunition in magazine
+    [HideInInspector]
+    public int numberBulletsInMag;
+
+
+
+    // Total number of bullets allowed for this weapon
+    [SerializeField]
+    public int totalBullets;
+
     /* This function adds a whole magazine of bullets to the gun, function can be found in pistol reload animation*/
     void add_magazine_bullet()
     {
-        currentAmmo = magazineSize;
+        // Calculate the remaining amount of bullets
+        totalBullets = numberBulletsInMag + totalBullets;
+
+        // If bullets left is lesser than magazine size
+        if (totalBullets <= magazineSize)
+        {
+            // Set magazine amount to amount of bullets left
+            numberBulletsInMag = totalBullets;
+
+            totalBullets = 0;
+        }
+        // Reload as per normal
+        else
+        {
+            // Set magazine amount to full
+            numberBulletsInMag = magazineSize;
+
+            totalBullets = totalBullets - magazineSize;
+        }
     }
 
     /* This function decrements the current ammo in magazine, function can be found in pistol firing animation*/
     void shoot_bullet()
     {
-        if (currentAmmo != 0)
+
+        // If magazine is not empty
+        if (numberBulletsInMag != 0)
         {
-            currentAmmo--;
+            // Remove 1 bullet from mag
+            numberBulletsInMag--;
 
             // Create bullet object
             Instantiate(bullet, bullet_spawner_object.transform.position, bullet_spawner_object.transform.rotation);
         }
-
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        // Set current ammo
-        currentAmmo = magazineSize;
+        // If number of bullets is lesser than magazine capacity
+        if (totalBullets <= magazineSize)
+        {
+
+            // Set current ammo
+            numberBulletsInMag = totalBullets;
+
+            totalBullets = 0;
+        }
+        else
+        {
+            // Set current ammo
+            numberBulletsInMag = magazineSize;
+
+            // Number of bullets in magazine
+            totalBullets = totalBullets - magazineSize;
+        }
 
         lastShotTime = 0f; // Initialize last shot time
 
@@ -74,20 +120,15 @@ public class automatic_rifle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("Current amount of bullets:" + currentAmmo);
+        Debug.Log("Total bullets in mag: " + numberBulletsInMag + "Total Bullets: " + totalBullets);
 
         // Enable shooting as weapon is not being reloaded
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
         {
             // Allow user to fire
             isReloading = false;
-        }
 
-        // Ensures that reload animation does not repeat twice
-        if (currentAmmo >= magazineSize)
-        {
             isReloading = false;
-            // Disable reload animation
             animator.SetBool("reload", false);
         }
 
@@ -99,7 +140,7 @@ public class automatic_rifle : MonoBehaviour
         }
 
         // Fire weapon
-        if (currentAmmo > 1 && Input.GetMouseButton(0) && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+        if (numberBulletsInMag > 1 && Input.GetMouseButton(0) && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
         {
             // Enable firing animation
             animator.SetBool("shoot", true);
@@ -114,7 +155,7 @@ public class automatic_rifle : MonoBehaviour
         }
 
         // Fire last shot
-        if (currentAmmo == 1 && Input.GetMouseButton(0) && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+        if (numberBulletsInMag == 1 && Input.GetMouseButton(0) && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
         {
             // Trigger firing animation
             animator.SetBool("last_shot", true);
@@ -123,10 +164,8 @@ public class automatic_rifle : MonoBehaviour
             lastShotTime = Time.time;
         }
 
-        if (currentAmmo < magazineSize && Input.GetKeyDown(KeyCode.R))
+        if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
         {
-            // Do not allow user to fire
-            isReloading = true;
 
             // Set load bullet to be true
             animator.SetBool("reload", true);

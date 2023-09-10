@@ -30,8 +30,9 @@ public class Pistol : MonoBehaviour
     // Stores the time where the last shot was taken
     private float lastShotTime;
 
-    // Stores information about current ammunition in magazine
-    private int numberBulletsInMag;
+    // Stores information about current ammunition in magazine\
+    [HideInInspector]
+    public int numberBulletsInMag;
 
     // If reloading, prevent any other actions from happening
     private bool isReloading;
