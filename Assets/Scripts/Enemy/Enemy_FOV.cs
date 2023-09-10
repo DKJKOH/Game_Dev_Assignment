@@ -56,7 +56,7 @@ public class Enemy_FOV : MonoBehaviour
 
     private void Update()
     {
-        if (targetsVisible.Count > 0)
+        if (targetsVisible.Count > 0 && transform.GetChild(0).gameObject.transform.childCount != 0)
         {
             for (int i = 0; i < targetsVisible.Count; i++)
             {
