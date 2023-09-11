@@ -24,6 +24,7 @@ public class grenade_throw : MonoBehaviour
         Destroy(gameObject);
     }
 
+
     void Start()
     {
         grenade = GetComponent<Rigidbody2D>();
@@ -46,6 +47,9 @@ public class grenade_throw : MonoBehaviour
 
             grenade.isKinematic = false; // Now, physics affect the grenade
 
+            // Get's hand forward direction (y axis) so that we can orient grenade throw in the correct direction
+            grenade.transform.up = transform.parent.up;
+
             transform.parent = null; // Detach grenade from its parent
 
             grenade.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
@@ -54,13 +58,12 @@ public class grenade_throw : MonoBehaviour
             grenade.AddForce(transform.up * throw_force * Time.deltaTime, ForceMode2D.Impulse);
         }
 
-        // Debug.Log("Time.time: " + Time.time);
-        // Debug.Log("Start.time: " + start_time);
-
         if (Time.time - start_time >= explosion_time && isStarted == true)
         {
+
             // Stop grenade's movement
             grenade.velocity = new Vector3(0, 0, 0);
+
             // Trigger explosion animation
             animator.SetTrigger("isExplode");
         }

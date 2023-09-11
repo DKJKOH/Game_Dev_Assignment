@@ -12,7 +12,8 @@ public class Pistol : MonoBehaviour
     // This part is for bullet spawn location, attach bullet spawner here
     GameObject bullet_spawner_object;
 
-    Animator animator;
+    [HideInInspector]
+    public Animator animator;
 
     // What kind of bullet would spawn
     [SerializeField]
@@ -29,11 +30,16 @@ public class Pistol : MonoBehaviour
     // Stores the time where the last shot was taken
     private float lastShotTime;
 
-    // Stores information about current ammunition in magazine
-    private int currentAmmo;
+    // Stores information about current ammunition in magazine\
+    [HideInInspector]
+    public int numberBulletsInMag;
 
     // If reloading, prevent any other actions from happening
     private bool isReloading;
+
+    // Total number of bullets allowed for this weapon
+    [SerializeField]
+    public int totalBullets;
 
     [SerializeField]
     public float reloadTime = 1;
@@ -41,15 +47,41 @@ public class Pistol : MonoBehaviour
     /* This function adds a whole magazine of bullets to the gun, function can be found in pistol reload animation*/
     void add_magazine_bullet()
     {
-        currentAmmo = magazineSize;
+
+        // Calculate the remaining amount of bullets
+        totalBullets = numberBulletsInMag + totalBullets;
+
+        // If bullets left is lesser than magazine size
+        if (totalBullets <= magazineSize)
+        {
+            // Set magazine amount to amount of bullets left
+            numberBulletsInMag = totalBullets;
+
+            totalBullets = 0;
+        }
+        // Reload as per normal
+        else
+        { 
+            // Set magazine amount to full
+            numberBulletsInMag = magazineSize;
+
+            totalBullets = totalBullets - magazineSize;
+        }
+
+        isReloading = false;
+        // Disable reload animation
+        animator.SetBool("reload", false);
+
     }
 
     /* This function decrements the current ammo in magazine, function can be found in pistol firing animation*/
     void shoot_bullet()
     {
-        if (currentAmmo != 0)
+        // If magazine is not empty
+        if (numberBulletsInMag != 0)
         {
-            currentAmmo--;
+            // Remove 1 bullet from mag
+            numberBulletsInMag--;
 
             // Create bullet object
             Instantiate(bullet, bullet_spawner_object.transform.position, bullet_spawner_object.transform.rotation);
@@ -58,14 +90,29 @@ public class Pistol : MonoBehaviour
     }
 
 
-
     // Start is called before the first frame update
     void Start()
     {
-        // Set current ammo
-        currentAmmo = magazineSize;
+        // If number of bullets is lesser than magazine capacity
+        if (totalBullets <= magazineSize)
+        {
 
-        lastShotTime = 0f; // Initialize last shot time
+            // Set current ammo
+            numberBulletsInMag = totalBullets;
+
+            totalBullets = 0;
+        }
+        else
+        {
+            // Set current ammo
+            numberBulletsInMag = magazineSize;
+
+            // Number of bullets in magazine
+            totalBullets = totalBullets - magazineSize;
+        }
+
+        // Initialize last shot time
+        lastShotTime = 0f;
 
         // Retrieve animator component for user
         animator = weapon.GetComponent<Animator>();
@@ -79,7 +126,7 @@ public class Pistol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Current amount of bullets:" + currentAmmo);
+        Debug.Log("Total bullets in mag: " + numberBulletsInMag + "Total Bullets: " + totalBullets);
 
         // Enable shooting is weapon is not being reloaded
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
@@ -88,16 +135,8 @@ public class Pistol : MonoBehaviour
             isReloading = false;
         }
 
-        // Ensures that reload animation does not repeat twice
-        if (currentAmmo >= magazineSize)
-        {
-            isReloading = false;
-            // Disable reload animation
-            animator.SetBool("reload", false);
-        }
-
         // Fire weapon
-        if (currentAmmo > 1 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+        if (numberBulletsInMag > 1 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
         {
             // Trigger firing animation
             animator.SetTrigger("shoot");
@@ -107,7 +146,7 @@ public class Pistol : MonoBehaviour
         }
 
         // Fire last shot
-        if (currentAmmo == 1 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+        if (numberBulletsInMag == 1 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
         {
 
             // Trigger firing animation
@@ -117,7 +156,7 @@ public class Pistol : MonoBehaviour
             lastShotTime = Time.time;
         }
 
-        if (currentAmmo < magazineSize && Input.GetKeyDown(KeyCode.R))
+        if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
         {
             // Do not allow user to fire
             isReloading = true;
@@ -126,4 +165,6 @@ public class Pistol : MonoBehaviour
             animator.SetBool("reload", true);
         }
     }
+
+
 }
