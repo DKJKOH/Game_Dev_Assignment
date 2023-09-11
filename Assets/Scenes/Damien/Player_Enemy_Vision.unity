@@ -5898,7 +5898,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3593064ae6ddc774781c85c1d4b725a1, type: 2}
+  - {fileID: 2100000, guid: 5c4197aef331d1d4faa4abd259666163, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27610,8 +27610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a311e11cc88e64d9ae6f9220535d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grenadeAnimator: {fileID: 0}
-  explosion_radius: 0
 --- !u!4 &904782978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6983519471736804472, guid: 7c82b44edcbe0294eb65be83557409de,
@@ -32229,7 +32227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1553290793
 MeshCollider:
   m_ObjectHideFlags: 0
