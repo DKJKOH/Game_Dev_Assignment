@@ -1,5 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine.SceneManagement;
+
 
 // The commented code below causes build errors (find alternative may to import UnityEditor.Animations)
 //using UnityEditor.Animations;
@@ -12,6 +15,8 @@ public class AutoEnemyCounter : MonoBehaviour
 {
     GameObject[] enemies;
     //public Text enemyCountText;
+    [SerializeField]
+    public GameObject ButtonToEnable;
 
     private int totalEnemies = 0;
     void Start()
@@ -19,6 +24,8 @@ public class AutoEnemyCounter : MonoBehaviour
         // To Find How Many Enemies are in the Level
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         totalEnemies = enemies.Length;
+        ButtonToEnable.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -36,20 +43,30 @@ public class AutoEnemyCounter : MonoBehaviour
             }
         }
 
+        int enemiesLeft = totalEnemies - enemyDeadCount;
+
         if (enemyDeadCount >= totalEnemies)
         {
-            Debug.Log("All enemies dead! You win!");
+            enemiesLeft = totalEnemies - enemyDeadCount;
 
             gameObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.nearClipPlane + 1));
 
-            gameObject.GetComponent<TextMesh>().text = "You Win!";
+            gameObject.GetComponent<TextMeshProUGUI>().text = "All Enemies Dead!";
+            // All enemies are dead, enable the button and allow scene transition
+            ButtonToEnable.SetActive(true);
+
         }
         else
         {
-            gameObject.GetComponent<TextMesh>().text = "";
+            gameObject.GetComponent<TextMeshProUGUI>().text = "Enemies left: " + enemiesLeft;
         }
 
         Debug.Log("Enemies Left : " + enemies.Length);
-        //enemyCountText.text = "Enemies Left : " + enemies.Length.ToString();
+    }
+
+      public void NextScene()
+    {
+        // To load the next active stage
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
