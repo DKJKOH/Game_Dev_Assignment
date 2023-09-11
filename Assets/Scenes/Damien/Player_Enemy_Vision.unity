@@ -27450,7 +27450,7 @@ GameObject:
   - component: {fileID: 892711301}
   m_Layer: 0
   m_Name: ExplosiveBarrel
-  m_TagString: grenade
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27591,7 +27591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892711299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.32, y: 5.36, z: -3.9604945}
+  m_LocalPosition: {x: -6.39, y: 5.36, z: -3.9604945}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 150238310}
