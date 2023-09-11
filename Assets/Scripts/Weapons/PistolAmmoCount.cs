@@ -8,20 +8,20 @@ public class PistolAmmoCount : MonoBehaviour
 
     private int totalBullets;
     private int numberBulletsInMag;
+
     // Start is called before the first frame update
     void Start()
     {
         // Get bullet in magazine information and stuff
         totalBullets = currentPistolScript.totalBullets;
         numberBulletsInMag = currentPistolScript.numberBulletsInMag;
-
-
     }
 
 
     // Update is called once per frame
     void Update()
     {
+
         gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         // Get bullet in magazine information and stuff
         totalBullets = currentPistolScript.totalBullets;
