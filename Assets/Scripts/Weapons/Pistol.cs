@@ -45,7 +45,7 @@ public class Pistol : MonoBehaviour
     public float reloadTime = 1;
 
     // Gun sounds
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     [SerializeField]
     public AudioClip shoot_sound;
 

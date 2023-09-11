@@ -32,7 +32,7 @@ public class barrel : MonoBehaviour
         if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Done"))
         {
             // Destroy itself
-            Destroy(gameObject);
+            Destroy(gameObject, grenade_explode_sound.length);
         }
     }
 

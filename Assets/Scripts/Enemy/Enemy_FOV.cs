@@ -26,6 +26,11 @@ public class Enemy_FOV : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask ObstacleMask;
 
+    private Transform transform_target;
+    private Vector3 directionToTarget;
+    private Vector3 weaponDirectionToTarget;
+
+
     // Lists which contains current visible targets from current object
     [HideInInspector]
     public List<Transform> targetsVisible = new List<Transform>();
@@ -55,18 +60,18 @@ public class Enemy_FOV : MonoBehaviour
     }
 
     private void Update()
-    {
-        if (targetsVisible.Count > 0 && transform.GetChild(0).gameObject.transform.childCount != 0)
+    {        
+
+        if (transform.GetChild(0).gameObject.transform.childCount > 0 && targetsVisible.Count > 0)
         {
             for (int i = 0; i < targetsVisible.Count; i++)
             {
                 // Get the player's current position
-                Transform transform_target = targetsVisible[i];
+                transform_target = targetsVisible[i];
 
                 // Retrieve the normalized vector (Direction) from enemy to player no
-                Vector3 directionToTarget = (transform_target.position - transform.position).normalized;
-                Vector3 weaponDirectionToTarget = (transform_target.position - gun.transform.position).normalized;
-
+                directionToTarget = (transform_target.position - transform.position).normalized;
+                weaponDirectionToTarget = (transform_target.position - gun.transform.position).normalized;
 
                 // Calculate the angle to rotate the enemy towards the seen player
                 float rotationAngle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg - 90f;
@@ -93,13 +98,13 @@ public class Enemy_FOV : MonoBehaviour
                         // Animate firing
                         pistol_controller.GetComponent<Animator>().SetTrigger("shoot");
 
-
                         // Save the last shot time
                         lastShotTime = Time.time;
                     }
                 }
             }
         }
+        
     }
 
     /* Function which finds targets in current object's view cone */

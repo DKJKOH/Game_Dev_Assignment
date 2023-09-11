@@ -57,14 +57,17 @@ public class grenade_throw : MonoBehaviour
 
     void Update()
     {
-        
-        if (grenade.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Done"))
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("grenade_ani"))
         {
-            grenade_remove();
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+
+            Destroy(gameObject, grenade_explode_sound.length);
         }
 
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && transform.parent != null)
         {
             // Grenade throwing process started
             isStarted = true;
@@ -86,11 +89,20 @@ public class grenade_throw : MonoBehaviour
         if (Time.time - start_time >= explosion_time && isStarted == true)
         {
 
+            
+
             // Stop grenade's movement
             grenade.velocity = new Vector3(0, 0, 0);
 
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+
             // Trigger explosion animation
             animator.SetTrigger("isExplode");
+
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+
+            
+
         }
     }
 }

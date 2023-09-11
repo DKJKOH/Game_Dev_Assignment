@@ -14,15 +14,12 @@ public class shotgunAmmoCount : MonoBehaviour
         // Get bullet in magazine information and stuff
         totalBullets = currentShotgunScript.totalBullets;
         numberBulletsInMag = currentShotgunScript.numberBulletsInMag;
-
-
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         // Get bullet in magazine information and stuff
         totalBullets = currentShotgunScript.totalBullets;
         numberBulletsInMag = currentShotgunScript.numberBulletsInMag;
