@@ -44,6 +44,11 @@ public class Pistol : MonoBehaviour
     [SerializeField]
     public float reloadTime = 1;
 
+    // Gun sounds
+    private AudioSource audioSource;
+    [SerializeField]
+    public AudioClip shoot_sound;
+
     /* This function adds a whole magazine of bullets to the gun, function can be found in pistol reload animation*/
     void add_magazine_bullet()
     {
@@ -93,6 +98,9 @@ public class Pistol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Find audio listener
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         // If number of bullets is lesser than magazine capacity
         if (totalBullets <= magazineSize)
         {
@@ -141,6 +149,8 @@ public class Pistol : MonoBehaviour
             // Trigger firing animation
             animator.SetTrigger("shoot");
 
+            audioSource.PlayOneShot(shoot_sound);
+
             // Save the last shot time
             lastShotTime = Time.time;
         }
@@ -151,6 +161,8 @@ public class Pistol : MonoBehaviour
 
             // Trigger firing animation
             animator.SetTrigger("last_shot");
+
+            audioSource.PlayOneShot(shoot_sound);
 
             // Save the last shot time
             lastShotTime = Time.time;

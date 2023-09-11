@@ -290,6 +290,7 @@ MonoBehaviour:
   numberBulletsInMag: 0
   totalBullets: 15
   reloadTime: 1
+  shoot_sound: {fileID: 0}
 --- !u!95 &21918774
 Animator:
   serializedVersion: 3
@@ -5898,7 +5899,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3593064ae6ddc774781c85c1d4b725a1, type: 2}
+  - {fileID: 2100000, guid: 5c4197aef331d1d4faa4abd259666163, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27450,7 +27451,7 @@ GameObject:
   - component: {fileID: 892711301}
   m_Layer: 0
   m_Name: ExplosiveBarrel
-  m_TagString: Untagged
+  m_TagString: explosive_barrel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27591,12 +27592,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892711299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.39, y: 5.36, z: -3.9604945}
+  m_LocalPosition: {x: -10.39, y: 5.31, z: -3.9604945}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 150238310}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &892711306
 MonoBehaviour:
@@ -27610,8 +27611,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a311e11cc88e64d9ae6f9220535d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grenadeAnimator: {fileID: 0}
-  explosion_radius: 0
 --- !u!4 &904782978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6983519471736804472, guid: 7c82b44edcbe0294eb65be83557409de,
@@ -28192,6 +28191,7 @@ GameObject:
   - component: {fileID: 943741868}
   - component: {fileID: 943741867}
   - component: {fileID: 943741866}
+  - component: {fileID: 943741869}
   m_Layer: 0
   m_Name: Weapon_Object
   m_TagString: gun
@@ -28238,6 +28238,7 @@ MonoBehaviour:
   numberBulletsInMag: 0
   totalBullets: 15
   reloadTime: 1
+  shoot_sound: {fileID: 8300000, guid: 305c9c1af316ab44ba6396cf5aec5b82, type: 3}
 --- !u!95 &943741867
 Animator:
   serializedVersion: 3
@@ -28308,6 +28309,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &943741869
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943741864}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &949901021
 GameObject:
   m_ObjectHideFlags: 0
@@ -29336,6 +29433,7 @@ MonoBehaviour:
   numberBulletsInMag: 0
   totalBullets: 15
   reloadTime: 1
+  shoot_sound: {fileID: 0}
 --- !u!95 &1172160265
 Animator:
   serializedVersion: 3
@@ -37005,13 +37103,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990915997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.47, y: 5.22, z: 0}
+  m_LocalPosition: {x: -4.57, y: 4.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 849824731}
   - {fileID: 943741865}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1993785945
 GameObject:
@@ -41133,6 +41231,7 @@ MonoBehaviour:
   numberBulletsInMag: 0
   totalBullets: 0
   reloadTime: 1
+  shoot_sound: {fileID: 0}
 --- !u!4 &2084432776
 Transform:
   m_ObjectHideFlags: 0
