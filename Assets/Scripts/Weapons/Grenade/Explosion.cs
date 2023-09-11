@@ -16,9 +16,23 @@ public class Explosion : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, explosion_radius);
     }
 
+
+    // This function removes grenade, will be executed on end of grenade explosion animation, can be found under grenade_ani in animations
+    void grenade_remove()
+    {
+        // Destroy the grenade game object
+        Destroy(gameObject);
+    }
+
+
     // Update is called once per frame
     void Update()
     {
+        if (grenadeAnimator.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Done"))
+        {
+            Destroy(gameObject.transform.parent.gameObject);
+        }
+
         // If grenade is currently exploding
         if (!grenadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("grenade_idle"))
         {

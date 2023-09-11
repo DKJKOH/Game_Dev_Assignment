@@ -48,7 +48,7 @@ public class bullet_collision : MonoBehaviour
         if (hitObject.tag == "grenade" || hitObject.tag == "explosive_barrel")
         {
             // Grenade explodes
-            hitObject.GetComponent<Animator>().SetTrigger("isExplode");          
+            hitObject.GetComponent<Animator>().SetTrigger("isExplode");
         }
 
 
