@@ -729,7 +729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 5066000850023589950}
   pistol_controller: {fileID: 5066000850354717955}
-  viewRadius: 3.38
+  viewRadius: 5
   bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   viewAngle: 64.85
   targetMask:

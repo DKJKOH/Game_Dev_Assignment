@@ -167,7 +167,9 @@ public class pickup_throw : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
         if ((collision.gameObject.CompareTag("gun")|| collision.gameObject.CompareTag("grabbable") || collision.gameObject.CompareTag("grenade")) && !holdingGun && Hand.transform.childCount < 1)
-        {
+        {   
+            Debug.Log("apple");
+            
             // Retrieve details for weapon to pickup
             weapon_to_pickup = collision.gameObject;
 
