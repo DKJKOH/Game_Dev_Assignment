@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: c3cba788c0900d24ab9bc741b5126e22
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Damien/Fabian_Player_Enemy_Vision copy.unity
     guid: 51cc7246de1c34d0f8d190a33db4357d
   - enabled: 1
     path: Assets/Scenes/Damien/Player_Enemy_Vision.unity
     guid: b5281e19bf2465c47b444c60bb37dc3f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Damien/Tutorial room edited (Damien).unity
     guid: 15927847fc16efe4aa53068b05ba358f
   m_configObjects: {}
