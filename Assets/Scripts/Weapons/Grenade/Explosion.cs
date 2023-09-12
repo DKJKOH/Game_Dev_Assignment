@@ -28,18 +28,20 @@ public class Explosion : MonoBehaviour
         {
             // Get all objects hit by the circle2d collider
             Collider2D[] enemyHit = Physics2D.OverlapCircleAll(transform.position, explosion_radius);
+            Debug.Log(enemyHit.Length);
 
             // Iterate through all collisions 
             foreach (Collider2D col in enemyHit)
-            {                       
-                // If the grenade hits enemy
-                if (col.attachedRigidbody.tag == "Enemy")
+            {    
+                if (col.tag == "Enemy")
                 {
                     // Start enemy death animation
                     col.gameObject.GetComponent<Animator>().SetTrigger("die");
-
+                    
+                    // If the grenade hits enemy
                     col.gameObject.GetComponent<Enemy_FOV>().enabled = false;
-                }
+                }             
+
             }
         }
     }
