@@ -44,6 +44,73 @@ public class Pistol : MonoBehaviour
     [SerializeField]
     public float reloadTime = 1;
 
+    // Gun sounds
+    public AudioSource audioSource;
+    [SerializeField]
+    public AudioClip shoot_sound;
+
+    [SerializeField]
+    public AudioClip release_slide_sound;
+
+    [SerializeField]
+    public AudioClip load_magazine_sound;
+
+    [SerializeField]
+    public AudioClip unload_magazine_sound;
+
+    [SerializeField]
+    public AudioClip drop_magazine_sound;
+
+    [SerializeField]
+    public AudioClip shell_eject_sound;
+
+    [SerializeField]
+    public AudioClip shell_bounce_sound;
+
+    [SerializeField]
+    public AudioClip dry_fire_sound;
+
+    // Sound functions (Used in animation)
+    void fire_sound()
+    {
+        audioSource.PlayOneShot(shoot_sound);
+    }
+
+    void Release_slide_sound()
+    {
+        audioSource.PlayOneShot(release_slide_sound);
+    }
+
+    void Load_magazine_sound()
+    {
+        audioSource.PlayOneShot(load_magazine_sound);
+    }
+
+    void Unload_magazine_sound()
+    {
+        audioSource.PlayOneShot(unload_magazine_sound);
+    }
+
+    void Drop_magazine_sound()
+    {
+        audioSource.PlayOneShot(drop_magazine_sound);
+    }
+
+    void Shell_eject_sound()
+    {
+        audioSource.PlayOneShot(shell_eject_sound);
+    }
+
+    void Shell_bounce_sound()
+    {
+        audioSource.PlayOneShot(shell_bounce_sound);
+    }
+
+    void Dry_fire_sound()
+    {
+        audioSource.PlayOneShot(dry_fire_sound);
+    }
+
     /* This function adds a whole magazine of bullets to the gun, function can be found in pistol reload animation*/
     void add_magazine_bullet()
     {
@@ -93,6 +160,9 @@ public class Pistol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Find audio listener
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         // If number of bullets is lesser than magazine capacity
         if (totalBullets <= magazineSize)
         {
@@ -126,13 +196,18 @@ public class Pistol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Total bullets in mag: " + numberBulletsInMag + "Total Bullets: " + totalBullets);
-
         // Enable shooting is weapon is not being reloaded
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
         {
             // Allow user to fire
             isReloading = false;
+        }
+
+        // Sound cue for empty mag (if fire is pressed)
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("empty") && Input.GetButtonDown("Fire1"))
+        {
+            // Start dry fire sound
+            Dry_fire_sound();
         }
 
         // Fire weapon

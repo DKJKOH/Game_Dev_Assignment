@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking.Types;
 using UnityEngine.UIElements;
 
 public class Explosion : MonoBehaviour
 {
     [SerializeField]
     Animator grenadeAnimator;
+
+    public AudioClip grenade_explode_sound;
 
     public float explosion_radius;
     // This portion is to show the explosion radius (So that we can see what is happening)
@@ -18,7 +21,8 @@ public class Explosion : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+
         // If grenade is currently exploding
         if (!grenadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("grenade_idle"))
         {

@@ -6,11 +6,23 @@ public class Enemy_Death : MonoBehaviour
 {
     private GameObject hand;
 
+    // Enemy Death Sounds here!
+    private AudioSource audioSource;
+
+    [SerializeField]
+    public AudioClip enemy_uhh_dead_sound;
+
+    public void Enemy_uhh_dead_sound()
+    {
+        audioSource.PlayOneShot(enemy_uhh_dead_sound);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         hand = transform.GetChild(0).gameObject;
+
+        audioSource = gameObject.GetComponent<AudioSource>();   
     }
 
     // Update is called once per frame
