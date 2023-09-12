@@ -5,16 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/MainMenu.unity
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/MainMenu.unity
     guid: c3cba788c0900d24ab9bc741b5126e22
-  - enabled: 0
-    path: Assets/Scenes/Damien/Fabian_Player_Enemy_Vision copy.unity
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/GameOverTutorial.unity
+    guid: 23094ab0a2165284a9f31f9ad502d35a
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/GameOverMain.unity
+    guid: 8a64401dbf81545e396c9dee6610bac2
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/Final Map v3 (New Save).unity
+    guid: 4aeb4995fd1b2f246a37bed63aea311e
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/TutorialLevel.unity
     guid: 51cc7246de1c34d0f8d190a33db4357d
   - enabled: 1
-    path: Assets/Scenes/Damien/Player_Enemy_Vision.unity
-    guid: b5281e19bf2465c47b444c60bb37dc3f
-  - enabled: 0
-    path: Assets/Scenes/Damien/Tutorial room edited (Damien).unity
-    guid: 15927847fc16efe4aa53068b05ba358f
+    path: Assets/Scenes/FinalScenes/VictoryScreen.unity
+    guid: 0d0dd292a2d614f01a6cdf6812d0a5bd
   m_configObjects: {}

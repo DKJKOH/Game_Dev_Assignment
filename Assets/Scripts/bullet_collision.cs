@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bullet_collision : MonoBehaviour
 {
+    Scene scene;
     // Start is called before the first frame update
     void Start()
     {
-        
+        scene = SceneManager.GetActiveScene();
     }
 
     // Update is called once per frame
@@ -21,8 +23,6 @@ public class bullet_collision : MonoBehaviour
     {
         // This is the game object that is hit by the bullet
         GameObject hitObject = collision.gameObject;
-
-        Debug.Log(hitObject.name);
 
         // If bullet hits enemy
         if (hitObject.tag == "Enemy")
@@ -38,9 +38,31 @@ public class bullet_collision : MonoBehaviour
         }
 
         // If bullet hits gun
-        if (hitObject.tag == "gun")
+        if (hitObject.tag == "Person")
         {
-            // Destroy gun
+
+            // Pause game
+            Time.timeScale = 0f;
+
+            if( scene.name == "TutorialLevel")
+            {
+
+                // Link the gameover scene 
+                SceneManager.LoadScene("GameOverTutorial");
+            }
+            else
+            {
+                 // Link the gameover scene 
+                SceneManager.LoadScene("GameOverMain");
+            }
+
+           
+
+        }
+
+        if(hitObject.tag == "gun")
+        {
+             // Destroy gun
             Destroy(hitObject);
         }
 
@@ -50,8 +72,6 @@ public class bullet_collision : MonoBehaviour
             // Grenade explodes
             hitObject.GetComponent<Animator>().SetTrigger("isExplode");
         }
-
-
 
         // Destroy self (aka bullet)
         Destroy(transform.gameObject);
