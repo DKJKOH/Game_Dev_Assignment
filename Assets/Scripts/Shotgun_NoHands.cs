@@ -60,9 +60,67 @@ public class Shotgun_NoHands : MonoBehaviour
     public int totalBullets;
 
 
+    // Shotgun sound stuff
+    // Gun sounds
+    private AudioSource audioSource;
+
+    [SerializeField]
+    public AudioClip shoot_sound;
+
+    [SerializeField]
+    public AudioClip insert_shell_sound;
+
+
+    [SerializeField]
+    public AudioClip pump_back_sound;
+
+    [SerializeField]
+    public AudioClip pump_forward_sound;
+
+    [SerializeField]
+    public AudioClip shell_drop_sound;
+
+    [SerializeField]
+    public AudioClip dry_fire_sound;
+
+
+    void Shoot_sound()
+    {
+        audioSource.PlayOneShot(shoot_sound);
+    }
+
+    void Insert_shell_sound()
+    {
+        audioSource.PlayOneShot(insert_shell_sound);
+    }
+    void Pump_back_sound()
+    {
+        audioSource.PlayOneShot(pump_back_sound);
+    }
+    void Pump_forward_sound()
+    {
+        audioSource.PlayOneShot(pump_forward_sound);
+    }
+
+    void Shell_drop_sound()
+    {
+        audioSource.PlayOneShot(shell_drop_sound);
+    }
+
+    void Dry_fire_sound()
+    {
+        audioSource.PlayOneShot(dry_fire_sound);
+    }
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+
+        // Find audio listener (for weapon sounds)
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         // If number of bullets is lesser than magazine capacity
         if (totalBullets <= magazineSize)
         {
@@ -94,21 +152,22 @@ public class Shotgun_NoHands : MonoBehaviour
     // Function is being used in animation clip for shotgun (Reload_Bullet_Shotgun) clip
     void add_bullet()
     {
-        //if (numberBulletsInMag <= magazineSize && totalBullets > 0)
-        //{
-            // Minus total ammo
-            totalBullets--;
-            // Add number of bullets
-            numberBulletsInMag++;
-        //}
-
+        // Minus total ammo
+        totalBullets--;
+        // Add number of bullets
+        numberBulletsInMag++;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // For ammo count debugging
-        Debug.Log("Total bullets in mag: " + numberBulletsInMag + "Total Bullets: " + totalBullets);
+
+        // Sound cue for no bullets in magazine
+        if (numberBulletsInMag <= 0 && Input.GetButtonDown("Fire1") && !isReloading)
+        {
+            // Start dry fire sound
+            Dry_fire_sound();
+        }
 
 
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("insert_bullet"))
@@ -120,7 +179,7 @@ public class Shotgun_NoHands : MonoBehaviour
             isReloading = false;
         }
 
-        if (numberBulletsInMag == 0 && totalBullets > 0)
+        if (numberBulletsInMag == 0 && totalBullets > 0 && Input.GetKeyDown(KeyCode.R))
         {
             // Animation purposes where you would need to pump shotgun to load round into chamber
             pumpShotgun = true;
@@ -155,10 +214,19 @@ public class Shotgun_NoHands : MonoBehaviour
 
 
         // If user presses fire during reload animation
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && isReloading)
         {
             // Stop reload coroutine
             animator.SetBool("load_slug", false);
+
+            if (pumpShotgun)
+            {
+                // Prevent pump shotgun from happening again
+                pumpShotgun = false;
+
+                // Trigger Insert_Last_bullet
+                animator.SetTrigger("load_last_bullet");
+            }
         }
 
         // If there are bullets in magazine and user fires

@@ -9,24 +9,12 @@ public class PauseMenu : MonoBehaviour
 	[SerializeField]
 	GameObject pauseMenuUI;
 
-	private bool isPaused = false; // Track whether the game is paused.
+	public bool isPaused = false; // Track whether the game is paused.
 
     // Add this Update method to check for the Escape key press.
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-        	Debug.Log("Escape pressed");
-        	
-            if (isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
-        }
+   
     }  
 
     // Function to pause the game

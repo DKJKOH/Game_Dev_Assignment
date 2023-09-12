@@ -12,6 +12,7 @@ TagManager:
   - flamethrower
   - Enemy
   - grenade
+  - explosive_barrel
   layers:
   - Default
   - TransparentFX

@@ -10,7 +10,8 @@ public class bullet_spawn : MonoBehaviour
 
     // Sound effect of the gunshot
     private AudioSource audioSource;
-    public AudioClip gunshotSound;
+    [SerializeField]
+    public AudioClip shootSound;
 
 
     // Amount of bullets available in the weapon
@@ -45,7 +46,7 @@ public class bullet_spawn : MonoBehaviour
         {
             //Create bullet object
             Instantiate(bullet, transform.position, transform.rotation);
-            audioSource.PlayOneShot(gunshotSound);
+            audioSource.PlayOneShot(shootSound);
             currentAmmo--;
 
             // Save the last shot time
@@ -60,7 +61,7 @@ public class bullet_spawn : MonoBehaviour
                 //Create bullet object
                 Instantiate(bullet, transform.position, transform.rotation);
                 Debug.Log("Playing gunshot sound!");
-                audioSource.PlayOneShot(gunshotSound);
+                audioSource.PlayOneShot(shootSound);
 
                 // Deduct ammo
                 currentAmmo--;

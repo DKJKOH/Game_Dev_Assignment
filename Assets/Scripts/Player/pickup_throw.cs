@@ -5,6 +5,17 @@ using UnityEngine;
 
 public class pickup_throw : MonoBehaviour
 {
+    // Gun Sounds here!
+    private AudioSource audioSource;
+
+    [SerializeField]
+    public AudioClip drop_weapon_sound;
+
+    [SerializeField]
+    public AudioClip pickup_weapon_sound;
+
+
+
     [SerializeField] GameObject Pickup_text;
     [SerializeField] GameObject Drop_text;
 
@@ -13,9 +24,26 @@ public class pickup_throw : MonoBehaviour
     GameObject weapon_to_pickup;
 
     bool holdingGun;
+
+
+
+    void Drop_weapon_sound()
+    {
+        audioSource.PlayOneShot(drop_weapon_sound);
+    }
+    void Pickup_weapon_sound()
+    {
+        audioSource.PlayOneShot(pickup_weapon_sound);
+    }
+
     void Start()
     {
+        // Get audio source
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         holdingGun = false;
+
+
     }
 
     void weaponDisable(Transform weapon_object, bool isDisable)
@@ -68,11 +96,16 @@ public class pickup_throw : MonoBehaviour
             // If user presses q (To drop item in hand)
             if (Input.GetKey("q"))
             {
+
+                // Drop weapon sound
+                audioSource.PlayOneShot(drop_weapon_sound);
+
                 // Disable ammo count text for weapons held by player
                 if (item_on_hand.name == "Pistol" || item_on_hand.name == "M4 Carbine" || item_on_hand.name == "Kar98K" || item_on_hand.name == "Shotgun")
                 {
                     // Disable text object
                     item_on_hand.transform.GetChild(0).gameObject.SetActive(false);
+
                 }
 
 
@@ -156,6 +189,9 @@ public class pickup_throw : MonoBehaviour
 
             if (Input.GetKey("e"))
             {
+
+                audioSource.PlayOneShot(pickup_weapon_sound);
+
                 // If is pistol
                 if (weapon_to_pickup.name == "Pistol" || weapon_to_pickup.name == "M4 Carbine" || weapon_to_pickup.name == "Kar98K" || weapon_to_pickup.name == "Shotgun")
                 {

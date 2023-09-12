@@ -46,16 +46,76 @@ public class kar98k : MonoBehaviour
     [SerializeField]
     public int totalBullets;
 
+
+    // Gun Sounds here!
+    private AudioSource audioSource;
+
+    [SerializeField]
+    public AudioClip shoot_sound;
+
+    [SerializeField]
+    public AudioClip open_bolt_sound;
+
+    [SerializeField]
+    public AudioClip close_bolt_sound;
+
+    [SerializeField]
+    public AudioClip load_bullet_sound;
+
+    [SerializeField]
+    public AudioClip load_clip_sound;
+
+    [SerializeField]
+    public AudioClip reload_stripper_drop_sound;
+
+    [SerializeField]
+    public AudioClip dry_fire_sound;
+
+    [SerializeField]
+    public AudioClip shell_casing_sound;
+
+    void Shoot_sound()
+    {
+        audioSource.PlayOneShot(shoot_sound);
+    }
+    void Open_bolt_sound()
+    {
+        audioSource.PlayOneShot(open_bolt_sound);
+    }
+    void Close_bolt_sound()
+    {
+        audioSource.PlayOneShot(close_bolt_sound);
+    }
+    void Load_bullet_sound()
+    {
+        audioSource.PlayOneShot(load_bullet_sound);
+    }
+    void Load_clip_sound()
+    {
+        audioSource.PlayOneShot(load_clip_sound);
+    }
+
+    void Reload_stripper_drop_sound()
+    {
+        audioSource.PlayOneShot(reload_stripper_drop_sound);
+    }
+    void Dry_fire_sound()
+    {
+        audioSource.PlayOneShot(dry_fire_sound);
+    }
+
+    void Shell_casing_sound()
+    {
+        audioSource.PlayOneShot(shell_casing_sound);
+    }
+
     void add_bullet()
     {
-        //// If there is ammo and magazine is not full
-        //if (totalBullets > 0 && numberBulletsInMag <= magazineSize)
-        //{
         // Minus total ammo
         totalBullets--;
-            // Add number of bullets
+
+        // Add number of bullets
         numberBulletsInMag++;
-        //}
     }
 
     void add_magazine_bullet()
@@ -70,6 +130,10 @@ public class kar98k : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Find audio listener
+        audioSource = gameObject.GetComponent<AudioSource>();
+
+
         // If number of bullets is lesser than magazine capacity
         if (totalBullets <= magazineSize)
         {
@@ -88,9 +152,6 @@ public class kar98k : MonoBehaviour
             totalBullets = totalBullets - magazineSize;
         }
 
-        // Set current ammo
-        //totalBullets = magazineSize;
-
         lastShotTime = 0f; // Initialize last shot time
         animator = weapon.GetComponent<Animator>();
 
@@ -105,7 +166,13 @@ public class kar98k : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Total bullets in mag: " + numberBulletsInMag + "Total Bullets: " + totalBullets);
+        // This portion is to stop reloading animation
+        if (Input.GetButtonDown("Fire1") && numberBulletsInMag <= 0 && !isReloading)
+        {
+            // Start dry fire sound
+            Dry_fire_sound();
+        }
+
 
         // Disable 
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
@@ -128,6 +195,8 @@ public class kar98k : MonoBehaviour
             animator.SetBool("load_bullet", false);
         }
 
+
+
         // If user fires (magazine is not empty)
         if (numberBulletsInMag > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
         {
@@ -145,29 +214,30 @@ public class kar98k : MonoBehaviour
             numberBulletsInMag--;
         }
 
-        if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
         {
-            // Do not allow user to fire
-            isReloading = true;
+            // If user runs out of bullet (and has enough ammunition to reload a magazine)
+            if (numberBulletsInMag == 0 && totalBullets >= magazineSize)
+            {
+                // Do not allow user to fire
+                isReloading = true;
 
-            // Set load bullet to be true
-            animator.SetBool("load_bullet", true);
+                // Trigger load clip animation
+                animator.SetBool("load_clip", true);
+            }
+
+            else
+            {
+                // Do not allow user to fire
+                isReloading = true;
+
+                // Set load bullet to be true
+                animator.SetBool("load_bullet", true);
+            }
         }
 
-        // If user runs out of bullet (and has enough ammunition to reload a magazine)
-        if (numberBulletsInMag == 0 && totalBullets >= magazineSize)
-        {
-            // Trigger load clip animation
-            animator.SetBool("load_clip", true);
-        }
-        else if (numberBulletsInMag == 0 && totalBullets < magazineSize)
-        {
-            // Do not allow user to fire
-            isReloading = true;
 
-            // Set load bullet to be true
-            animator.SetBool("load_bullet", true);
-        }
+
 
 
         // If maximum amount of ammo in magazine size reached

@@ -10,20 +10,35 @@ public class grenade_throw : MonoBehaviour
     private Rigidbody2D grenade;
     Animator animator;
 
-    private float start_time;
+    public float start_time;
     private bool isStarted;
 
     // Time before grenade explodes
     [SerializeField]
-    float explosion_time = 1;
+    float explosion_time = 2;
+
+    // Grenade sounds
+    [HideInInspector]
+    public AudioSource audioSource;
+    [SerializeField]
+    public AudioClip grenade_explode_sound;
+
+    // Sound functions (Used in animation)
+    public void Grenade_explode_sound()
+    {
+
+        // Find audio listener
+        AudioSource audioSource = gameObject.GetComponent<AudioSource>();
+        // BOOM BOOM SOUND
+        audioSource.PlayOneShot(grenade_explode_sound);
+    }
 
     // This function removes grenade, will be executed on end of grenade explosion animation, can be found under grenade_ani in animations
     void grenade_remove()
     {
-        // Destroy the grenade game object
-        Destroy(gameObject);
+            // Destroy the grenade game object
+            Destroy(gameObject);
     }
-
 
     void Start()
     {
@@ -34,12 +49,32 @@ public class grenade_throw : MonoBehaviour
         // Grenade hasn't been thrown yet
         isStarted = false;
 
-        grenade.transform.rotation = transform.parent.rotation;
+
+        if (transform.parent != null)
+        {
+            grenade.transform.rotation = transform.parent.rotation;
+        }
+
+        
+
+        // Find audio listener
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
+        {
+            Debug.Log("Destroyed");
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+
+            Destroy(gameObject, grenade_explode_sound.length);
+        }
+
+
+        if (Input.GetMouseButtonDown(0) && transform.parent != null)
         {
             // Grenade throwing process started
             isStarted = true;
@@ -61,11 +96,20 @@ public class grenade_throw : MonoBehaviour
         if (Time.time - start_time >= explosion_time && isStarted == true)
         {
 
+            
+
             // Stop grenade's movement
             grenade.velocity = new Vector3(0, 0, 0);
 
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+
             // Trigger explosion animation
             animator.SetTrigger("isExplode");
+
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+
+            
+
         }
     }
 }
