@@ -9,11 +9,19 @@ public class GameOver : MonoBehaviour
     
 
     // Restart Button
-    public void RestartButton() {
+    public void RestartButtonTutorial() {
         //Reload the same level
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("TutorialLevel");
+        Time.timeScale = 1f;
+
     }
 
+    public void RestartButtonMain() {
+        //Reload the same level
+        SceneManager.LoadScene("Final Map v3 (New Save)");
+        Time.timeScale = 1f;
+
+    }
     // Return Main Menu Button
     public void MainMenu(){
         // Loading of scene to main menu

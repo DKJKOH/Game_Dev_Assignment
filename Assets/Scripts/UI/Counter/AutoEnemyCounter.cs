@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 
 // The commented code below causes build errors (find alternative may to import UnityEditor.Animations)
@@ -15,8 +14,8 @@ public class AutoEnemyCounter : MonoBehaviour
 {
     GameObject[] enemies;
     //public Text enemyCountText;
-    [SerializeField]
-    public GameObject ButtonToEnable;
+    //[SerializeField]
+    //public GameObject ButtonToEnable;
 
     private int totalEnemies = 0;
     void Start()
@@ -24,7 +23,7 @@ public class AutoEnemyCounter : MonoBehaviour
         // To Find How Many Enemies are in the Level
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         totalEnemies = enemies.Length;
-        ButtonToEnable.SetActive(false);
+        //ButtonToEnable.SetActive(false);
 
     }
 
@@ -53,20 +52,14 @@ public class AutoEnemyCounter : MonoBehaviour
 
             gameObject.GetComponent<TextMeshProUGUI>().text = "All Enemies Dead!";
             // All enemies are dead, enable the button and allow scene transition
-            ButtonToEnable.SetActive(true);
+            gameObject.SetActive(true);
 
         }
         else
         {
             gameObject.GetComponent<TextMeshProUGUI>().text = "Enemies left: " + enemiesLeft;
+            gameObject.SetActive(true);
         }
 
-        Debug.Log("Enemies Left : " + enemies.Length);
-    }
-
-      public void NextScene()
-    {
-        // To load the next active stage
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
