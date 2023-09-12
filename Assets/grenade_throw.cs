@@ -49,7 +49,13 @@ public class grenade_throw : MonoBehaviour
         // Grenade hasn't been thrown yet
         isStarted = false;
 
-        grenade.transform.rotation = transform.parent.rotation;
+
+        if (transform.parent != null)
+        {
+            grenade.transform.rotation = transform.parent.rotation;
+        }
+
+        
 
         // Find audio listener
         audioSource = gameObject.GetComponent<AudioSource>();
@@ -58,8 +64,9 @@ public class grenade_throw : MonoBehaviour
     void Update()
     {
 
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("grenade_ani"))
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
         {
+            Debug.Log("Destroyed");
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
 
