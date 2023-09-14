@@ -27,12 +27,14 @@ public class player_animation : MonoBehaviour
             // If condition to run
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
+                hand.SetActive(false);
                 // Set running to true
                 player_animator_controller.SetBool("running", true);
                 player_animator_controller.SetBool("walking", false);
             }
             else
             {
+                hand.SetActive(true);
                 // Set walking to true
                 player_animator_controller.SetBool("walking", true);
                 player_animator_controller.SetBool("running", false);
@@ -40,6 +42,7 @@ public class player_animation : MonoBehaviour
         }
         else
         {
+            hand.SetActive(true);
             player_animator_controller.SetBool("running", false);
             player_animator_controller.SetBool("walking", false);
         }

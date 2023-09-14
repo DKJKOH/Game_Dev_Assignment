@@ -28,7 +28,6 @@ public class Explosion : MonoBehaviour
         {
             // Get all objects hit by the circle2d collider
             Collider2D[] enemyHit = Physics2D.OverlapCircleAll(transform.position, explosion_radius);
-            Debug.Log(enemyHit.Length);
 
             // Iterate through all collisions 
             foreach (Collider2D col in enemyHit)
@@ -40,7 +39,12 @@ public class Explosion : MonoBehaviour
                     
                     // If the grenade hits enemy
                     col.gameObject.GetComponent<Enemy_FOV>().enabled = false;
-                }             
+                }     
+                else if (col.tag == "Person")
+                {
+                    Debug.Log("apple");
+                    Destroy(col.gameObject);
+                }
 
             }
         }

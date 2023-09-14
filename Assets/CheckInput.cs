@@ -19,7 +19,7 @@ public class CheckInput : MonoBehaviour
 			Debug.Log(Input.inputString);
 		}
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown("p"))
         {
             Debug.Log("Escape pressed");
             
