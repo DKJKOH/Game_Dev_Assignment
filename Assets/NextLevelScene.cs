@@ -45,7 +45,7 @@ public class NextLevelScene : MonoBehaviour
         {
         	gameObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.nearClipPlane + 1));
 
-        	if(scene.name == "Final Map v3 (New Save")
+        	if(scene.name == "FinalMapv3_Backup_Alston")
         	{
         		SceneManager.LoadScene("VictoryScreen");
         	}
@@ -60,7 +60,7 @@ public class NextLevelScene : MonoBehaviour
     public void NextScene()
     {
         // To load the next active stage
-        SceneManager.LoadScene("Final Map v3 (New Save)");
+        SceneManager.LoadScene("FinalMapv3_Backup_Alston");
         NextLevel.SetActive(false);
     }
 }

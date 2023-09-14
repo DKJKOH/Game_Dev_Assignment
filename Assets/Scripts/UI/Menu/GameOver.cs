@@ -18,7 +18,7 @@ public class GameOver : MonoBehaviour
 
     public void RestartButtonMain() {
         //Reload the same level
-        SceneManager.LoadScene("Final Map v3 (New Save)");
+        SceneManager.LoadScene("FinalMapv3_Backup_Alston");
         Time.timeScale = 1f;
 
     }
