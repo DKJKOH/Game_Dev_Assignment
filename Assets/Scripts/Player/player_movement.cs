@@ -8,9 +8,14 @@ public class player_movement : MonoBehaviour
     // Create private rigid body for player
     private Rigidbody2D player_rb;
 
-    // Set player's movement speed (By default is 3f)
+    // Set player's walking speed (By default is 3f)
     [SerializeField]
-    float movementSpeed = 3f;
+    float walkingSpeed = 3f;
+
+
+    // Set player's running speed (By default is 6f)
+    [SerializeField]
+    float runningSpeed = 6f;
 
     // Player movement
     private Vector2 playerMovement;
@@ -39,7 +44,15 @@ public class player_movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Move player
-        player_rb.velocity = playerMovement * movementSpeed;
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            // Player runs
+            player_rb.velocity = playerMovement * runningSpeed;
+        }
+        else
+        {
+            // Player walks
+            player_rb.velocity = playerMovement * walkingSpeed;
+        }
     }
 }

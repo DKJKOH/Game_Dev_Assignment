@@ -24,12 +24,23 @@ public class player_animation : MonoBehaviour
 
         if (horizontalInput != 0 || verticalInput != 0)
         {
-            
-            player_animator_controller.SetBool("walking", true);
+            // If condition to run
+            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            {
+                // Set running to true
+                player_animator_controller.SetBool("running", true);
+                player_animator_controller.SetBool("walking", false);
+            }
+            else
+            {
+                // Set walking to true
+                player_animator_controller.SetBool("walking", true);
+                player_animator_controller.SetBool("running", false);
+            }
         }
         else
         {
-           
+            player_animator_controller.SetBool("running", false);
             player_animator_controller.SetBool("walking", false);
         }
     }
