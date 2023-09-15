@@ -8,14 +8,14 @@ using TMPro;
 
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AutoEnemyCounter : MonoBehaviour
 {
+    Scene scene;
+
     GameObject[] enemies;
-    //public Text enemyCountText;
-    //[SerializeField]
-    //public GameObject ButtonToEnable;
 
     private int totalEnemies = 0;
     void Start()
@@ -23,7 +23,8 @@ public class AutoEnemyCounter : MonoBehaviour
         // To Find How Many Enemies are in the Level
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         totalEnemies = enemies.Length;
-        //ButtonToEnable.SetActive(false);
+
+        scene = SceneManager.GetActiveScene();
 
     }
 
@@ -46,13 +47,15 @@ public class AutoEnemyCounter : MonoBehaviour
 
         if (enemyDeadCount >= totalEnemies)
         {
-            enemiesLeft = totalEnemies - enemyDeadCount;
-
-            gameObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.nearClipPlane + 1));
-
             gameObject.GetComponent<TextMeshProUGUI>().text = "All Enemies Dead!";
-            // All enemies are dead, enable the button and allow scene transition
-            gameObject.SetActive(true);
+
+            if (scene.name != "TutorialLevel")
+            {
+
+                // Link the gameover scene 
+                SceneManager.LoadScene("VictoryScreen");
+            }
+
 
         }
         else

@@ -63,6 +63,8 @@ public class grenade_throw : MonoBehaviour
 
     void Update()
     {
+
+
         if (!animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
@@ -73,6 +75,8 @@ public class grenade_throw : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && transform.parent != null)
         {
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+
             // Grenade throwing process started
             isStarted = true;
             start_time = Time.time;

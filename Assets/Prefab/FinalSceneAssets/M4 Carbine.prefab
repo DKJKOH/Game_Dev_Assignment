@@ -723,7 +723,7 @@ MonoBehaviour:
   bullet_spawner_object: {fileID: 3610054318412615872}
   bullet: {fileID: 5173988708246799863, guid: 34107aa8f6562794287eb2c8cc4027f6, type: 3}
   magazineSize: 20
-  timeBetweeenShots: 0.005
+  timeBetweeenShots: 0.00001
   numberBulletsInMag: 0
   totalBullets: 40
   audioSource: {fileID: 4831515585875805209}

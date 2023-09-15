@@ -173,9 +173,7 @@ public class pickup_throw : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
         if ((collision.gameObject.CompareTag("gun")|| collision.gameObject.CompareTag("grabbable") || collision.gameObject.CompareTag("grenade")) && !holdingGun && Hand.transform.childCount < 1)
-        {   
-            Debug.Log("apple");
-            
+        {               
             // Retrieve details for weapon to pickup
             weapon_to_pickup = collision.gameObject;
 
@@ -200,6 +198,15 @@ public class pickup_throw : MonoBehaviour
 
                 audioSource.PlayOneShot(pickup_weapon_sound);
 
+                if (weapon_to_pickup.CompareTag("grenade"))
+                {
+
+                    // Change back to dynamic so that grenade do not "Float around"
+                    weapon_to_pickup.GetComponent<Rigidbody2D>().isKinematic = true;
+                    weapon_to_pickup.GetComponent<BoxCollider2D>().enabled = false;
+
+                }
+
                 // If is pistol
                 if (weapon_to_pickup.name == "Pistol" || weapon_to_pickup.name == "M4 Carbine" || weapon_to_pickup.name == "Kar98K" || weapon_to_pickup.name == "Shotgun")
                 {
@@ -216,7 +223,12 @@ public class pickup_throw : MonoBehaviour
                 {
                     
                 }
-
+                
+                if (weapon_to_pickup.name == "Pistol")
+                {
+                    // Set weapon position to hand position
+                    weapon_to_pickup.transform.rotation = Hand.transform.rotation;
+                }
                 weaponDisable(weapon_to_pickup.transform, false);
 
                 // Set weapon position to hand position

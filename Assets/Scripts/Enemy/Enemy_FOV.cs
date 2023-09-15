@@ -89,7 +89,7 @@ public class Enemy_FOV : MonoBehaviour
                 if (hand.transform.childCount != 0)
                 {
                     // Trigger gun shoot (Fire weapon)
-                    GameObject bullet_spawner = transform.Find("Hand/Pistol/Weapon_Object/Bullet_Spawner").gameObject;
+                    GameObject bullet_spawner = transform.Find("Hand-Enemy/Pistol/Weapon_Object/Bullet_Spawner").gameObject;
 
                     if (Time.time - lastShotTime >= timeBetweeenShots)
                     {

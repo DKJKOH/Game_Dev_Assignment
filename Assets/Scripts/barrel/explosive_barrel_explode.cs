@@ -67,6 +67,15 @@ public class explosive_barrel_explode : MonoBehaviour
                         SceneManager.LoadScene("GameOverMain");
                     }
                 }
+
+                if (col.tag == "grenade" || col.tag == "explosive_barrel")
+                {
+                    // Grenade Explosion Animation
+                    col.GetComponent<Animator>().SetTrigger("isExplode");
+
+                    // Enable Explosion Collider
+                    col.transform.GetChild(0).gameObject.SetActive(true);
+                }
             }
         }
     }
