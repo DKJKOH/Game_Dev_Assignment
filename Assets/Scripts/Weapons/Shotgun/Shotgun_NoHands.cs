@@ -45,10 +45,7 @@ public class Shotgun_NoHands : MonoBehaviour
 
 
     // Ammo count stuff
-
-
     // Stores information about current ammunition in magazine
-    //public int currentAmmo;
     // Amount of bullets available in the weapon (Default 10)
     [SerializeField]
     public int magazineSize = 10;
@@ -62,7 +59,7 @@ public class Shotgun_NoHands : MonoBehaviour
 
     // Shotgun sound stuff
     // Gun sounds
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     [SerializeField]
     public AudioClip shoot_sound;
@@ -117,10 +114,6 @@ public class Shotgun_NoHands : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        // Find audio listener (for weapon sounds)
-        audioSource = gameObject.GetComponent<AudioSource>();
-
         // If number of bullets is lesser than magazine capacity
         if (totalBullets <= magazineSize)
         {

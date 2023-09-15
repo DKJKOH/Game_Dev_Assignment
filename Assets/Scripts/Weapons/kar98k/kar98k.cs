@@ -48,7 +48,7 @@ public class kar98k : MonoBehaviour
 
 
     // Gun Sounds here!
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     [SerializeField]
     public AudioClip shoot_sound;
@@ -130,10 +130,6 @@ public class kar98k : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Find audio listener
-        audioSource = gameObject.GetComponent<AudioSource>();
-
-
         // If number of bullets is lesser than magazine capacity
         if (totalBullets <= magazineSize)
         {

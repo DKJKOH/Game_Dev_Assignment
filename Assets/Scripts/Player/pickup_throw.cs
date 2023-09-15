@@ -43,7 +43,6 @@ public class pickup_throw : MonoBehaviour
 
         holdingGun = false;
 
-
     }
 
     void weaponDisable(Transform weapon_object, bool isDisable)
@@ -89,9 +88,21 @@ public class pickup_throw : MonoBehaviour
 
         if (Hand.transform.childCount == 1)
         {
+            float speed_weapon = 6.0f;
+
             GameObject item_on_hand = Hand.transform.GetChild(0).gameObject;
 
-            item_on_hand.transform.position = Hand.transform.position;
+            float distance_gun_hand = Vector3.Distance(item_on_hand.transform.position, Hand.transform.position);
+
+            Vector3 smoothedPosition = Vector3.Lerp(item_on_hand.transform.position, Hand.transform.position, speed_weapon * Time.deltaTime);
+
+            item_on_hand.transform.position = smoothedPosition;
+
+            if (distance_gun_hand > 1)
+            {
+                item_on_hand.transform.position = Hand.transform.position;
+            }
+
 
             // If user presses q (To drop item in hand)
             if (Input.GetKey("q"))
@@ -138,9 +149,6 @@ public class pickup_throw : MonoBehaviour
                     // Unset the hand as the weapon's parent
                     item_on_hand.transform.parent = null;
 
-                    // Set sprite to dynamic
-                    //item_on_hand.GetComponent<Rigidbody2D>().isKinematic = false;
-
                     // Disable weapon rotation / shooting scripts
                     weaponDisable(item_on_hand.transform, true);
 
@@ -157,8 +165,6 @@ public class pickup_throw : MonoBehaviour
                     // After a few seconds, disable text
                     StartCoroutine(disable_text());
                 }
-                // Freeze transformation of weapon so that the weapon do not move away from hand
-                //weapon_to_pickup.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             }
 
         }
@@ -213,17 +219,11 @@ public class pickup_throw : MonoBehaviour
 
                 weaponDisable(weapon_to_pickup.transform, false);
 
-                // Initially, grenade is not affected by physics 
-                //weapon_to_pickup.GetComponent<Rigidbody2D>().isKinematic = true;
-
                 // Set weapon position to hand position
                 weapon_to_pickup.transform.position = Hand.transform.position;
 
                 // Set parent of weapon which is going to be picked up to be the hand
                 weapon_to_pickup.transform.parent = Hand.transform;
-
-                // Freeze transformation of weapon so that the weapon do not move away from hand
-                //weapon_to_pickup.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
             }
         }
     }

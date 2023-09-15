@@ -55,9 +55,6 @@ public class bullet_collision : MonoBehaviour
                  // Link the gameover scene 
                 SceneManager.LoadScene("GameOverMain");
             }
-
-           
-
         }
 
         if(hitObject.tag == "gun")
@@ -69,8 +66,11 @@ public class bullet_collision : MonoBehaviour
         // If bullet hits grenade
         if (hitObject.tag == "grenade" || hitObject.tag == "explosive_barrel")
         {
-            // Grenade explodes
+            // Grenade Explosion Animation
             hitObject.GetComponent<Animator>().SetTrigger("isExplode");
+
+            // Enable Explosion Collider
+            hitObject.transform.GetChild(0).gameObject.SetActive(true);
         }
 
         // Destroy self (aka bullet)

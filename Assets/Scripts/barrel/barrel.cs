@@ -31,8 +31,6 @@ public class barrel : MonoBehaviour
     {
         if (!gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("idle"))
         {
-            Debug.Log("Barrel start destroy!");
-
             // Destroy itself
             Destroy(gameObject, grenade_explode_sound.length);
         }
