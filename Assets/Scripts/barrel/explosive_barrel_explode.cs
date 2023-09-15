@@ -1,24 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking.Types;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class Explosion : MonoBehaviour
+public class explosive_barrel_explode : MonoBehaviour
 {
     [SerializeField]
     Animator grenadeAnimator;
 
-    public AudioClip grenade_explode_sound;
-
     public float explosion_radius;
-    // This portion is to show the explosion radius (So that we can see what is happening)
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, explosion_radius);
-    }
 
     Scene scene;
     // Start is called before the first frame update
@@ -27,6 +18,12 @@ public class Explosion : MonoBehaviour
         scene = SceneManager.GetActiveScene();
     }
 
+    // This portion is to show the explosion radius (So that we can see what is happening)
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosion_radius);
+    }
 
     // Update is called once per frame
     void Update()
@@ -36,8 +33,6 @@ public class Explosion : MonoBehaviour
             Destroy(gameObject);
         }
 
-
-
         // If grenade is currently exploding
         if (!grenadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
         {
@@ -46,16 +41,18 @@ public class Explosion : MonoBehaviour
 
             // Iterate through all collisions 
             foreach (Collider2D col in enemyHit)
-            {    
-                if (col.tag == "Enemy")
+            {
+                // If the grenade hits enemy
+                if (col.attachedRigidbody.tag == "Enemy")
                 {
                     // Start enemy death animation
                     col.gameObject.GetComponent<Animator>().SetTrigger("die");
-                    
-                    // If the grenade hits enemy
+
                     col.gameObject.GetComponent<Enemy_FOV>().enabled = false;
-                }     
-                else if (col.tag == "Person")
+                }
+
+                // If the grenade hits Player
+                if (col.attachedRigidbody.tag == "Person")
                 {
                     // Send to home screen
                     if (scene.name == "TutorialLevel")
@@ -70,19 +67,15 @@ public class Explosion : MonoBehaviour
                         SceneManager.LoadScene("GameOverMain");
                     }
                 }
-                else if (col.tag == "grenade" || col.tag == "explosive_barrel")
+
+                if (col.tag == "grenade" || col.tag == "explosive_barrel")
                 {
-                    if (gameObject.transform.GetChildCount() > 0)
-                    {
-                        // Enable Explosion Collider
-                        col.transform.GetChild(0).gameObject.SetActive(true);
-                    }
                     // Grenade Explosion Animation
                     col.GetComponent<Animator>().SetTrigger("isExplode");
 
-
+                    // Enable Explosion Collider
+                    col.transform.GetChild(0).gameObject.SetActive(true);
                 }
-
             }
         }
     }

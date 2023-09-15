@@ -13701,7 +13701,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -13854,7 +13854,7 @@ PrefabInstance:
     - target: {fileID: 1186364343092783874, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
       propertyPath: m_Name
-      value: Grenade (4)
+      value: Grenade
       objectReference: {fileID: 0}
     - target: {fileID: 1186364343092783880, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
@@ -13929,7 +13929,7 @@ PrefabInstance:
     - target: {fileID: 1186364343092783874, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
       propertyPath: m_Name
-      value: Grenade (3)
+      value: Grenade
       objectReference: {fileID: 0}
     - target: {fileID: 1186364343092783880, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
@@ -16079,7 +16079,7 @@ PrefabInstance:
     - target: {fileID: 1186364343092783874, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
       propertyPath: m_Name
-      value: Grenade (1)
+      value: Grenade
       objectReference: {fileID: 0}
     - target: {fileID: 1186364343092783880, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
@@ -16879,7 +16879,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -18597,7 +18597,7 @@ PrefabInstance:
     - target: {fileID: 3464697759405009364, guid: 6eff2c6386b4fcc46a8dfdfda44cb612,
         type: 3}
       propertyPath: m_Name
-      value: Pistol (3)
+      value: Pistol
       objectReference: {fileID: 0}
     - target: {fileID: 3464697759405009384, guid: 6eff2c6386b4fcc46a8dfdfda44cb612,
         type: 3}
@@ -19768,7 +19768,7 @@ PrefabInstance:
     - target: {fileID: 692452214502867015, guid: 10fcd791210b6a04fad4931f90c25401,
         type: 3}
       propertyPath: m_Name
-      value: Shotgun (1)
+      value: Shotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10fcd791210b6a04fad4931f90c25401, type: 3}
@@ -30857,7 +30857,7 @@ PrefabInstance:
     - target: {fileID: 1186364343092783874, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
       propertyPath: m_Name
-      value: Grenade (5)
+      value: Grenade
       objectReference: {fileID: 0}
     - target: {fileID: 1186364343092783880, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
@@ -32386,6 +32386,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7783098279518151979, guid: 8bf947f3f5427f34cb61206ef9a06cb8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7783098279518151979, guid: 8bf947f3f5427f34cb61206ef9a06cb8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.021
+      objectReference: {fileID: 0}
     - target: {fileID: 7783098280858030708, guid: 8bf947f3f5427f34cb61206ef9a06cb8,
         type: 3}
       propertyPath: m_Name
@@ -32404,7 +32414,7 @@ PrefabInstance:
     - target: {fileID: 7783098280858030710, guid: 8bf947f3f5427f34cb61206ef9a06cb8,
         type: 3}
       propertyPath: viewRadius
-      value: 7
+      value: 7.54
       objectReference: {fileID: 0}
     - target: {fileID: 7783098280858030717, guid: 8bf947f3f5427f34cb61206ef9a06cb8,
         type: 3}
@@ -36423,7 +36433,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -36789,7 +36799,7 @@ PrefabInstance:
     - target: {fileID: 3464697759405009364, guid: 6eff2c6386b4fcc46a8dfdfda44cb612,
         type: 3}
       propertyPath: m_Name
-      value: Pistol (2)
+      value: Pistol
       objectReference: {fileID: 0}
     - target: {fileID: 3464697759405009384, guid: 6eff2c6386b4fcc46a8dfdfda44cb612,
         type: 3}
@@ -38480,7 +38490,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -38554,7 +38564,7 @@ PrefabInstance:
     - target: {fileID: 1186364343092783874, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
       propertyPath: m_Name
-      value: Grenade (7)
+      value: Grenade
       objectReference: {fileID: 0}
     - target: {fileID: 1186364343092783880, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
@@ -38707,7 +38717,7 @@ PrefabInstance:
     - target: {fileID: 1186364343092783874, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
       propertyPath: m_Name
-      value: Grenade (2)
+      value: Grenade
       objectReference: {fileID: 0}
     - target: {fileID: 1186364343092783880, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
@@ -40077,7 +40087,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -40932,6 +40942,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7597724091722996760, guid: 8767c5221f446374691de077956d86d5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597724091722997222, guid: 8767c5221f446374691de077956d86d5,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597724091722997223, guid: 8767c5221f446374691de077956d86d5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7597724092964331458, guid: 8767c5221f446374691de077956d86d5,
         type: 3}
       propertyPath: m_RootOrder
@@ -40950,7 +40975,7 @@ PrefabInstance:
     - target: {fileID: 7597724092964331458, guid: 8767c5221f446374691de077956d86d5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 7597724092964331458, guid: 8767c5221f446374691de077956d86d5,
         type: 3}
@@ -42552,7 +42577,7 @@ PrefabInstance:
     - target: {fileID: 3464697759405009364, guid: 6eff2c6386b4fcc46a8dfdfda44cb612,
         type: 3}
       propertyPath: m_Name
-      value: Pistol (4)
+      value: Pistol
       objectReference: {fileID: 0}
     - target: {fileID: 3464697759405009384, guid: 6eff2c6386b4fcc46a8dfdfda44cb612,
         type: 3}
@@ -42621,7 +42646,7 @@ PrefabInstance:
     - target: {fileID: 1186364343092783874, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
       propertyPath: m_Name
-      value: Grenade (6)
+      value: Grenade
       objectReference: {fileID: 0}
     - target: {fileID: 1186364343092783880, guid: 46dce13e2ba45064da030833c5986330,
         type: 3}
@@ -44423,7 +44448,7 @@ PrefabInstance:
     - target: {fileID: 8451325125690317077, guid: caec8a6f05e50714da58523ced2870c6,
         type: 3}
       propertyPath: m_Name
-      value: Kar98K (1)
+      value: Kar98K
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caec8a6f05e50714da58523ced2870c6, type: 3}
@@ -46724,7 +46749,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -113247,7 +113272,7 @@ PrefabInstance:
     - target: {fileID: 3610054319443538317, guid: f6086e88da0d8674c84f9f9b00d6bbb7,
         type: 3}
       propertyPath: m_Name
-      value: M4 Carbine (1)
+      value: M4 Carbine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6086e88da0d8674c84f9f9b00d6bbb7, type: 3}
@@ -113524,7 +113549,7 @@ PrefabInstance:
     - target: {fileID: 3464697759405009364, guid: 6eff2c6386b4fcc46a8dfdfda44cb612,
         type: 3}
       propertyPath: m_Name
-      value: Pistol (1)
+      value: Pistol
       objectReference: {fileID: 0}
     - target: {fileID: 3464697759405009384, guid: 6eff2c6386b4fcc46a8dfdfda44cb612,
         type: 3}
@@ -114339,7 +114364,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -117007,7 +117032,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -117854,7 +117879,7 @@ PrefabInstance:
     - target: {fileID: 692452214502867015, guid: 10fcd791210b6a04fad4931f90c25401,
         type: 3}
       propertyPath: m_Name
-      value: Shotgun (2)
+      value: Shotgun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10fcd791210b6a04fad4931f90c25401, type: 3}
@@ -117947,7 +117972,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
@@ -118912,7 +118937,7 @@ PrefabInstance:
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5066000850700258378, guid: b13bc1bfdfe1cdd4a8930640739180fb,
         type: 3}
