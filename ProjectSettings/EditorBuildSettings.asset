@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalScenes/MainMenu.unity
     guid: c3cba788c0900d24ab9bc741b5126e22
   - enabled: 1
-    path: Assets/Scenes/FinalScenes/GameOverTutorial.unity
-    guid: 23094ab0a2165284a9f31f9ad502d35a
-  - enabled: 1
-    path: Assets/Scenes/FinalScenes/GameOverMain.unity
-    guid: 8a64401dbf81545e396c9dee6610bac2
-  - enabled: 1
     path: Assets/Scenes/FinalScenes/FinalMapv3_Backup_Alston.unity
     guid: 166d2bce80d0a7649a357f57cb016e7c
   - enabled: 1
@@ -23,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalScenes/VictoryScreen.unity
     guid: 0d0dd292a2d614f01a6cdf6812d0a5bd
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/GameOverTutorial.unity
+    guid: 23094ab0a2165284a9f31f9ad502d35a
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/GameOverMain.unity
+    guid: 8a64401dbf81545e396c9dee6610bac2
   m_configObjects: {}

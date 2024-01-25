@@ -193,50 +193,52 @@ public class Pistol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Enable shooting is weapon is not being reloaded
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
+        // Do not execute when game is pausedp
+        if (Time.timeScale != 0)
         {
-            // Allow user to fire
-            isReloading = false;
-        }
+            // Enable shooting is weapon is not being reloaded
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
+            {
+                // Allow user to fire
+                isReloading = false;
+            }
 
-        // Sound cue for empty mag (if fire is pressed)
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("empty") && Input.GetButtonDown("Fire1"))
-        {
-            // Start dry fire sound
-            Dry_fire_sound();
-        }
+            // Sound cue for empty mag (if fire is pressed)
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("empty") && Input.GetButtonDown("Fire1"))
+            {
+                // Start dry fire sound
+                Dry_fire_sound();
+            }
 
-        // Fire weapon
-        if (numberBulletsInMag > 1 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
-        {
-            // Trigger firing animation
-            animator.SetTrigger("shoot");
+            // Fire weapon
+            if (numberBulletsInMag > 1 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+            {
+                // Trigger firing animation
+                animator.SetTrigger("shoot");
 
-            // Save the last shot time
-            lastShotTime = Time.time;
-        }
+                // Save the last shot time
+                lastShotTime = Time.time;
+            }
 
-        // Fire last shot
-        if (numberBulletsInMag == 1 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
-        {
+            // Fire last shot
+            if (numberBulletsInMag == 1 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+            {
 
-            // Trigger firing animation
-            animator.SetTrigger("last_shot");
+                // Trigger firing animation
+                animator.SetTrigger("last_shot");
 
-            // Save the last shot time
-            lastShotTime = Time.time;
-        }
+                // Save the last shot time
+                lastShotTime = Time.time;
+            }
 
-        if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
-        {
-            // Do not allow user to fire
-            isReloading = true;
+            if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
+            {
+                // Do not allow user to fire
+                isReloading = true;
 
-            // Set load bullet to be true
-            animator.SetBool("reload", true);
+                // Set load bullet to be true
+                animator.SetBool("reload", true);
+            }
         }
     }
-
-
 }

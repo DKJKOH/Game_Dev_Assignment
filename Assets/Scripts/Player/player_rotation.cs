@@ -33,6 +33,6 @@ public class player_rotation : MonoBehaviour
         float rotationAngle = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg - 90f;
         
         // Rotate player
-        transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, rotationAngle));
+        transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, rotationAngle * Time.timeScale));
     }
 }
