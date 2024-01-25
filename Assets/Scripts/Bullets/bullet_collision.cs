@@ -66,16 +66,11 @@ public class bullet_collision : MonoBehaviour
         // If bullet hits grenade
         if (hitObject.tag == "grenade" || hitObject.tag == "explosive_barrel")
         {
-            Debug.Log("Bullet hit grenade");
             // Grenade Explosion Animation
             hitObject.GetComponent<Animator>().SetTrigger("isExplode");
-            if (hitObject.transform.childCount > 0)
-            {
-                // Enable Explosion Collider
-                hitObject.transform.GetChild(0).gameObject.SetActive(true);
-            }
 
-
+            // Enable Explosion Collider
+            hitObject.transform.GetChild(0).gameObject.SetActive(true);
         }
 
         // Destroy self (aka bullet)

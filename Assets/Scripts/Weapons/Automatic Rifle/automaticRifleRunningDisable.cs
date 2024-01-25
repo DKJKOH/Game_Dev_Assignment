@@ -15,6 +15,7 @@ public class automaticRifleRunningDisable : MonoBehaviour
         {
             if (gameObject.transform.parent.name == "Hand")
             {
+                Debug.Log("Has hand");
                 // If gun is not being animated and user is running
                 if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle") && Input.GetButton("Shift"))
                 {

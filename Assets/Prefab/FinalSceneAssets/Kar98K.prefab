@@ -439,7 +439,7 @@ TextMesh:
   m_GameObject: {fileID: 8451325125597866521}
   m_Text: Ammo Count
   m_OffsetZ: 0
-  m_CharacterSize: 2
+  m_CharacterSize: 1
   m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
@@ -751,7 +751,7 @@ TextMesh:
   m_GameObject: {fileID: 8451325125811877815}
   m_Text: Q - Drop Weapon
   m_OffsetZ: 0
-  m_CharacterSize: 2
+  m_CharacterSize: 1
   m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0

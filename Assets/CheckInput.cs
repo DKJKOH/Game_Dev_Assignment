@@ -15,7 +15,9 @@ public class CheckInput : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown("p"))
-        {            
+        {
+            Debug.Log("Escape pressed");
+            
             if (PauseMenu.isPaused)
             {
                 PauseMenu.ResumeGame();

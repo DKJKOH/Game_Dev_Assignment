@@ -24,6 +24,7 @@ public class PopUpText : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Person"))
         {
+            Debug.Log("Entered Scene for text");
             TextMeshPro.enabled = true; // Show the text when entering the trigger zone
             backgroundImage.enabled = true; // Show the background when entering the trigger zone
 
@@ -34,6 +35,7 @@ public class PopUpText : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Person"))
         {
+            Debug.Log("Exited Scene for text");
             TextMeshPro.enabled = false; // Hide the text when exiting the trigger zone
             backgroundImage.enabled = false; // Hide the background when exiting the trigger zone
         }

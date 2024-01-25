@@ -13,7 +13,6 @@ TagManager:
   - Enemy
   - grenade
   - explosive_barrel
-  - toggle_vision
   layers:
   - Default
   - TransparentFX

@@ -10,33 +10,9 @@ public class player_animation : MonoBehaviour
     // Triggers running animation
     private bool running;
 
-
-    // Thingy which will emit sound
-    private AudioSource audioSource;
-
-    // To simulate walking and running
-    [SerializeField]
-    public AudioClip walk_sound;
-
-    [SerializeField]
-    public AudioClip run_sound;
-
-    // These functions will execute in the animation itself
-    void Walk_sound()
-    {
-        audioSource.PlayOneShot(walk_sound);
-    }
-    void Run_sound()
-    {
-        audioSource.PlayOneShot(run_sound);
-    }
-
     // Start is called before the first frame update
     void Start()
     {
-        // Get audio source
-        audioSource = gameObject.GetComponent<AudioSource>();
-
         // By default, disable running
         running = false;
         // Retrieve player's player controller animator

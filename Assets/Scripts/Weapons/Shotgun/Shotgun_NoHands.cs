@@ -154,102 +154,100 @@ public class Shotgun_NoHands : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale != 0)
+
+        // Sound cue for no bullets in magazine
+        if (numberBulletsInMag <= 0 && Input.GetButtonDown("Fire1") && !isReloading)
         {
-            // Sound cue for no bullets in magazine
-            if (numberBulletsInMag <= 0 && Input.GetButtonDown("Fire1") && !isReloading)
+            // Start dry fire sound
+            Dry_fire_sound();
+        }
+
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("insert_bullet"))
+        {
+            isReloading = true;
+        }
+        else
+        {
+            isReloading = false;
+        }
+
+        if (numberBulletsInMag == 0 && totalBullets > 0 && Input.GetKeyDown(KeyCode.R))
+        {
+            // Animation purposes where you would need to pump shotgun to load round into chamber
+            pumpShotgun = true;
+
+            // Automatically reload shotgun
+            isReloading = true;
+
+            // Starts reload animation
+            animator.SetBool("load_slug", true);
+        }
+
+
+        // If maximum amount of ammo in magazine size reached
+        if (numberBulletsInMag >= magazineSize || totalBullets <= 0)
+        {
+            // Set reloading to false
+            isReloading = false;
+
+            // Stops reload animation
+            animator.SetBool("load_slug", false);
+
+            // If number of bullets in magazine is full and it is during the reloading phase
+            if (pumpShotgun)
             {
-                // Start dry fire sound
-                Dry_fire_sound();
+                // Set pumpshotgun to false as you would not need to pump shotgun
+                pumpShotgun = false;
+
+                // Trigger Insert_Last_bullet
+                animator.SetTrigger("load_last_bullet");
             }
+        }
 
 
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("insert_bullet"))
+        // If user presses fire during reload animation
+        if (Input.GetButtonDown("Fire1") && isReloading)
+        {
+            // Stop reload coroutine
+            animator.SetBool("load_slug", false);
+
+            if (pumpShotgun)
             {
-                isReloading = true;
+                // Prevent pump shotgun from happening again
+                pumpShotgun = false;
+
+                // Trigger Insert_Last_bullet
+                animator.SetTrigger("load_last_bullet");
             }
-            else
-            {
-                isReloading = false;
-            }
+        }
 
-            if (numberBulletsInMag == 0 && totalBullets > 0 && Input.GetKeyDown(KeyCode.R))
-            {
-                // Animation purposes where you would need to pump shotgun to load round into chamber
-                pumpShotgun = true;
+        // If there are bullets in magazine and user fires
+        if (numberBulletsInMag > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+        {
+            // Set load bullet to be false
+            animator.SetBool("load_slug", false);
 
-                // Automatically reload shotgun
-                isReloading = true;
+            // Trigger firing animation
+            animator.SetTrigger("fire");
 
-                // Starts reload animation
-                animator.SetBool("load_slug", true);
-            }
+            // Save the last shot time
+            lastShotTime = Time.time;
 
+            //Create bullet object
+            Instantiate(bullet, bullet_spawner_object.transform.position, bullet_spawner_object.transform.rotation);
 
-            // If maximum amount of ammo in magazine size reached
-            if (numberBulletsInMag >= magazineSize || totalBullets <= 0)
-            {
-                // Set reloading to false
-                isReloading = false;
+            // Decrease current ammo in clip
+            numberBulletsInMag--;
+        }
 
-                // Stops reload animation
-                animator.SetBool("load_slug", false);
+        if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
+        {
+            // Do not allow user to fire
+            isReloading = true;
 
-                // If number of bullets in magazine is full and it is during the reloading phase
-                if (pumpShotgun)
-                {
-                    // Set pumpshotgun to false as you would not need to pump shotgun
-                    pumpShotgun = false;
-
-                    // Trigger Insert_Last_bullet
-                    animator.SetTrigger("load_last_bullet");
-                }
-            }
-
-
-            // If user presses fire during reload animation
-            if (Input.GetButtonDown("Fire1") && isReloading)
-            {
-                // Stop reload coroutine
-                animator.SetBool("load_slug", false);
-
-                if (pumpShotgun)
-                {
-                    // Prevent pump shotgun from happening again
-                    pumpShotgun = false;
-
-                    // Trigger Insert_Last_bullet
-                    animator.SetTrigger("load_last_bullet");
-                }
-            }
-
-            // If there are bullets in magazine and user fires
-            if (numberBulletsInMag > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
-            {
-                // Set load bullet to be false
-                animator.SetBool("load_slug", false);
-
-                // Trigger firing animation
-                animator.SetTrigger("fire");
-
-                // Save the last shot time
-                lastShotTime = Time.time;
-
-                //Create bullet object
-                Instantiate(bullet, bullet_spawner_object.transform.position, bullet_spawner_object.transform.rotation);
-
-                // Decrease current ammo in clip
-                numberBulletsInMag--;
-            }
-
-            if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
-            {
-                // Do not allow user to fire
-                isReloading = true;
-
-                // Set load bullet to be true
-                animator.SetBool("load_slug", true);
-            }
+            // Set load bullet to be true
+            animator.SetBool("load_slug", true);
         }
     }
 }
