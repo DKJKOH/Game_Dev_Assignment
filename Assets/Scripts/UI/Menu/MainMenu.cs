@@ -10,12 +10,14 @@ public class MainMenu : MonoBehaviour
     {
         // To load the next active stage
         SceneManager.LoadScene("TutorialLevel");
+
+        Time.timeScale = 1.0f;
     }
     
     //Quit Game Button
     public void QuitGame() 
     {
-        Debug.Log("Quit!"); //To test if the quit button works
+        //To test if the quit button works
         //Quit the game
         Application.Quit();
     }

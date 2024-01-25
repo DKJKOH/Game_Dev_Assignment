@@ -14,15 +14,8 @@ public class CheckInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKey)
-		{
-			Debug.Log(Input.inputString);
-		}
-
         if (Input.GetKeyDown("p"))
-        {
-            Debug.Log("Escape pressed");
-            
+        {            
             if (PauseMenu.isPaused)
             {
                 PauseMenu.ResumeGame();

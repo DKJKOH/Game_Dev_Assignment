@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 using static UnityEngine.GraphicsBuffer;
 
 
@@ -29,6 +30,9 @@ public class Enemy_FOV : MonoBehaviour
     private Transform transform_target;
     private Vector3 directionToTarget;
     private Vector3 weaponDirectionToTarget;
+
+    private Vector3 last_seen_position;
+    private bool going_to_position;
 
 
     // Lists which contains current visible targets from current object
@@ -60,36 +64,105 @@ public class Enemy_FOV : MonoBehaviour
     }
 
     private void Update()
-    {        
+    {
+        // STUFF TO SOLVE: ENEMY STOPS FOLLOWING PLAYER IF THE WEAPON GETS STOLEN
+        // Retrieve distance from current object to target
+        float distanceToTarget = Vector3.Distance(transform.position, last_seen_position);
 
-        if (transform.GetChild(0).gameObject.transform.childCount > 0 && targetsVisible.Count > 0)
+        // If enemies current position is at the last seen position, do not move the enemy
+        if (last_seen_position.x != transform.position.x && last_seen_position.y != transform.position.y && going_to_position)
+        {
+            // Move enemy to player's last seen position
+            directionToTarget = (last_seen_position - transform.position).normalized;
+
+            // Calculate the angle to rotate the enemy towards the seen player
+            float rotationAngle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg - 90f;
+
+            // Rotate Enemy body
+            transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, rotationAngle));
+
+
+            // Move the player towards the target
+
+            Vector3 force = directionToTarget * 1 * Time.timeScale;
+
+            transform.gameObject.GetComponent<Rigidbody2D>().AddForce(force);
+
+            GameObject hand = transform.GetChild(0).gameObject;
+
+            // If enemy is holding a gun (to prepare if it gets destroyed)
+            if (hand.transform.childCount != 0)
+            {
+                //Get weapon direction using weapon last seen direciton
+                weaponDirectionToTarget = (last_seen_position - gun.transform.position).normalized;
+
+                // Calculate angle on how much weapon needs to rotate
+                float WeaponRotationAngle = Mathf.Atan2(weaponDirectionToTarget.y, weaponDirectionToTarget.x) * Mathf.Rad2Deg;
+
+                // Rotate enemy gun
+                gun.transform.rotation = Quaternion.Euler(new Vector3(0f, 0, WeaponRotationAngle));
+            }
+            else
+            {
+                Debug.Log("Not holding gun");
+            }
+        }
+        // If enemy is at player's last seen position, do not move the enemy
+        if( distanceToTarget < 1)
+        {
+            
+            // Disable movement
+            going_to_position = false;
+        }
+
+
+        if (targetsVisible.Count > 0)
         {
             for (int i = 0; i < targetsVisible.Count; i++)
             {
                 // Get the player's current position
                 transform_target = targetsVisible[i];
 
+                // Save last seen position
+                last_seen_position = transform_target.position;
+
+                going_to_position = true;
+
+
                 // Retrieve the normalized vector (Direction) from enemy to player no
                 directionToTarget = (transform_target.position - transform.position).normalized;
-                weaponDirectionToTarget = (transform_target.position - gun.transform.position).normalized;
+                
 
                 // Calculate the angle to rotate the enemy towards the seen player
                 float rotationAngle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg - 90f;
 
-                float WeaponRotationAngle = Mathf.Atan2(weaponDirectionToTarget.y, weaponDirectionToTarget.x) * Mathf.Rad2Deg;
+                
 
                 // Rotate Enemy
                 transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, rotationAngle));
 
-                gun.transform.rotation = Quaternion.Euler(new Vector3(0f, 0, WeaponRotationAngle));
+
+
+                // Move the enemy
+                // Move the player towards the target
+                transform.position += directionToTarget * 1 * Time.deltaTime;
 
                 GameObject hand = transform.GetChild(0).gameObject;
 
                 // If enemy has weapon
                 if (hand.transform.childCount != 0)
                 {
+                    weaponDirectionToTarget = (transform_target.position - gun.transform.position).normalized;
+
+                    float WeaponRotationAngle = Mathf.Atan2(weaponDirectionToTarget.y, weaponDirectionToTarget.x) * Mathf.Rad2Deg;
+
+
+
+                    // Rotate the gun
+                    gun.transform.rotation = Quaternion.Euler(new Vector3(0f, 0, WeaponRotationAngle));
+
                     // Trigger gun shoot (Fire weapon)
-                    GameObject bullet_spawner = transform.Find("Hand/Pistol/Weapon_Object/Bullet_Spawner").gameObject;
+                    GameObject bullet_spawner = transform.Find("Hand-Enemy/Pistol/Weapon_Object/Bullet_Spawner").gameObject;
 
                     if (Time.time - lastShotTime >= timeBetweeenShots)
                     {

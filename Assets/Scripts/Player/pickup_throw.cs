@@ -25,6 +25,9 @@ public class pickup_throw : MonoBehaviour
 
     bool holdingGun;
 
+    // How fast does the weapon follow the user
+    [SerializeField]
+    public float weapon_follow_speed = 6.0f;
 
 
     void Drop_weapon_sound()
@@ -43,7 +46,6 @@ public class pickup_throw : MonoBehaviour
 
         holdingGun = false;
 
-
     }
 
     void weaponDisable(Transform weapon_object, bool isDisable)
@@ -51,13 +53,6 @@ public class pickup_throw : MonoBehaviour
         MonoBehaviour[] allScripts = weapon_object.GetComponents<MonoBehaviour>();
         foreach (MonoBehaviour script in allScripts)
         {
-            if (script.name == "LaserSight")
-            {
-                // Enable laser sight
-                script.enabled = true;
-                continue;
-            }
-
             if (isDisable)
             {
                 script.enabled = false;
@@ -89,24 +84,37 @@ public class pickup_throw : MonoBehaviour
 
         if (Hand.transform.childCount == 1)
         {
+
             GameObject item_on_hand = Hand.transform.GetChild(0).gameObject;
 
-            item_on_hand.transform.position = Hand.transform.position;
+            float distance_gun_hand = Vector3.Distance(item_on_hand.transform.position, Hand.transform.position);
+
+            Vector3 smoothedPosition = Vector3.Lerp(item_on_hand.transform.position, Hand.transform.position, weapon_follow_speed * Time.deltaTime);
+
+            item_on_hand.transform.position = smoothedPosition;
+
+            if (distance_gun_hand > 1)
+            {
+                item_on_hand.transform.position = Hand.transform.position;
+            }
+
 
             // If user presses q (To drop item in hand)
             if (Input.GetKey("q"))
             {
 
-                // Drop weapon sound
-                audioSource.PlayOneShot(drop_weapon_sound);
 
                 // Disable ammo count text for weapons held by player
                 if (item_on_hand.name == "Pistol" || item_on_hand.name == "M4 Carbine" || item_on_hand.name == "Kar98K" || item_on_hand.name == "Shotgun")
                 {
-                    // Disable text object
-                    item_on_hand.transform.GetChild(0).gameObject.SetActive(false);
-
+                    if (item_on_hand.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("idle") || item_on_hand.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("empty"))
+                    {
+                        // Disable text object
+                        item_on_hand.transform.GetChild(0).gameObject.SetActive(false);
+                    }
                 }
+
+ 
 
 
                 if (item_on_hand.CompareTag("grenade"))
@@ -117,8 +125,14 @@ public class pickup_throw : MonoBehaviour
                     // Change back to dynamic so that grenade do not "Float around"
                     item_on_hand.GetComponent<Rigidbody2D>().isKinematic = false;
 
-                    // Disable grenade scripts
-                    weaponDisable(item_on_hand.transform, true);
+                    // So that player is able to pick the grenade up!
+                    item_on_hand.GetComponent<BoxCollider2D>().enabled = true;
+
+                    // Enable grenade scripts
+                    weaponDisable(item_on_hand.transform, false);
+
+                    // Enable grenade animation
+                    item_on_hand.GetComponentInChildren<Animator>().enabled = true;
 
                     // Change the text
                     Drop_text.GetComponent<TextMesh>().text = item_on_hand.name + " dropped!";
@@ -128,18 +142,15 @@ public class pickup_throw : MonoBehaviour
 
                     // After a few seconds, disable text
                     StartCoroutine(disable_text());
+
+                    // Drop weapon sound
+                    audioSource.PlayOneShot(drop_weapon_sound);
                 }
-   
-
-
-                if (item_on_hand.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("idle") || item_on_hand.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("empty"))
+                else if (item_on_hand.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("idle") || item_on_hand.GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("empty"))
                 {
 
                     // Unset the hand as the weapon's parent
                     item_on_hand.transform.parent = null;
-
-                    // Set sprite to dynamic
-                    //item_on_hand.GetComponent<Rigidbody2D>().isKinematic = false;
 
                     // Disable weapon rotation / shooting scripts
                     weaponDisable(item_on_hand.transform, true);
@@ -150,15 +161,16 @@ public class pickup_throw : MonoBehaviour
 
                     // Change the text
                     Drop_text.GetComponent<TextMesh>().text = item_on_hand.name + " dropped!";
-                
+
                     // Enable text
                     Drop_text.SetActive(true);
 
                     // After a few seconds, disable text
                     StartCoroutine(disable_text());
+
+                    // Drop weapon sound
+                    audioSource.PlayOneShot(drop_weapon_sound);
                 }
-                // Freeze transformation of weapon so that the weapon do not move away from hand
-                //weapon_to_pickup.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             }
 
         }
@@ -167,9 +179,7 @@ public class pickup_throw : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
         if ((collision.gameObject.CompareTag("gun")|| collision.gameObject.CompareTag("grabbable") || collision.gameObject.CompareTag("grenade")) && !holdingGun && Hand.transform.childCount < 1)
-        {   
-            Debug.Log("apple");
-            
+        {               
             // Retrieve details for weapon to pickup
             weapon_to_pickup = collision.gameObject;
 
@@ -194,6 +204,15 @@ public class pickup_throw : MonoBehaviour
 
                 audioSource.PlayOneShot(pickup_weapon_sound);
 
+                if (weapon_to_pickup.CompareTag("grenade"))
+                {
+
+                    // Change back to dynamic so that grenade do not "Float around"
+                    weapon_to_pickup.GetComponent<Rigidbody2D>().isKinematic = true;
+                    weapon_to_pickup.GetComponent<BoxCollider2D>().enabled = false;
+
+                }
+
                 // If is pistol
                 if (weapon_to_pickup.name == "Pistol" || weapon_to_pickup.name == "M4 Carbine" || weapon_to_pickup.name == "Kar98K" || weapon_to_pickup.name == "Shotgun")
                 {
@@ -210,20 +229,19 @@ public class pickup_throw : MonoBehaviour
                 {
                     
                 }
-
+                
+                if (weapon_to_pickup.name == "Pistol")
+                {
+                    // Set weapon position to hand position
+                    weapon_to_pickup.transform.rotation = Hand.transform.rotation;
+                }
                 weaponDisable(weapon_to_pickup.transform, false);
-
-                // Initially, grenade is not affected by physics 
-                //weapon_to_pickup.GetComponent<Rigidbody2D>().isKinematic = true;
 
                 // Set weapon position to hand position
                 weapon_to_pickup.transform.position = Hand.transform.position;
 
                 // Set parent of weapon which is going to be picked up to be the hand
                 weapon_to_pickup.transform.parent = Hand.transform;
-
-                // Freeze transformation of weapon so that the weapon do not move away from hand
-                //weapon_to_pickup.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
             }
         }
     }

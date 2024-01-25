@@ -116,7 +116,7 @@ public class FOV : MonoBehaviour
             viewPoints.Add(newViewCast.point);
 
             // Debug, draw line
-            //Debug.DrawLine(transform.position, transform.position + DirectionFromAngle(angle, true) * viewRadius, Color.green);
+            Debug.DrawLine(transform.position, transform.position + DirectionFromAngle(angle, true) * viewRadius, Color.green);
         }
 
         // Number of vertexes for all triangles
