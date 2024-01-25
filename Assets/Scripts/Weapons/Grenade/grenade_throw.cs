@@ -63,53 +63,54 @@ public class grenade_throw : MonoBehaviour
 
     void Update()
     {
-
-
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
+        if (Time.timeScale != 0)
         {
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
-
-            Destroy(gameObject, grenade_explode_sound.length);
-        }
-
-
-        if (Input.GetMouseButtonDown(0) && transform.parent != null)
-        {
-            gameObject.GetComponent<BoxCollider2D>().enabled = true;
-
-            // Grenade throwing process started
-            isStarted = true;
-            start_time = Time.time;
-
-            grenade.isKinematic = false; // Now, physics affect the grenade
-
-            // Get's hand forward direction (y axis) so that we can orient grenade throw in the correct direction
-            grenade.transform.up = transform.parent.up;
-
-            transform.parent = null; // Detach grenade from its parent
-
-            grenade.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-
-            // Apply force to simulate the throw
-            grenade.AddForce(transform.up * throw_force * Time.deltaTime, ForceMode2D.Impulse);
-        }
-
-        if (Time.time - start_time >= explosion_time && isStarted == true)
-        {
-            // Stop grenade's movement
-            grenade.velocity = new Vector3(0, 0, 0);
-
-            if (gameObject.transform.GetChildCount() > 0)
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
             {
-                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+                Destroy(gameObject, grenade_explode_sound.length);
             }
 
-            
 
-            // Trigger explosion animation
-            animator.SetTrigger("isExplode");
+            if (Input.GetMouseButtonDown(0) && transform.parent != null)
+            {
+                gameObject.GetComponent<BoxCollider2D>().enabled = true;
 
-            gameObject.GetComponent<BoxCollider2D>().enabled = true;
+                // Grenade throwing process started
+                isStarted = true;
+                start_time = Time.time;
+
+                grenade.isKinematic = false; // Now, physics affect the grenade
+
+                // Get's hand forward direction (y axis) so that we can orient grenade throw in the correct direction
+                grenade.transform.up = transform.parent.up;
+
+                transform.parent = null; // Detach grenade from its parent
+
+                grenade.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+
+                // Apply force to simulate the throw
+                grenade.AddForce(transform.up * throw_force * Time.deltaTime, ForceMode2D.Impulse);
+            }
+
+            if (Time.time - start_time >= explosion_time && isStarted == true)
+            {
+                // Stop grenade's movement
+                grenade.velocity = new Vector3(0, 0, 0);
+
+                if (gameObject.transform.childCount > 0)
+                {
+                    gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                }
+
+
+
+                // Trigger explosion animation
+                animator.SetTrigger("isExplode");
+
+                gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            }
         }
     }
 }

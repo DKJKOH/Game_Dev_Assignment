@@ -202,63 +202,64 @@ public class automatic_rifle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Total bullets in mag: " + numberBulletsInMag + "Total Bullets: " + totalBullets);
-
-        // Enable shooting as weapon is not being reloaded
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
-        {
-            // Allow user to fire
-            isReloading = false;
-
-            isReloading = false;
-            animator.SetBool("reload", false);
-        }
-
-        // Enable shooting as weapon is not being reloaded
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("reload_no_bullet"))
-        {
-            // Trigger firing animation
-            animator.SetBool("last_shot", false);
-        }
-
-        // Fire weapon
-        if (numberBulletsInMag > 1 && Input.GetMouseButton(0) && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
-        {
-            // Enable firing animation
-            animator.SetBool("shoot", true);
-
-            // Save the last shot time
-            lastShotTime = Time.time;
-        }
-        else
-        {
-            // Disable firing animation
-            animator.SetBool("shoot", false);
-        }
-
-        // Sound Cue for no bullets
-        if (numberBulletsInMag <= 0 && Input.GetButtonDown("Fire1") && animator.GetCurrentAnimatorStateInfo(0).IsName("empty"))
-        {
-            // Execute dry fire sound
-            Dry_fire_sound();
-        }
-
-        // Fire last shot
-        if (numberBulletsInMag == 1 && Input.GetMouseButton(0) && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
-        {
-            // Trigger firing animation
-            animator.SetBool("last_shot", true);
-
-            // Save the last shot time
-            lastShotTime = Time.time;
-        }
-
-        if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
+        if (Time.timeScale != 0)
         {
 
-            // Set load bullet to be true
-            animator.SetBool("reload", true);
-        }
+            // If there is ammo to reload and magazine is not full
+            if (numberBulletsInMag < magazineSize && Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
+            {
+                // Trigger reload animation
+                animator.SetTrigger("reload");
+            }
 
+            // Enable shooting as weapon is not being reloaded
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
+            {
+                // Allow user to fire
+                isReloading = false;
+            }
+
+            // Enable shooting as weapon is not being reloaded
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("reload_no_bullet"))
+            {
+                // Trigger firing animation
+                animator.SetBool("last_shot", false);
+            }
+
+            // Fire weapon
+            if (numberBulletsInMag > 1 && Input.GetMouseButton(0) && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+            {
+                // Enable firing animation
+                animator.SetBool("shoot", true);
+
+                // Save the last shot time
+                lastShotTime = Time.time;
+            }
+            else
+            {
+                // Disable firing animation
+                animator.SetBool("shoot", false);
+            }
+
+            // Sound Cue for no bullets
+            if (numberBulletsInMag <= 0 && Input.GetButtonDown("Fire1") && animator.GetCurrentAnimatorStateInfo(0).IsName("empty"))
+            {
+                // Execute dry fire sound
+                Dry_fire_sound();
+            }
+
+            // Fire last shot
+            if (numberBulletsInMag == 1 && Input.GetMouseButton(0) && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+            {
+                // Trigger firing animation
+                animator.SetBool("last_shot", true);
+
+                // Save the last shot time
+                lastShotTime = Time.time;
+            }
+
+
+
+        }
     }
 }

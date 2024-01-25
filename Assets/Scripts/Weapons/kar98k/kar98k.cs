@@ -162,96 +162,95 @@ public class kar98k : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // This portion is to stop reloading animation
-        if (Input.GetButtonDown("Fire1") && numberBulletsInMag <= 0 && !isReloading)
+        if (Time.timeScale != 0)
         {
-            // Start dry fire sound
-            Dry_fire_sound();
-        }
-
-
-        // Disable 
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
-        {
-            isReloading = false;
-
-            // Trigger load clip animation
-            animator.SetBool("load_clip", false);
-        }
-        else
-        {
-            isReloading = true;
-        }
-
-        // This portion is to stop reloading animation
-        if (Input.GetButtonDown("Fire1"))
-        {
-
-            // Stop reload coroutine
-            animator.SetBool("load_bullet", false);
-        }
-
-
-
-        // If user fires (magazine is not empty)
-        if (numberBulletsInMag > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
-        {
-
-            // Trigger firing animation
-            animator.SetTrigger("shoot");
-
-            // Save the last shot time
-            lastShotTime = Time.time;
-
-            //Create bullet object
-            Instantiate(bullet, bullet_spawner_object.transform.position, bullet_spawner_object.transform.rotation);
-
-            // Decrease current ammo in clip
-            numberBulletsInMag--;
-        }
-
-        if (Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
-        {
-            // If user runs out of bullet (and has enough ammunition to reload a magazine)
-            if (numberBulletsInMag == 0 && totalBullets >= magazineSize)
+            // This portion is to stop reloading animation
+            if (Input.GetButtonDown("Fire1") && numberBulletsInMag <= 0 && !isReloading)
             {
-                // Do not allow user to fire
-                isReloading = true;
+                // Start dry fire sound
+                Dry_fire_sound();
+            }
+
+
+            // Disable 
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("idle"))
+            {
+                isReloading = false;
 
                 // Trigger load clip animation
-                animator.SetBool("load_clip", true);
+                animator.SetBool("load_clip", false);
             }
-
             else
             {
-                // Do not allow user to fire
                 isReloading = true;
-
-                // Set load bullet to be true
-                animator.SetBool("load_bullet", true);
             }
-        }
+
+            // This portion is to stop reloading animation
+            if (Input.GetButtonDown("Fire1"))
+            {
+
+                // Stop reload coroutine
+                animator.SetBool("load_bullet", false);
+            }
 
 
 
+            // If user fires (magazine is not empty)
+            if (numberBulletsInMag > 0 && Input.GetButtonDown("Fire1") && Time.time - lastShotTime >= timeBetweeenShots && !isReloading)
+            {
 
+                // Trigger firing animation
+                animator.SetTrigger("shoot");
 
-        // If maximum amount of ammo in magazine size reached
-        if (numberBulletsInMag >= magazineSize)
-        {
-            // Set reloading to false
-            isReloading = false;
+                // Save the last shot time
+                lastShotTime = Time.time;
 
-            // Stops reload animation
-            animator.SetBool("load_bullet", false);
-        }
+                //Create bullet object
+                Instantiate(bullet, bullet_spawner_object.transform.position, bullet_spawner_object.transform.rotation);
 
-        if (totalBullets <= 0)
-        {
-            // Set reloading to false
-            isReloading = false;
-            // Stops reload animation
-            animator.SetBool("load_bullet", false);
+                // Decrease current ammo in clip
+                numberBulletsInMag--;
+            }
+
+            if (Input.GetKeyDown(KeyCode.R) && totalBullets > 0)
+            {
+                // If user runs out of bullet (and has enough ammunition to reload a magazine)
+                if (numberBulletsInMag == 0 && totalBullets >= magazineSize)
+                {
+                    // Do not allow user to fire
+                    isReloading = true;
+
+                    // Trigger load clip animation
+                    animator.SetBool("load_clip", true);
+                }
+
+                else
+                {
+                    // Do not allow user to fire
+                    isReloading = true;
+
+                    // Set load bullet to be true
+                    animator.SetBool("load_bullet", true);
+                }
+            }
+
+            // If maximum amount of ammo in magazine size reached
+            if (numberBulletsInMag >= magazineSize)
+            {
+                // Set reloading to false
+                isReloading = false;
+
+                // Stops reload animation
+                animator.SetBool("load_bullet", false);
+            }
+
+            if (totalBullets <= 0)
+            {
+                // Set reloading to false
+                isReloading = false;
+                // Stops reload animation
+                animator.SetBool("load_bullet", false);
+            }
         }
     }
 }
